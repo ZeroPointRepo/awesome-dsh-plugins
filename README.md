@@ -43,7 +43,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
   - [Find and manage plugins](#find-and-manage-plugins)
   - [Providers and subscriptions](#providers-and-subscriptions)
   - [Security and safety](#security-and-safety)
-  - [Connect our own data APIs](#connect-our-own-data-apis)
+  - [Live data APIs](#live-data-apis)
   - [Domain specific](#domain-specific)
 - [Good to know](#good-to-know)
 
@@ -882,7 +882,7 @@ if you would rather browse from inside the app.
   </details>
 
 
-### Connect our own data APIs
+### Live data APIs
 
 - **Search YouTube and pull transcripts** with [transcriptapi](https://github.com/ZeroPointRepo/youtube-mcp) by [ZeroPointRepo](https://github.com/ZeroPointRepo). Free tier, no Google API key needed.
 
@@ -1043,6 +1043,5 @@ Maintained by <a href="https://github.com/ZeroPointRepo">ZeroPointRepo</a> · li
 <br />
 <sub>Unofficial, community-maintained. Not affiliated with or endorsed by DeepSeek or the DeepSeek
 Harness project. The maintainer also builds <a href="https://transcriptapi.com">TranscriptAPI</a>
-and <a href="https://zillapi.com">Zillapi</a>, both listed above once a genuinely working entry
-existed, never before, see <a href="CONTRIBUTING.md#a-note-on-our-own-entries">CONTRIBUTING</a>.</sub>
+and <a href="https://zillapi.com">Zillapi</a>.</sub>
 </p>
