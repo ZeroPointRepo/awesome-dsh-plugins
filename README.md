@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" width="800" alt="Awesome DSH Plugins" />
+  <img src=".github/assets/banner.png" width="800" alt="Awesome DSH Plugins - everything is a plugin" />
 </p>
 
 <p align="center">
