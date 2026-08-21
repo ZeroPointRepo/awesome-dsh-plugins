@@ -20,7 +20,14 @@ When one of ours appears here:
   does not go in. StayingAPI is not listed for exactly this reason (its key could not be verified
   live at the time of writing).
 - We will **never reject or downrank a competing entry** to protect one of ours.
-- Where it appears, it carries an inline disclosure: *(Maintainer's own — see this section.)*
+- The full disclosure lives here and in the README footer, not as extra text next to the entry
+  itself, so the catalog reads the same for every entry regardless of who built it.
+
+## The Featured plugin slot
+
+The top slot rotates on merit, roughly one plugin in six from a strong batch. It is not a permanent
+house slot. A plugin earns it by being an unusually good answer to a real job, having a verified
+install command, and being active. Maintainers pick it; there is no separate application.
 
 ## Adding a plugin entry
 
@@ -28,14 +35,20 @@ Open a PR that adds one entry, in the right category, in this exact format:
 
 ```
 - **What it does for the reader, as a short action phrase** with
-  [name](repo-url) by [author](author-url). A factual one-line description. N★, LICENSE. **[tag]**
+  [name](repo-url) by [author](author-url). A factual one-line description. N★, LICENSE.
+
+  <details>
+  <summary>Install</summary>
+
   ```sh
   dsh plugin --profile <profile> add <package>
   ```
+
+  </details>
 ```
 
-Tags: **production** (mature, widely installed) · **beta** (works, pre-1.0 or young) ·
-**experimental** (early, worth watching).
+One entry, one lead phrase, one description, one collapsed install block. No tags, no extra
+sub-bullets, nothing else in the visible line.
 
 ### Acceptance bar (we merge if all of these are true)
 
@@ -53,8 +66,8 @@ We reject only for: no working install command, dead or archived link, no real s
 or exact duplicate. **We always reply**, even to a rejection, and we will say exactly what would get
 a resubmission in.
 
-An honestly empty category beats a padded one. If your plugin doesn't clear the bar yet, tell us and
-we will note it in [What we left out](README.md#what-we-left-out) instead of listing a command that
+An honestly empty category beats a padded one. If your plugin doesn't clear the bar yet, tell us in
+the PR or an issue and we will say plainly what is missing, instead of listing a command that
 doesn't work.
 
 ## Style

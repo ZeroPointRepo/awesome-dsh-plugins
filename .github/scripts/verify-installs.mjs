@@ -34,9 +34,10 @@ const H = {
 
 const text = readFileSync(file, 'utf8');
 // Scope to the catalog section only, so the badge count matches the "N plugins" claim at the top
-// of the README rather than also picking up cross-links in Related lists / Other ways to find.
+// of the README rather than also picking up the Featured plugin entry or any link in the
+// collapsed "Good to know" accordions (verification explainer / security / contributing).
 const catalogStart = text.indexOf('## The catalog');
-const catalogEnd = text.indexOf('## Other ways to find dsh plugins');
+const catalogEnd = text.indexOf('## Good to know');
 const catalogText = catalogStart >= 0 && catalogEnd > catalogStart ? text.slice(catalogStart, catalogEnd) : text;
 const lines = catalogText.split('\n');
 
