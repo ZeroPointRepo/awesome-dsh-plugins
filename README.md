@@ -401,6 +401,9 @@ network. A tag on this list means the install command works and the project is r
 its last check, not that the code has been reviewed for safety. Read a plugin's source before you
 install it or hand it credentials, the same as you would any package or browser extension.
 
+Found a plugin that seems malicious rather than merely broken? Open an issue and say so plainly, or
+use GitHub's private vulnerability reporting on the plugin's own repo if it has one enabled.
+
 ## 🤝 Contributing
 
 PRs are very welcome, see [CONTRIBUTING.md](CONTRIBUTING.md) for the format and the acceptance
