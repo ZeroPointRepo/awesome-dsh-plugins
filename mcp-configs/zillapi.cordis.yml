@@ -1,0 +1,12 @@
+# Wires api.zillapi.com's remote MCP server (Zillow property data) into DSH.
+# Get a key at https://zillapi.com, then set ZILLAPI_KEY before starting DSH.
+- insert:
+    - id: zillapi-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: zillapi
+        transport: streamable-http
+        url: https://api.zillapi.com/mcp
+        headers:
+          Authorization: !!js >-
+            'Bearer ' + (process.env.ZILLAPI_KEY ?? '')

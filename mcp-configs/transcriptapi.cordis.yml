@@ -1,0 +1,12 @@
+# Wires transcriptapi.com's remote MCP server (YouTube search + transcripts) into DSH.
+# Get a key at https://transcriptapi.com, then set TRANSCRIPTAPI_KEY before starting DSH.
+- insert:
+    - id: transcriptapi-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: transcriptapi
+        transport: streamable-http
+        url: https://transcriptapi.com/mcp
+        headers:
+          Authorization: !!js >-
+            'Bearer ' + (process.env.TRANSCRIPTAPI_KEY ?? '')

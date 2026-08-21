@@ -1,0 +1,39 @@
+name: verify-installs
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Mondays 08:00 UTC, ahead of the weekly maintenance pass
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/scripts/verify-installs.mjs
+      - .github/workflows/verify-installs.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify every install command against its own source
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/verify-installs.mjs README.md
+
+      - name: Commit updated badge data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- badges/; then
+            git add badges/
+            git commit -m "chore: refresh install-verification badges [skip ci]"
+            git push
+          else
+            echo "No badge change."
+          fi
