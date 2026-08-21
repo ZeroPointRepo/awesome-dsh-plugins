@@ -1042,6 +1042,5 @@ Maintained by <a href="https://github.com/ZeroPointRepo">ZeroPointRepo</a> · li
 <a href="https://crhq.ai">crhq.ai</a>
 <br />
 <sub>Unofficial, community-maintained. Not affiliated with or endorsed by DeepSeek or the DeepSeek
-Harness project. The maintainer also builds <a href="https://transcriptapi.com">TranscriptAPI</a>
-and <a href="https://zillapi.com">Zillapi</a>.</sub>
+Harness project.</sub>
 </p>
