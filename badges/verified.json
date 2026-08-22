@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
   "label": "install checks",
-  "message": "73/76 passing",
-  "color": "red"
+  "message": "76/76 passing",
+  "color": "brightgreen"
 }

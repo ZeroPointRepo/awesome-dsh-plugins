@@ -76,6 +76,20 @@ for (let i = 0; i < lines.length; i++) {
 
 console.log(`Parsed ${entries.length} catalog entries from ${file}\n`);
 
+// Some projects document their pinned ref as a shell variable rather than inline:
+//   DSH_PLUGIN_REF=v2.4.0
+//   dsh plugin --profile web add "github:owner/repo#${DSH_PLUGIN_REF}"
+// Substituting the assignments before matching is the difference between checking that pin and
+// reporting a correctly pinned entry as drift.
+function expandVars(md) {
+  const vars = new Map();
+  for (const m of md.matchAll(/^\s*(?:export\s+)?([A-Z][A-Z0-9_]{2,})=["']?([\w.@#/-]+)["']?\s*$/gm)) {
+    vars.set(m[1], m[2]);
+  }
+  if (!vars.size) return md;
+  return md.replace(/\$\{?([A-Z][A-Z0-9_]{2,})\}?/g, (all, name) => (vars.has(name) ? vars.get(name) : all));
+}
+
 const problems = [];
 const ok = [];
 
@@ -107,13 +121,13 @@ for (const e of entries) {
     continue;
   }
 
-  let tok = e.cmd.split(/\s+/).pop();
+  let tok = e.cmd.split(/\s+/).pop().replace(/^['"]|['"]$/g, '');
   const rr = await fetch(`https://api.github.com/repos/${e.slug}/readme`, { headers: H });
   if (!rr.ok) {
     problems.push(`${e.name} (${e.slug}): could not read project's own README (HTTP ${rr.status}), command unverified`);
     continue;
   }
-  const md = Buffer.from((await rr.json()).content, 'base64').toString();
+  const md = expandVars(Buffer.from((await rr.json()).content, 'base64').toString());
   // For a github.com archive/tarball URL, the owner segment can go stale after a rename
   // (the repo-health check above already catches that independently). What actually matters
   // here is whether the referenced tag/file still exists in the project's own docs, so match

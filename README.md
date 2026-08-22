@@ -47,7 +47,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
   - [Domain specific](#domain-specific)
 - [Good to know](#good-to-know)
 
-- **Full catalog:** every verified DSH plugin (222) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified DSH plugin (221) in [CATALOG.md](CATALOG.md)
 
 ---
 
@@ -56,7 +56,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. The first vision plugin the DSH ecosystem got, and still the reference one: it set the pattern most of the ecosystem's other vision bridges now copy. 3,486★, MIT.
 
 ```sh
-dsh plugin --profile web add @liustack/modlens@3.22.1
+dsh plugin --profile web add @liustack/modlens@3.23.1
 ```
 
 ---
@@ -99,7 +99,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.22.1
+  dsh plugin --profile web add @liustack/modlens@3.23.1
   ```
 
   </details>
@@ -146,7 +146,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modsearch@5.8.0
+  dsh plugin --profile web add @liustack/modsearch@5.9.0
   ```
 
   </details>
@@ -856,7 +856,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add "github:toby-bridges/api-relay-audit#latest"
+  dsh plugin --profile web add github:toby-bridges/api-relay-audit#v2.4.0
   ```
 
   </details>

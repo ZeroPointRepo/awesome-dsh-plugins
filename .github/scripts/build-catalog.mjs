@@ -167,11 +167,23 @@ function extractCommand(fullName, md) {
   return hits[0] && hits[0].score >= 2 ? hits[0].line : null;
 }
 
+// Some projects document their pinned ref as a shell variable (DSH_PLUGIN_REF=v2.4.0, then
+// "github:owner/repo#${DSH_PLUGIN_REF}"). Substitute before matching so a correctly pinned entry
+// is not read as drift. Same rule as verify-installs.mjs.
+function expandVars(md) {
+  const vars = new Map();
+  for (const m of md.matchAll(/^\s*(?:export\s+)?([A-Z][A-Z0-9_]{2,})=["']?([\w.@#/-]+)["']?\s*$/gm)) {
+    vars.set(m[1], m[2]);
+  }
+  if (!vars.size) return md;
+  return md.replace(/\$\{?([A-Z][A-Z0-9_]{2,})\}?/g, (all, name) => (vars.has(name) ? vars.get(name) : all));
+}
+
 async function fetchReadme(slug) {
   const r = await api(`https://api.github.com/repos/${slug}/readme`);
   if (!r.ok) return null;
   const j = await r.json();
-  return Buffer.from(j.content, 'base64').toString('utf8');
+  return expandVars(Buffer.from(j.content, 'base64').toString('utf8'));
 }
 
 // ---------------------------------------------------------------- verify + assemble
