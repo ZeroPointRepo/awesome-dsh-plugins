@@ -47,6 +47,8 @@ that actually install, sorted by the job they do for you instead of the alphabet
   - [Domain specific](#domain-specific)
 - [Good to know](#good-to-know)
 
+- **Full catalog:** every verified DSH plugin (221) in [CATALOG.md](CATALOG.md)
+
 ---
 
 ## ⭐ Featured plugin
