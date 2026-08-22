@@ -37,10 +37,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- badges/ CATALOG.md README.md; then
-            git add badges/ CATALOG.md README.md
-            git commit -m "chore: refresh install-verification badges and catalog [skip ci]"
-            git push
-          else
+          if git diff --quiet -- badges/ CATALOG.md README.md; then
             echo "No badge or catalog change."
+            exit 0
           fi
+          git add badges/ CATALOG.md README.md
+          git commit -m "chore: refresh install-verification badges and catalog [skip ci]"
+          # Two runs can finish at once (the weekly cron, a push, a manual dispatch). Rebase onto
+          # whichever one landed first instead of failing the job on a lost race.
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash origin main || exit 1
+          done
+          git push
