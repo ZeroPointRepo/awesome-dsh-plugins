@@ -32,17 +32,21 @@ const H = {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function api(url, tries = 3) {
+async function api(url, tries = 5) {
+  let r;
   for (let i = 0; i < tries; i++) {
-    const r = await fetch(url, { headers: H });
+    r = await fetch(url, { headers: H });
     if (r.ok) return r;
+    // Secondary rate limiting is the normal failure here, and it is temporary. Waiting it out is
+    // the difference between a verified row and a row that silently reads as unverified.
     if (r.status === 403 || r.status === 429) {
-      await sleep(5000 * (i + 1));
+      const retryAfter = Number(r.headers.get('retry-after')) || 0;
+      await sleep(Math.max(retryAfter * 1000, 4000 * 2 ** i));
       continue;
     }
     return r;
   }
-  return fetch(url, { headers: H });
+  return r;
 }
 
 // ---------------------------------------------------------------- README (curated entries)
@@ -179,9 +183,15 @@ function expandVars(md) {
   return md.replace(/\$\{?([A-Z][A-Z0-9_]{2,})\}?/g, (all, name) => (vars.has(name) ? vars.get(name) : all));
 }
 
+let readFailures = 0;
+
 async function fetchReadme(slug) {
   const r = await api(`https://api.github.com/repos/${slug}/readme`);
-  if (!r.ok) return null;
+  if (!r.ok) {
+    readFailures++;
+    console.log(`  could not read ${slug}'s README (HTTP ${r.status})`);
+    return null;
+  }
   const j = await r.json();
   return expandVars(Buffer.from(j.content, 'base64').toString('utf8'));
 }
@@ -259,6 +269,15 @@ if (rows.length < curated.length) {
   process.exit(1);
 }
 
+// A README we could not read is an unknown, not a failed check. A handful is normal API weather; a
+// pile of them means the run is unreliable and would publish false "unverified" marks.
+const readFailureBudget = Math.max(5, Math.round(rows.length * 0.05));
+console.log(`README reads that failed: ${readFailures} (budget ${readFailureBudget})`);
+if (readFailures > readFailureBudget) {
+  console.error('Too many README reads failed. Keeping the existing catalog rather than publishing false unverified marks.');
+  process.exit(1);
+}
+
 // ---------------------------------------------------------------- render
 
 const esc = (s) =>
@@ -292,13 +311,32 @@ organized list is [README.md](README.md).
 |---|---|---|---|---|
 ${body}
 
-<sub>${rows.length} plugins · rebuilt by [\`build-catalog.mjs\`](.github/scripts/build-catalog.mjs) on every
+<sub>${rows.length} plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
+[\`build-catalog.mjs\`](.github/scripts/build-catalog.mjs) on every
 [verify-installs](.github/workflows/verify-installs.yml) run · ✅ = the install command still appears in the
 project's own README · edits here are overwritten, send them to [README.md](README.md).</sub>
 `;
 
 writeFileSync('CATALOG.md', catalog);
 console.log(`Wrote CATALOG.md (${rows.length} plugins)`);
+
+// The same rows as data, for anyone consuming the list programmatically. Full untruncated
+// description, exact star count, RFC 4180 quoting.
+const csvCell = (v) => {
+  const s = String(v ?? '').replace(/\s+/g, ' ').trim();
+  return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+};
+const csv =
+  ['name,description,stars,install_command,verified,repo_url']
+    .concat(
+      rows.map((r) =>
+        [r.name, r.blurb, r.stars, r.cmd, r.verified, `https://github.com/${r.slug}`].map(csvCell).join(',')
+      )
+    )
+    .join('\n') + '\n';
+
+writeFileSync('catalog.csv', csv);
+console.log(`Wrote catalog.csv (${rows.length} rows)`);
 
 // Keep the README's pointer line honest about the count.
 const line = `- **Full catalog:** every verified DSH plugin (${rows.length}) in [CATALOG.md](CATALOG.md)`;

@@ -47,7 +47,8 @@ that actually install, sorted by the job they do for you instead of the alphabet
   - [Domain specific](#domain-specific)
 - [Good to know](#good-to-know)
 
-- **Full catalog:** every verified DSH plugin (222) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified DSH plugin (221) in [CATALOG.md](CATALOG.md)
+- **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv)
 
 ---
 
@@ -56,7 +57,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. The first vision plugin the DSH ecosystem got, and still the reference one: it set the pattern most of the ecosystem's other vision bridges now copy. 3,486★, MIT.
 
 ```sh
-dsh plugin --profile web add @liustack/modlens@3.23.1
+dsh plugin --profile web add @liustack/modlens@3.24.0
 ```
 
 ---
@@ -99,7 +100,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.23.1
+  dsh plugin --profile web add @liustack/modlens@3.24.0
   ```
 
   </details>
@@ -389,7 +390,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.6.7.tar.gz
+  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.6.8.tar.gz
   ```
 
   </details>
