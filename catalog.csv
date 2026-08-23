@@ -5,7 +5,7 @@ modlens,Paste an image and get structured evidence back,3533,dsh plugin --profil
 DSH-better-sidebar,Get an open sidebar foundation other plugins can register into,2675,dsh plugin --profile web add dsh-better-sidebar@latest,true,https://github.com/omdsh-dev/DSH-better-sidebar
 memsearch,"A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex), backed by Markdown and Milvus.",2494,dsh plugin --profile web add @zilliz/memsearch-dsh,true,https://github.com/zilliztech/memsearch
 dsh-TUI,Run DSH in a Claude Code style terminal UI,2329,dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui,true,https://github.com/ccch1mneyyy/dsh-TUI
-dsh-market,Browse and install plugins without leaving the app,1898,dsh plugin --profile web add dshmarket,true,https://github.com/dsh-market/dsh-market
+dsh-market,Browse and install plugins without leaving the app,1900,dsh plugin --profile web add dshmarket,true,https://github.com/dsh-market/dsh-market
 Browser4,"Browser4 — an AI-native browser engine for autonomous agents, intelligent extraction, and large-scale web automation.",1110,dsh plugin --profile web add github:platonai/dsh-browser4,true,https://github.com/platonai/Browser4
 dsh-vision-router,"Use a free, keyless vision route plus pixel tools",935,dsh plugin --profile web add dsh-vision-router,true,https://github.com/ysr666/dsh-vision-router
 dsh-context,See exactly what your context window is made of,916,dsh plugin --profile web add dsh-context,true,https://github.com/bowenliang123/dsh-context
@@ -72,7 +72,7 @@ dsh-webui-market-plugin,"dsh Web GUI 社区插件市场：浏览 awesome-dsh-plu
 dsh-crew,"DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness vision and image generation.",100,dsh plugin --profile web add @zseven-w/dsh-crew@latest,true,https://github.com/ZSeven-W/dsh-crew
 dsh-turn-rewind,Roll a conversation and the workspace back together,96,dsh plugin --profile web add @anionex/dsh-turn-rewind,true,https://github.com/Anionex/dsh-turn-rewind
 dsh-skill-mcp-panel,DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）,96,dsh plugin --profile web add github:Fishquito7/dsh-skill-mcp-panel,true,https://github.com/Fishquito7/dsh-skill-mcp-panel
-dsh_workflow,Turn one-shot multi-agent runs into a saved workflow,95,"dsh plugin --profile web add ""github:dsh-external/dsh_workflow#main""",true,https://github.com/omdsh-dev/dsh_workflow
+dsh_workflow,Turn one-shot multi-agent runs into a saved workflow,96,"dsh plugin --profile web add ""github:dsh-external/dsh_workflow#main""",true,https://github.com/omdsh-dev/dsh_workflow
 odai,"AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning, orchestration, and verified delivery.",95,dsh plugin --profile web add odai-dsh-plugin,true,https://github.com/orziz/odai
 dsh-tabbit,Tabbit Browser plugins for Deepseek Harness,95,dsh plugin --profile web add github:Tabbit-Browser/dsh-tabbit,true,https://github.com/Tabbit-Browser/dsh-tabbit
 dsh-damage-pulse,DeepSeek Harness Token 余额监控插件：鲸鱼娘待机/扣费/复苏动画、峰谷计费、连续扣费飘字与会话费用统计。,92,dsh plugin --profile web add github:wssfk12138/dsh-damage-pulse,true,https://github.com/wssfk12138/dsh-damage-pulse
@@ -199,7 +199,6 @@ dsh-full-remote,"Get an auditable, token-gated remote gateway",21,dsh plugin --p
 dsh-anchored-standard,"Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap (bash+read), then full Standard tools after the first tool call or reply",21,dsh plugin --profile web add github:Jungod1121/dsh-anchored-standard,true,https://github.com/Jungod1121/dsh-anchored-standard
 rapid-mlx-dsh-provider,Run local MLX models as a native provider,21,dsh plugin --profile web add @raullenchai/dsh-provider,true,https://github.com/raullenchai/rapid-mlx-dsh-provider
 dsh-openmaic,"OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching",21,dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git,true,https://github.com/THU-MAIC/dsh-openmaic
-dsh-solo-thinking,Solo-style isolated brainstorm branches and Handoffs for DeepSeek Harness,20,dsh plugin --profile web add github:fredalxin/dsh-solo-thinking#v0.1.19,true,https://github.com/fredalxin/dsh-solo-thinking
 dsh-memoir,DSH 项目持久化记忆插件（TypeScript）：会话归纳 + 经验教训沉淀，写入 PROJECT_MEMORY.md 与全局索引；每轮工作结束自动提醒蒸馏、自动注入未来 AGENTS；附 Web GUI 记忆面板（项目/全局 tab、检索、手动记录/删除）。dsh-plugin,20,dsh plugin --profile web add github:Qinling-Melon-Farmers/dsh-memoir,true,https://github.com/Qinling-Melon-Farmers/dsh-memoir
 blender,Drive Blender from a conversation,19,dsh plugin --profile web add dsh-blender,true,https://github.com/CheshireJCat/blender
 dsh-files,Upload a file and let the model actually read it,18,dsh plugin --profile web add dsh-files,true,https://github.com/taxueseek/dsh-files

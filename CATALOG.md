@@ -78,7 +78,7 @@ organized list is [README.md](README.md).
 | [dsh-crew](https://github.com/ZSeven-W/dsh-crew) | DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress,… | 100 | `dsh plugin --profile web add @zseven-w/dsh-crew@latest` | ✅ |
 | [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | Roll a conversation and the workspace back together | 96 | `dsh plugin --profile web add @anionex/dsh-turn-rewind` | ✅ |
 | [dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) | DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具） | 96 | `dsh plugin --profile web add github:Fishquito7/dsh-skill-mcp-panel` | ✅ |
-| [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) | Turn one-shot multi-agent runs into a saved workflow | 95 | `dsh plugin --profile web add "github:dsh-external/dsh_workflow#main"` | ✅ |
+| [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) | Turn one-shot multi-agent runs into a saved workflow | 96 | `dsh plugin --profile web add "github:dsh-external/dsh_workflow#main"` | ✅ |
 | [odai](https://github.com/orziz/odai) | AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning,… | 95 | `dsh plugin --profile web add odai-dsh-plugin` | ✅ |
 | [dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) | Tabbit Browser plugins for Deepseek Harness | 95 | `dsh plugin --profile web add github:Tabbit-Browser/dsh-tabbit` | ✅ |
 | [dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) | DeepSeek Harness Token 余额监控插件：鲸鱼娘待机/扣费/复苏动画、峰谷计费、连续扣费飘字与会话费用统计。 | 92 | `dsh plugin --profile web add github:wssfk12138/dsh-damage-pulse` | ✅ |
@@ -205,7 +205,6 @@ organized list is [README.md](README.md).
 | [dsh-anchored-standard](https://github.com/Jungod1121/dsh-anchored-standard) | Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap (bash+read), then full Standard tools after the first… | 21 | `dsh plugin --profile web add github:Jungod1121/dsh-anchored-standard` | ✅ |
 | [rapid-mlx-dsh-provider](https://github.com/raullenchai/rapid-mlx-dsh-provider) | Run local MLX models as a native provider | 21 | `dsh plugin --profile web add @raullenchai/dsh-provider` | ✅ |
 | [dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) | OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching | 21 | `dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git` | ✅ |
-| [dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) | Solo-style isolated brainstorm branches and Handoffs for DeepSeek Harness | 20 | `dsh plugin --profile web add github:fredalxin/dsh-solo-thinking#v0.1.19` | ✅ |
 | [dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) | DSH 项目持久化记忆插件（TypeScript）：会话归纳 + 经验教训沉淀，写入 PROJECT_MEMORY.md 与全局索引；每轮工作结束自动提醒蒸馏、自动注入未来 AGENTS；附 Web GUI 记忆面板（项目/全局… | 20 | `dsh plugin --profile web add github:Qinling-Melon-Farmers/dsh-memoir` | ✅ |
 | [blender](https://github.com/CheshireJCat/blender) | Drive Blender from a conversation | 19 | `dsh plugin --profile web add dsh-blender` | ✅ |
 | [dsh-files](https://github.com/taxueseek/dsh-files) | Upload a file and let the model actually read it | 18 | `dsh plugin --profile web add dsh-files` | ✅ |
@@ -227,7 +226,7 @@ organized list is [README.md](README.md).
 | [transcriptapi](https://github.com/ZeroPointRepo/youtube-mcp) | Search YouTube and pull transcripts | 8 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/transcriptapi.cordis.yml` | — |
 | [zillapi](https://github.com/ZeroPointRepo/zillow-mcp) | Look up Zillow property data | 1 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/zillapi.cordis.yml` | — |
 
-<sub>221 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
+<sub>220 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
 [`build-catalog.mjs`](.github/scripts/build-catalog.mjs) on every
 [verify-installs](.github/workflows/verify-installs.yml) run · ✅ = the install command still appears in the
 project's own README · edits here are overwritten, send them to [README.md](README.md).</sub>
