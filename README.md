@@ -1037,6 +1037,13 @@ rules.
 
 </details>
 
+<details>
+<summary><strong>Related lists</strong></summary>
+
+- [awesome-fx-skills](https://github.com/ZeroPointRepo/awesome-fx-skills): skills, MCP servers and subagents for Vercel's fx coding agent, every install command machine-checked weekly.
+
+</details>
+
 ---
 
 <p align="center">
