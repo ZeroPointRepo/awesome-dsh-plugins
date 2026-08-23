@@ -3,25 +3,17 @@
 Thanks for considering a contribution. We are strict about verification but fast about merging
 (target under 7 days to a first response on every PR).
 
-## A note on our own entries
+## Entries from ZeroPointRepo
 
-The maintainer of this repository builds and sells developer tools:
-[TranscriptAPI](https://transcriptapi.com), [StayingAPI](https://stayingapi.com), and
-[Zillapi](https://zillapi.com). Two of them, TranscriptAPI and Zillapi, are listed in the
-[Connect our own data APIs](README.md#connect-our-own-data-apis) section of this list, because both
-have a working MCP server we wired into DSH and verified end to end.
+Some entries in this list are built by ZeroPointRepo: `transcriptapi` and `zillapi`, both under
+[Live data APIs](README.md#live-data-apis). They are held to the same rules as every other entry,
+and to a higher bar on one point:
 
-When one of ours appears here:
-
-- It follows the **exact same entry format** as everyone else's: no bold, no emoji, no "featured"
-  styling.
-- It sits **at most once per category**.
-- It is held to a **higher** bar than contributed entries: no verified install path, no real docs, it
-  does not go in. StayingAPI is not listed for exactly this reason (its key could not be verified
-  live at the time of writing).
-- We will **never reject or downrank a competing entry** to protect one of ours.
-- The full disclosure lives here and in the README footer, not as extra text next to the entry
-  itself, so the catalog reads the same for every entry regardless of who built it.
+- Same entry format as everyone else. No bold, no emoji, no "featured" styling.
+- At most one per category.
+- A higher acceptance bar: no verified install path, no real docs, it does not go in. StayingAPI is
+  not listed for exactly that reason, its key could not be verified live at the time of writing.
+- A competing entry is never rejected or downranked to protect one of ours.
 
 ## The Featured plugin slot
 
