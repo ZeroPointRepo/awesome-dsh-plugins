@@ -48,7 +48,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 - [Good to know](#good-to-know)
 
 - **Full catalog:** every verified DSH plugin (223) in [CATALOG.md](CATALOG.md)
-- **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv)
+- **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), which [dsh-market](https://github.com/dsh-market/dsh-market) reads if you point `DSHM_REGISTRY_URL` at its raw URL
 
 ---
 

@@ -57,8 +57,17 @@ const cEnd = readme.indexOf('## Good to know');
 const catalogText = cStart >= 0 && cEnd > cStart ? readme.slice(cStart, cEnd) : readme;
 const rLines = catalogText.split('\n');
 
+const slugify = (s) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 const curated = [];
+let section = null;
 for (let i = 0; i < rLines.length; i++) {
+  const h = rLines[i].match(/^### (.+?)\s*$/);
+  if (h) section = h[1];
   if (!/^- \*\*/.test(rLines[i])) continue;
   const headline = (rLines[i].match(/^- \*\*(.+?)\*\*/) || [])[1] || null;
   let slug = null;
@@ -79,7 +88,7 @@ for (let i = 0; i < rLines.length; i++) {
     }
   }
   if (!slug) continue;
-  curated.push({ slug, name, cmd, headline, curated: true });
+  curated.push({ slug, name, cmd, headline, section, curated: true });
 }
 console.log(`Curated entries parsed from README.md: ${curated.length}`);
 
@@ -310,6 +319,7 @@ await run(curated, async (e) => {
     cmd: e.cmd,
     verified,
     shots: extractImages(j.full_name, md),
+    section: e.section,
     curated: true,
   });
 });
@@ -428,6 +438,128 @@ const csv =
 
 writeFileSync('catalog.csv', csv);
 console.log(`Wrote catalog.csv (${rows.length} rows)`);
+
+// ---------------------------------------------------------------- plugins.json (registry feed)
+
+// dsh-market's own schema, so a market user can point DSHM_REGISTRY_URL at this file and get our
+// verified list instead of theirs. Their catalog is a static file too, so this raw URL is the whole
+// endpoint. Fields we cannot fill honestly are left out rather than guessed; their type marks them
+// optional and their code reads a missing value the same as null.
+
+// An npm name only goes in when the package exists AND its own repository field points back at the
+// repo we list. Anything looser attaches someone else's download count to our entry, which is the
+// exact claim-jacking their contributing doc warns about.
+const NPM_NAME = /^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/;
+
+function npmSpecOf(cmd) {
+  if (!cmd || !/^dsh\s+plugin/i.test(cmd)) return null;
+  let tok = cmd.trim().split(/\s+/).pop().replace(/^['"]|['"]$/g, '').replace(/^npm:/, '');
+  if (/^(github:|git\+|https?:|file:|link:|npm-|\.)/i.test(tok)) return null;
+  const m = tok.match(/^((?:@[^@/]+\/)?[^@/]+)(?:@[^@]+)?$/);
+  return m && NPM_NAME.test(m[1]) ? m[1] : null;
+}
+
+async function resolveNpm(rowsIn) {
+  const out = new Map();
+  let checked = 0;
+  let rejected = 0;
+  await run(rowsIn, async (r) => {
+    const pkg = npmSpecOf(r.cmd);
+    if (!pkg) return;
+    checked++;
+    let res;
+    try {
+      res = await fetch(`https://registry.npmjs.org/${pkg.replace('/', '%2f')}`, {
+        headers: { 'User-Agent': H['User-Agent'] },
+      });
+    } catch {
+      return;
+    }
+    if (!res.ok) return void rejected++;
+    const j = await res.json();
+    const repoField = j.repository && (j.repository.url || j.repository);
+    const m = String(repoField || '').match(/github\.com[/:]([^/]+)\/([^/.#?]+)/i);
+    const claims = m ? `${m[1]}/${m[2]}`.toLowerCase() : null;
+    if (claims && claims === r.slug.toLowerCase()) out.set(r.slug, pkg);
+    else rejected++;
+  });
+  console.log(
+    `npm linkage: ${out.size} of ${checked} npm-shaped install specs verified back to their own repo ` +
+      `(${rejected} rejected: unpublished, or the package points at a different repository).`
+  );
+  return out;
+}
+
+const npmBySlug = await resolveNpm(rows);
+
+// First-seen ledger. The GitHub API can tell us when a repo was created but not when WE first
+// listed it, so this is recorded from now on and never back-dated.
+const LEDGER = '.github/data/first-seen.json';
+const today = new Date().toISOString().slice(0, 10);
+let ledger = { _note: '', seen: {} };
+try {
+  const parsed = JSON.parse(readFileSync(LEDGER, 'utf8'));
+  if (parsed && parsed.seen) ledger = parsed;
+} catch {
+  /* first run */
+}
+ledger._note =
+  'When this catalog first listed each entry, keyed by owner/repo. Written by ' +
+  '.github/scripts/build-catalog.mjs and never edited by hand. The ledger starts on 2026-08-24: ' +
+  'every entry present that day carries that date because it is the first date we actually ' +
+  'recorded, not the date we listed it. Nothing here is back-dated.';
+let firstSeenNew = 0;
+for (const r of rows) {
+  if (!ledger.seen[r.slug]) {
+    ledger.seen[r.slug] = today;
+    firstSeenNew++;
+  }
+}
+ledger.seen = Object.fromEntries(Object.entries(ledger.seen).sort(([a], [b]) => a.localeCompare(b)));
+writeFileSync(LEDGER, JSON.stringify(ledger, null, 2) + '\n');
+
+// Categories are the README's own section headings. A discovered row has no section, so it says so
+// rather than being filed under a guess.
+const UNSORTED = 'unsorted';
+const categories = {};
+for (const r of rows) {
+  const key = r.section ? slugify(r.section) : UNSORTED;
+  r.category = key;
+  if (!categories[key]) categories[key] = { en: r.section || 'Unsorted' };
+}
+
+const REPO_URL = 'https://github.com/ZeroPointRepo/awesome-dsh-plugins';
+const feed = {
+  name: 'awesome-dsh-plugins',
+  url: REPO_URL,
+  source: REPO_URL,
+  updated: today,
+  count: rows.length,
+  categories,
+  plugins: rows.map((r) => {
+    const [owner] = r.slug.split('/');
+    const p = {
+      name: r.name,
+      owner,
+      url: `https://github.com/${r.slug}`,
+      category: r.category,
+      description: { en: esc(r.blurb) },
+      stars: r.stars,
+      install: r.cmd || '',
+      added: ledger.seen[r.slug],
+    };
+    const pkg = npmBySlug.get(r.slug);
+    if (pkg) p.npm = pkg;
+    if (r.shots.length) p.screenshots = r.shots;
+    return p;
+  }),
+};
+
+writeFileSync('plugins.json', JSON.stringify(feed, null, 2) + '\n');
+console.log(
+  `Wrote plugins.json (${rows.length} plugins, ${Object.keys(categories).length} categories, ` +
+    `${firstSeenNew} newly added to the first-seen ledger)`
+);
 
 // Keep the README's pointer line honest about the count.
 const line = `- **Full catalog:** every verified DSH plugin (${rows.length}) in [CATALOG.md](CATALOG.md)`;
