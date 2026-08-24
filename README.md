@@ -390,7 +390,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.6.8.tar.gz
+  dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.6.8.tar.gz
   ```
 
   </details>
