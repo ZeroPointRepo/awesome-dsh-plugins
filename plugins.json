@@ -87,11 +87,11 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 5842,
+      "stars": 5848,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "screenshots": [
-        "https://repository-images.githubusercontent.com/1331636953/a9d6eb6e-7196-4656-b5ec-426e87042c28",
+        "https://repository-images.githubusercontent.com/1331636953/03dabdd3-5a81-45e6-8d30-15b439a744e6",
         "https://raw.githubusercontent.com/zhu1090093659/dsh-web/HEAD/docs/screenshots/13-hero-main.png",
         "https://raw.githubusercontent.com/zhu1090093659/dsh-web/HEAD/docs/screenshots/31-market-home.png",
         "https://raw.githubusercontent.com/zhu1090093659/dsh-web/HEAD/docs/screenshots/09-task-board.png"
@@ -105,7 +105,7 @@
       "description": {
         "en": "Paste an image and get structured evidence back"
       },
-      "stars": 3583,
+      "stars": 3587,
       "install": "dsh plugin --profile web add @liustack/modlens@3.24.1",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
@@ -143,7 +143,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 2774,
+      "stars": 2779,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -180,7 +180,7 @@
       "description": {
         "en": "Run DSH in a Claude Code style terminal UI"
       },
-      "stars": 2417,
+      "stars": 2419,
       "install": "dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui",
       "added": "2026-08-24",
       "npm": "@deepseek-harness-tui/dsh-tui",
@@ -199,7 +199,7 @@
       "description": {
         "en": "Browse and install plugins without leaving the app"
       },
-      "stars": 2113,
+      "stars": 2116,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-24",
       "npm": "dshmarket",
@@ -250,7 +250,7 @@
       "description": {
         "en": "See exactly what your context window is made of"
       },
-      "stars": 979,
+      "stars": 980,
       "install": "dsh plugin --profile web add dsh-context",
       "added": "2026-08-24",
       "npm": "dsh-context",
@@ -288,7 +288,7 @@
       "description": {
         "en": "Dispatch work across a team of agents"
       },
-      "stars": 937,
+      "stars": 938,
       "install": "dsh plugin --profile web add @nanmicoder/dsh-agent-teams",
       "added": "2026-08-24",
       "npm": "@nanmicoder/dsh-agent-teams",
@@ -340,7 +340,7 @@
       "description": {
         "en": "DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装"
       },
-      "stars": 789,
+      "stars": 795,
       "install": "dsh plugin --profile web add link:D:\\你的路径\\DeepSeek-Balance-Whale-Widget",
       "added": "2026-08-24",
       "screenshots": [
@@ -356,7 +356,7 @@
       "description": {
         "en": "Connect nine chat platforms to DSH at once"
       },
-      "stars": 736,
+      "stars": 739,
       "install": "dsh plugin --profile web add -w @xmanrui/dsh-im",
       "added": "2026-08-24",
       "npm": "@xmanrui/dsh-im",
@@ -375,7 +375,7 @@
       "description": {
         "en": "Scan a QR code to reach your desktop DSH from your phone"
       },
-      "stars": 570,
+      "stars": 571,
       "install": "dsh plugin --profile web add dsh-pocket -w",
       "added": "2026-08-24",
       "screenshots": [
@@ -546,7 +546,7 @@
       "description": {
         "en": "DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。"
       },
-      "stars": 278,
+      "stars": 279,
       "install": "dsh plugin --profile web add \"github:vlln/whale-girl#main\"",
       "added": "2026-08-24",
       "screenshots": [
@@ -682,7 +682,7 @@
       "description": {
         "en": "DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus a streaming sidebar panel you can tap and drag on."
       },
-      "stars": 235,
+      "stars": 236,
       "install": "dsh plugin --profile web add @zseven-w/dsh-ios@latest",
       "added": "2026-08-24",
       "npm": "@zseven-w/dsh-ios",
@@ -717,7 +717,7 @@
       "description": {
         "en": "Turn model output into visualization cards"
       },
-      "stars": 208,
+      "stars": 209,
       "install": "dsh plugin --profile web add github:Nagi-ovo/dsh-visualize",
       "added": "2026-08-24",
       "screenshots": [
@@ -787,7 +787,7 @@
       "description": {
         "en": "Track session and daily cost against a budget"
       },
-      "stars": 175,
+      "stars": 176,
       "install": "dsh plugin --profile web add dsh-cost-meter",
       "added": "2026-08-24",
       "npm": "dsh-cost-meter",
@@ -1024,7 +1024,7 @@
       "description": {
         "en": "DeepSeek Harness 滑动变阻器皮肤"
       },
-      "stars": 136,
+      "stars": 137,
       "install": "dsh plugin --profile web add 'github:kingOfSoySauce/dsh-liang-skin'",
       "added": "2026-08-24",
       "screenshots": [
@@ -1135,7 +1135,7 @@
       "description": {
         "en": "Run persistent multi-model teams with a real console"
       },
-      "stars": 122,
+      "stars": 123,
       "install": "dsh plugin --profile web add -w github:toolclub/dsh-agent-team-gui",
       "added": "2026-08-24",
       "screenshots": [
@@ -1282,7 +1282,7 @@
       "description": {
         "en": "DSH适用的Codex风格的思考强度滑块，以及大肥鱼跑步滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness"
       },
-      "stars": 106,
+      "stars": 107,
       "install": "dsh plugin --profile web add github:HanaAyane/dsh-reasoning-effort#main",
       "added": "2026-08-24",
       "screenshots": [
@@ -1341,6 +1341,41 @@
       ]
     },
     {
+      "name": "dsh-univer-office",
+      "owner": "dream-num",
+      "url": "https://github.com/dream-num/dsh-univer-office",
+      "category": "browse-files-and-data",
+      "description": {
+        "en": "Preview and edit spreadsheets, docs, and slides inline"
+      },
+      "stars": 101,
+      "install": "dsh plugin --profile web add dsh-univer-office",
+      "added": "2026-08-24",
+      "npm": "dsh-univer-office",
+      "screenshots": [
+        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/chart-and-formatting.png",
+        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/spreadsheet-request.png",
+        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/live-worktree.png",
+        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/review-result.png"
+      ]
+    },
+    {
+      "name": "dsh-webui-market-plugin",
+      "owner": "Sanqi-normal",
+      "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
+      "category": "unsorted",
+      "description": {
+        "en": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile."
+      },
+      "stars": 101,
+      "install": "dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin",
+      "added": "2026-08-24",
+      "npm": "@sanqi-normal/dsh-webui-market-plugin",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Sanqi-normal/dsh-webui-market-plugin/HEAD/img/51766e7935d9e67d7087510e4d6b0cb8.png"
+      ]
+    },
+    {
       "name": "dsh-turn-rewind",
       "owner": "Anionex",
       "url": "https://github.com/Anionex/dsh-turn-rewind",
@@ -1358,25 +1393,6 @@
       ]
     },
     {
-      "name": "dsh-univer-office",
-      "owner": "dream-num",
-      "url": "https://github.com/dream-num/dsh-univer-office",
-      "category": "browse-files-and-data",
-      "description": {
-        "en": "Preview and edit spreadsheets, docs, and slides inline"
-      },
-      "stars": 100,
-      "install": "dsh plugin --profile web add dsh-univer-office",
-      "added": "2026-08-24",
-      "npm": "dsh-univer-office",
-      "screenshots": [
-        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/chart-and-formatting.png",
-        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/spreadsheet-request.png",
-        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/live-worktree.png",
-        "https://raw.githubusercontent.com/dream-num/dsh-univer-office/HEAD/docs/assets/readme/review-result.png"
-      ]
-    },
-    {
       "name": "dsh-skill-mcp-panel",
       "owner": "Fishquito7",
       "url": "https://github.com/Fishquito7/dsh-skill-mcp-panel",
@@ -1390,22 +1406,6 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/63ca0431-c920-4ae3-94c7-2839d78a7896",
         "https://github.com/user-attachments/assets/16023783-9196-46c1-8a64-df28f23f5bdd"
-      ]
-    },
-    {
-      "name": "dsh-webui-market-plugin",
-      "owner": "Sanqi-normal",
-      "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
-      "category": "unsorted",
-      "description": {
-        "en": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile."
-      },
-      "stars": 100,
-      "install": "dsh plugin --profile web add @sanqi-normal/dsh-webui-market-plugin",
-      "added": "2026-08-24",
-      "npm": "@sanqi-normal/dsh-webui-market-plugin",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Sanqi-normal/dsh-webui-market-plugin/HEAD/img/51766e7935d9e67d7087510e4d6b0cb8.png"
       ]
     },
     {
@@ -1652,6 +1652,21 @@
       ]
     },
     {
+      "name": "dsh-qqbot",
+      "owner": "tencent-connect",
+      "url": "https://github.com/tencent-connect/dsh-qqbot",
+      "category": "notifications-and-messaging",
+      "description": {
+        "en": "Wire a QQ bot into DSH with Tencent's own plugin"
+      },
+      "stars": 75,
+      "install": "dsh plugin --profile qqbot add @tencent-connect/dsh-qqbot",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/tencent-connect/dsh-qqbot/HEAD/docs/assets/qrcode.png"
+      ]
+    },
+    {
       "name": "dsh-automation",
       "owner": "titanwings",
       "url": "https://github.com/titanwings/dsh-automation",
@@ -1680,21 +1695,6 @@
       "stars": 74,
       "install": "dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.3.tar.gz",
       "added": "2026-08-24"
-    },
-    {
-      "name": "dsh-qqbot",
-      "owner": "tencent-connect",
-      "url": "https://github.com/tencent-connect/dsh-qqbot",
-      "category": "notifications-and-messaging",
-      "description": {
-        "en": "Wire a QQ bot into DSH with Tencent's own plugin"
-      },
-      "stars": 74,
-      "install": "dsh plugin --profile qqbot add @tencent-connect/dsh-qqbot",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/tencent-connect/dsh-qqbot/HEAD/docs/assets/qrcode.png"
-      ]
     },
     {
       "name": "dsh-reverse-skill",
@@ -1898,6 +1898,18 @@
       ]
     },
     {
+      "name": "DSH-EasyRewrite",
+      "owner": "Renzic-Stone",
+      "url": "https://github.com/Renzic-Stone/DSH-EasyRewrite",
+      "category": "unsorted",
+      "description": {
+        "en": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイティブ体験、高い互換性、シンプルなトグル、充実した設定、モダンで軽量な UI。"
+      },
+      "stars": 57,
+      "install": "dsh plugin --profile web add github:Renzic-Stone/DSH-EasyRewrite",
+      "added": "2026-08-24"
+    },
+    {
       "name": "plugin-registry",
       "owner": "vlln",
       "url": "https://github.com/vlln/plugin-registry",
@@ -1928,18 +1940,6 @@
         "https://raw.githubusercontent.com/openma-ai/Martty/HEAD/assets/martty-lockup.svg",
         "https://raw.githubusercontent.com/openma-ai/Martty/HEAD/assets/screenshots/agent-turn.png"
       ]
-    },
-    {
-      "name": "DSH-EasyRewrite",
-      "owner": "Renzic-Stone",
-      "url": "https://github.com/Renzic-Stone/DSH-EasyRewrite",
-      "category": "unsorted",
-      "description": {
-        "en": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイティブ体験、高い互換性、シンプルなトグル、充実した設定、モダンで軽量な UI。"
-      },
-      "stars": 55,
-      "install": "dsh plugin --profile web add github:Renzic-Stone/DSH-EasyRewrite",
-      "added": "2026-08-24"
     },
     {
       "name": "SpecFusion",
@@ -2149,7 +2149,7 @@
       "description": {
         "en": "Remote access for DeepSeek Harness: account/password auth + MFA (TOTP) login gate, signed session cookies, role-based access, in-browser directory picker, and a Settings page for account management."
       },
-      "stars": 45,
+      "stars": 46,
       "install": "dsh plugin --profile web add @xgone/dsh-remote",
       "added": "2026-08-24",
       "npm": "@xgone/dsh-remote",
@@ -2191,6 +2191,18 @@
       ]
     },
     {
+      "name": "dsh-mcp-panel",
+      "owner": "PerryLink",
+      "url": "https://github.com/PerryLink/dsh-mcp-panel",
+      "category": "unsorted",
+      "description": {
+        "en": "MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a tool trial console over the official tool pipeline (Apache-2.0, dsh-plugin)."
+      },
+      "stars": 43,
+      "install": "dsh plugin --profile web add \"github:PerryLink/dsh-mcp-panel#main\"",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-benign-exit",
       "owner": "sunruize93-cmyk",
       "url": "https://github.com/sunruize93-cmyk/dsh-benign-exit",
@@ -2214,18 +2226,6 @@
       "install": "dsh plugin --profile web add dsh-lark-channel@latest",
       "added": "2026-08-24",
       "npm": "dsh-lark-channel"
-    },
-    {
-      "name": "dsh-mcp-panel",
-      "owner": "PerryLink",
-      "url": "https://github.com/PerryLink/dsh-mcp-panel",
-      "category": "unsorted",
-      "description": {
-        "en": "MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a tool trial console over the official tool pipeline (Apache-2.0, dsh-plugin)."
-      },
-      "stars": 42,
-      "install": "dsh plugin --profile web add \"github:PerryLink/dsh-mcp-panel#main\"",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-omi-voice",
@@ -2546,6 +2546,22 @@
       ]
     },
     {
+      "name": "dsh-memory",
+      "owner": "FuRongJun-1999",
+      "url": "https://github.com/FuRongJun-1999/dsh-memory",
+      "category": "unsorted",
+      "description": {
+        "en": "AGI 的长期记忆基础设施。让 AI Agent 拥有不可遗忘的自我。跨会话记忆 · 持续学习 · 可审计信任（智能论 v3.2）"
+      },
+      "stars": 33,
+      "install": "dsh plugin --profile web add @furongjun1999/dsh-memory",
+      "added": "2026-08-24",
+      "npm": "@furongjun1999/dsh-memory",
+      "screenshots": [
+        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/memory_score.png"
+      ]
+    },
+    {
       "name": "dsh-share",
       "owner": "hellodigua",
       "url": "https://github.com/hellodigua/dsh-share",
@@ -2572,22 +2588,6 @@
       "stars": 33,
       "install": "dsh plugin --profile web add @rison/dsh-endfield-ui",
       "added": "2026-08-24"
-    },
-    {
-      "name": "dsh-memory",
-      "owner": "FuRongJun-1999",
-      "url": "https://github.com/FuRongJun-1999/dsh-memory",
-      "category": "unsorted",
-      "description": {
-        "en": "AGI 的长期记忆基础设施。让 AI Agent 拥有不可遗忘的自我。跨会话记忆 · 持续学习 · 可审计信任（智能论 v3.2）"
-      },
-      "stars": 32,
-      "install": "dsh plugin --profile web add @furongjun1999/dsh-memory",
-      "added": "2026-08-24",
-      "npm": "@furongjun1999/dsh-memory",
-      "screenshots": [
-        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/memory_score.png"
-      ]
     },
     {
       "name": "dsh-sidebar-qa",
@@ -2663,6 +2663,24 @@
       ]
     },
     {
+      "name": "dsh-codex-ui",
+      "owner": "MichengAI",
+      "url": "https://github.com/MichengAI/dsh-codex-ui",
+      "category": "unsorted",
+      "description": {
+        "en": "DSH Codex UI 基于 DeepSeek Harness 的 Codex UI 插件，还原度90%，小细节拉满"
+      },
+      "stars": 31,
+      "install": "dsh plugin --profile web add @michengai/dsh-codex-ui@latest --registry=https://registry.npmjs.org/",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1334346564/fcf1e924-0c7c-44ab-af24-0cab532acfce",
+        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/conversation-light.png",
+        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/conversation.png",
+        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/session-menu.png"
+      ]
+    },
+    {
       "name": "dsh-permission-rules",
       "owner": "PerryLink",
       "url": "https://github.com/PerryLink/dsh-permission-rules",
@@ -2674,24 +2692,6 @@
       "install": "dsh plugin --profile web add dsh-permission-rules",
       "added": "2026-08-24",
       "npm": "dsh-permission-rules"
-    },
-    {
-      "name": "dsh-codex-ui",
-      "owner": "MichengAI",
-      "url": "https://github.com/MichengAI/dsh-codex-ui",
-      "category": "unsorted",
-      "description": {
-        "en": "DSH Codex UI 基于 DeepSeek Harness 的 Codex UI 插件，还原度90%，小细节拉满"
-      },
-      "stars": 30,
-      "install": "dsh plugin --profile web add @michengai/dsh-codex-ui@latest --registry=https://registry.npmjs.org/",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1334346564/fcf1e924-0c7c-44ab-af24-0cab532acfce",
-        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/conversation-light.png",
-        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/conversation.png",
-        "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/session-menu.png"
-      ]
     },
     {
       "name": "dsh-computer-use",
@@ -2783,6 +2783,19 @@
         "https://raw.githubusercontent.com/AwesomeHou/dsh-plugin-marketplace/HEAD/screenshot1.png",
         "https://raw.githubusercontent.com/AwesomeHou/dsh-plugin-marketplace/HEAD/screenshot2.png"
       ]
+    },
+    {
+      "name": "dsh-tavern",
+      "owner": "chen731215-dev",
+      "url": "https://github.com/chen731215-dev/dsh-tavern",
+      "category": "unsorted",
+      "description": {
+        "en": "DSH 原生酒馆管理面板，入口：设置 → 通用设置 → 酒馆管理（原生）。多角色卡/多世界书/多预设，会话级预设隔离；世界书智能关键词注入省 60-70% 上下文；记忆总结 + 角色关系网；剧情选项一键发送；创作/扮演双模式；NSFW 成人模式。免费非商用（CC BY-NC-SA 4.0）。安装：dsh plugin --profile web add dsh-tavern"
+      },
+      "stars": 27,
+      "install": "dsh plugin add dsh-tavern",
+      "added": "2026-08-24",
+      "npm": "dsh-tavern"
     },
     {
       "name": "dsh-tui",
@@ -2880,19 +2893,6 @@
       ]
     },
     {
-      "name": "dsh-tavern",
-      "owner": "chen731215-dev",
-      "url": "https://github.com/chen731215-dev/dsh-tavern",
-      "category": "unsorted",
-      "description": {
-        "en": "DSH 原生酒馆管理面板，入口：设置 → 通用设置 → 酒馆管理（原生）。多角色卡/多世界书/多预设，会话级预设隔离；世界书智能关键词注入省 60-70% 上下文；记忆总结 + 角色关系网；剧情选项一键发送；创作/扮演双模式；NSFW 成人模式。免费非商用（CC BY-NC-SA 4.0）。安装：dsh plugin --profile web add dsh-tavern"
-      },
-      "stars": 26,
-      "install": "dsh plugin add dsh-tavern",
-      "added": "2026-08-24",
-      "npm": "dsh-tavern"
-    },
-    {
       "name": "dsh-toolkit",
       "owner": "omdsh-dev",
       "url": "https://github.com/omdsh-dev/dsh-toolkit",
@@ -2916,6 +2916,18 @@
       "install": "dsh plugin --profile web add @wm-coders/dsh-custom-first-control-prompt",
       "added": "2026-08-24",
       "npm": "@wm-coders/dsh-custom-first-control-prompt"
+    },
+    {
+      "name": "dsh-theme-endfield",
+      "owner": "ymh0000123",
+      "url": "https://github.com/ymh0000123/dsh-theme-endfield",
+      "category": "unsorted",
+      "description": {
+        "en": "终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。"
+      },
+      "stars": 26,
+      "install": "dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield",
+      "added": "2026-08-24"
     },
     {
       "name": "dsh-web-lan-access",
@@ -2995,18 +3007,6 @@
         "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/tunnel-access.jpg",
         "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/wechat-bot-config.jpg"
       ]
-    },
-    {
-      "name": "dsh-theme-endfield",
-      "owner": "ymh0000123",
-      "url": "https://github.com/ymh0000123/dsh-theme-endfield",
-      "category": "unsorted",
-      "description": {
-        "en": "终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。"
-      },
-      "stars": 25,
-      "install": "dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-plugin-workshop",
