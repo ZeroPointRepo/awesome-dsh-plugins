@@ -26,6 +26,16 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node .github/scripts/verify-installs.mjs README.md
 
+      - name: Refresh the star figures in README.md
+        # These are hand-written and rot fast: 54 of 75 were more than 5% off after three days,
+        # several by half. The counts were already being fetched by the step above and by
+        # build-catalog.mjs for CATALOG.md, then thrown away for the one file people read.
+        # No-op when nothing moved, so this does not manufacture weekly commits.
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/refresh-stars.mjs README.md
+
       - name: Rebuild CATALOG.md
         if: always()
         env:
