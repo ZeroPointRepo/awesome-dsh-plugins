@@ -43,10 +43,22 @@ jobs:
           fi
           git add badges/ CATALOG.md catalog.csv README.md
           git commit -m "chore: refresh install-verification badges and catalog [skip ci]"
-          # Two runs can finish at once (the weekly cron, a push, a manual dispatch). Rebase onto
-          # whichever one landed first instead of failing the job on a lost race.
+          # Two runs can finish at once (the weekly cron, a push, a manual dispatch). Rebasing does
+          # not work here: both runs rewrite the same generated files, so the rebase stops on a
+          # content conflict in CATALOG.md every time. These files are pure output, so the loser
+          # simply replays its own copy on top of whatever landed first. README.md is hand-written,
+          # so only the one generated line in it is re-applied, never the whole file.
           for i in 1 2 3; do
             git push && exit 0
-            git pull --rebase --autostash origin main || exit 1
+            git fetch origin main
+            tmp=$(mktemp -d)
+            cp -r badges CATALOG.md catalog.csv "$tmp"/
+            git reset --hard origin/main
+            cp -r "$tmp"/badges "$tmp"/CATALOG.md "$tmp"/catalog.csv .
+            count=$(grep -c '^| \[' CATALOG.md)
+            sed -i -E "s/^(- \*\*Full catalog:\*\* every verified DSH plugin \()[0-9]+(\) in .*)$/\1${count}\2/" README.md
+            git add badges/ CATALOG.md catalog.csv README.md
+            git diff --cached --quiet && exit 0
+            git commit -m "chore: refresh install-verification badges and catalog [skip ci]"
           done
           git push

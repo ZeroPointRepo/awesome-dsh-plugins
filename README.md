@@ -57,7 +57,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. The first vision plugin the DSH ecosystem got, and still the reference one: it set the pattern most of the ecosystem's other vision bridges now copy. 3,486★, MIT.
 
 ```sh
-dsh plugin --profile web add @liustack/modlens@3.24.0
+dsh plugin --profile web add @liustack/modlens@3.24.1
 ```
 
 ---
@@ -100,7 +100,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.24.0
+  dsh plugin --profile web add @liustack/modlens@3.24.1
   ```
 
   </details>
@@ -246,13 +246,13 @@ if you would rather browse from inside the app.
 
 ### Reshape the interface
 
-- **Add a task board, git graph, and mobile remote UI** with [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 5,333★, Apache-2.0.
+- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 5,333★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @linxin666/dsh-web-ui-all@latest
+  dsh plugin --profile web add @linxin666/dsh-web-all@latest
   ```
 
   </details>
