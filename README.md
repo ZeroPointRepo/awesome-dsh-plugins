@@ -47,7 +47,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
   - [Domain specific](#domain-specific)
 - [Good to know](#good-to-know)
 
-- **Full catalog:** every verified DSH plugin (222) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified DSH plugin (223) in [CATALOG.md](CATALOG.md)
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv)
 
 ---
