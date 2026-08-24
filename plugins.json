@@ -105,7 +105,7 @@
       "description": {
         "en": "Paste an image and get structured evidence back"
       },
-      "stars": 3574,
+      "stars": 3575,
       "install": "dsh plugin --profile web add @liustack/modlens@3.24.1",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
@@ -180,7 +180,7 @@
       "description": {
         "en": "Run DSH in a Claude Code style terminal UI"
       },
-      "stars": 2412,
+      "stars": 2413,
       "install": "dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui",
       "added": "2026-08-24",
       "npm": "@deepseek-harness-tui/dsh-tui",
@@ -217,7 +217,7 @@
       "description": {
         "en": "Whale Girl skin series for DeepSeek Harness. 适用于 DeepSeek Harness 的，鲸鱼娘系列皮肤。"
       },
-      "stars": 1648,
+      "stars": 1650,
       "install": "dsh plugin --profile web add 'github:Small-tailqwq/dsh-deep-whale#path:/skin-manager'; dsh plugin --profile web add 'github:Small-tailqwq/dsh-deep-whale#path:/maid-atelier'; dsh plugin --profile web add 'github:Small-tailqwq/dsh-deep-whale#path:/orca-link'",
       "added": "2026-08-24",
       "screenshots": [
@@ -250,7 +250,7 @@
       "description": {
         "en": "See exactly what your context window is made of"
       },
-      "stars": 976,
+      "stars": 977,
       "install": "dsh plugin --profile web add dsh-context",
       "added": "2026-08-24",
       "npm": "dsh-context",
@@ -288,7 +288,7 @@
       "description": {
         "en": "Dispatch work across a team of agents"
       },
-      "stars": 929,
+      "stars": 931,
       "install": "dsh plugin --profile web add @nanmicoder/dsh-agent-teams",
       "added": "2026-08-24",
       "npm": "@nanmicoder/dsh-agent-teams",
@@ -356,7 +356,7 @@
       "description": {
         "en": "Connect nine chat platforms to DSH at once"
       },
-      "stars": 729,
+      "stars": 731,
       "install": "dsh plugin --profile web add -w @xmanrui/dsh-im",
       "added": "2026-08-24",
       "npm": "@xmanrui/dsh-im",
@@ -485,8 +485,8 @@
       "screenshots": [
         "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/assets/screenshots/dsh-pet-running-1.png",
         "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/assets/screenshots/dsh-pet-running-2.png",
-        "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/dsh-pet/assets/preview/daiji-huxi-xiuxian.gif",
-        "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/dsh-pet/assets/preview/dongzhangxiwang.gif"
+        "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/assets/screenshots/dsh-pet-running-3.png",
+        "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/HEAD/assets/screenshots/dsh-pet-running-4.png"
       ]
     },
     {
@@ -1135,7 +1135,7 @@
       "description": {
         "en": "Run persistent multi-model teams with a real console"
       },
-      "stars": 121,
+      "stars": 122,
       "install": "dsh plugin --profile web add -w github:toolclub/dsh-agent-team-gui",
       "added": "2026-08-24",
       "screenshots": [
@@ -1256,6 +1256,25 @@
       ]
     },
     {
+      "name": "dsh-crew",
+      "owner": "ZSeven-W",
+      "url": "https://github.com/ZSeven-W/dsh-crew",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness vision and image generation."
+      },
+      "stars": 108,
+      "install": "dsh plugin --profile web add @zseven-w/dsh-crew@latest",
+      "added": "2026-08-24",
+      "npm": "@zseven-w/dsh-crew",
+      "screenshots": [
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-logo.png",
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-overview.png",
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-host.png",
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-jobs.png"
+      ]
+    },
+    {
       "name": "dsh-reasoning-effort",
       "owner": "HanaAyane",
       "url": "https://github.com/HanaAyane/dsh-reasoning-effort",
@@ -1270,25 +1289,6 @@
         "https://raw.githubusercontent.com/HanaAyane/dsh-reasoning-effort/HEAD/assets/readme/hero.webp",
         "https://raw.githubusercontent.com/HanaAyane/dsh-reasoning-effort/HEAD/assets/readme/themes.webp",
         "https://raw.githubusercontent.com/HanaAyane/dsh-reasoning-effort/HEAD/assets/readme/settings.webp"
-      ]
-    },
-    {
-      "name": "dsh-crew",
-      "owner": "ZSeven-W",
-      "url": "https://github.com/ZSeven-W/dsh-crew",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness vision and image generation."
-      },
-      "stars": 107,
-      "install": "dsh plugin --profile web add @zseven-w/dsh-crew@latest",
-      "added": "2026-08-24",
-      "npm": "@zseven-w/dsh-crew",
-      "screenshots": [
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-logo.png",
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-overview.png",
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-host.png",
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-crew/HEAD/docs/images/dsh-crew-jobs.png"
       ]
     },
     {
@@ -1589,6 +1589,18 @@
       ]
     },
     {
+      "name": "dsh-popout-sidebar",
+      "owner": "e2mcc",
+      "url": "https://github.com/e2mcc/dsh-popout-sidebar",
+      "category": "unsorted",
+      "description": {
+        "en": "A sidebar can pop out a separate browser tab (drag it to another monitor)"
+      },
+      "stars": 80,
+      "install": "dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar",
+      "added": "2026-08-24"
+    },
+    {
       "name": "arc",
       "owner": "tririver",
       "url": "https://github.com/tririver/arc",
@@ -1598,18 +1610,6 @@
       },
       "stars": 80,
       "install": "dsh plugin --profile arc add github:tririver/arc",
-      "added": "2026-08-24"
-    },
-    {
-      "name": "dsh-popout-sidebar",
-      "owner": "e2mcc",
-      "url": "https://github.com/e2mcc/dsh-popout-sidebar",
-      "category": "unsorted",
-      "description": {
-        "en": "A sidebar can pop out a separate browser tab (drag it to another monitor)"
-      },
-      "stars": 79,
-      "install": "dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar",
       "added": "2026-08-24"
     },
     {
@@ -1709,6 +1709,18 @@
       "added": "2026-08-24"
     },
     {
+      "name": "dsh-memory",
+      "owner": "seriousz158",
+      "url": "https://github.com/seriousz158/dsh-memory",
+      "category": "unsorted",
+      "description": {
+        "en": ""
+      },
+      "stars": 71,
+      "install": "dsh plugin --profile web add github:seriousz158/dsh-memory",
+      "added": "2026-08-24"
+    },
+    {
       "name": "ru-marketplace-mcp",
       "owner": "Vladimir-Human",
       "url": "https://github.com/Vladimir-Human/ru-marketplace-mcp",
@@ -1736,18 +1748,6 @@
       "added": "2026-08-24"
     },
     {
-      "name": "dsh-memory",
-      "owner": "seriousz158",
-      "url": "https://github.com/seriousz158/dsh-memory",
-      "category": "unsorted",
-      "description": {
-        "en": ""
-      },
-      "stars": 70,
-      "install": "dsh plugin --profile web add github:seriousz158/dsh-memory",
-      "added": "2026-08-24"
-    },
-    {
       "name": "dsh-plugin-hub",
       "owner": "Noob-stupid",
       "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
@@ -1765,6 +1765,18 @@
       ]
     },
     {
+      "name": "dsh-turn-delete",
+      "owner": "hanshenmesen",
+      "url": "https://github.com/hanshenmesen/dsh-turn-delete",
+      "category": "unsorted",
+      "description": {
+        "en": "Delete one complete turn from a DeepSeek Harness session without deleting the session"
+      },
+      "stars": 67,
+      "install": "dsh plugin --profile web add github:hanshenmesen/dsh-turn-delete",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-web-plugin-manager",
       "owner": "LX2000WASD",
       "url": "https://github.com/LX2000WASD/dsh-web-plugin-manager",
@@ -1776,18 +1788,6 @@
       "install": "dsh plugin --profile web add dsh-web-plugin-manager@latest",
       "added": "2026-08-24",
       "npm": "dsh-web-plugin-manager"
-    },
-    {
-      "name": "dsh-turn-delete",
-      "owner": "hanshenmesen",
-      "url": "https://github.com/hanshenmesen/dsh-turn-delete",
-      "category": "unsorted",
-      "description": {
-        "en": "Delete one complete turn from a DeepSeek Harness session without deleting the session"
-      },
-      "stars": 66,
-      "install": "dsh plugin --profile web add github:hanshenmesen/dsh-turn-delete",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-plugins-store",
@@ -3124,6 +3124,18 @@
       ]
     },
     {
+      "name": "dsh-theme-endfield",
+      "owner": "ymh0000123",
+      "url": "https://github.com/ymh0000123/dsh-theme-endfield",
+      "category": "unsorted",
+      "description": {
+        "en": "终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。"
+      },
+      "stars": 24,
+      "install": "dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-agy",
       "owner": "chaos-03x",
       "url": "https://github.com/chaos-03x/dsh-agy",
@@ -3189,18 +3201,6 @@
       ]
     },
     {
-      "name": "dsh-theme-endfield",
-      "owner": "ymh0000123",
-      "url": "https://github.com/ymh0000123/dsh-theme-endfield",
-      "category": "unsorted",
-      "description": {
-        "en": "终末地官网风格的 DSH Web 主题：奶油纸底、墨黑文字、信号黄强调、全直角工业编辑风。"
-      },
-      "stars": 23,
-      "install": "dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield",
-      "added": "2026-08-24"
-    },
-    {
       "name": "dsh-focus-chat",
       "owner": "dingyi222666",
       "url": "https://github.com/dingyi222666/dsh-focus-chat",
@@ -3236,20 +3236,21 @@
       ]
     },
     {
-      "name": "dsh-qq2006",
-      "owner": "LaplaceYoung",
-      "url": "https://github.com/LaplaceYoung/dsh-qq2006",
+      "name": "dsh-personal-center",
+      "owner": "PolinniZhong",
+      "url": "https://github.com/PolinniZhong/dsh-personal-center",
       "category": "unsorted",
       "description": {
-        "en": "DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材"
+        "en": "DeepSeek Harness 个人中心:用量统计 / 自定义指令 / 成本估算 / 桌面宠物(纯本地，不联网）。 Personal center & custom instructions for DSH"
       },
       "stars": 22,
-      "install": "dsh plugin --profile web add https://github.com/LaplaceYoung/dsh-qq2006",
+      "install": "dsh plugin --profile web add github:PolinniZhong/dsh-personal-center",
       "added": "2026-08-24",
       "screenshots": [
-        "https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/HEAD/assets/screenshots/qq2006-window-view.webp",
-        "https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/HEAD/assets/screenshots/qq2006-window-chrome.webp",
-        "https://raw.githubusercontent.com/LaplaceYoung/dsh-qq2006/HEAD/assets/screenshots/qq2006-message-flow.webp"
+        "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/HEAD/docs/screenshots/light-profile.png",
+        "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/HEAD/docs/screenshots/dark-review.png",
+        "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/HEAD/docs/screenshots/light-pet.png",
+        "https://raw.githubusercontent.com/PolinniZhong/dsh-personal-center/HEAD/docs/screenshots/dark-pet.png"
       ]
     },
     {
