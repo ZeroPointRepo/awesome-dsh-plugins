@@ -196,6 +196,82 @@ async function fetchReadme(slug) {
   return expandVars(Buffer.from(j.content, 'base64').toString('utf8'));
 }
 
+// ---------------------------------------------------------------- screenshots (data capture only)
+
+// Collected now, displayed nowhere. CATALOG.md stays a text table; an image strip built from
+// whatever a README happens to contain would be a wall of broken and mismatched art, which is the
+// empty-state rule in reverse. This just future-proofs the data for a consumer that does not exist
+// yet, so the discipline is: only URLs the project itself published, only GitHub-hosted, never a
+// guess and never a hotlink to someone else's image host.
+const GH_IMAGE_HOST =
+  /^https:\/\/(raw\.githubusercontent\.com\/|user-images\.githubusercontent\.com\/|camo\.githubusercontent\.com\/|private-user-images\.githubusercontent\.com\/|repository-images\.githubusercontent\.com\/|github\.com\/user-attachments\/)/;
+const MAX_SHOTS = 4;
+
+// A repo's social preview counts only when the maintainer uploaded one. GitHub serves an
+// auto-generated card (opengraph.githubassets.com) for every other repo, and that card is a
+// rendered title block, not a screenshot. usesCustomOpenGraphImage is the only honest way to tell
+// them apart, and it exists on the GraphQL API only.
+async function fetchOgImages(slugs) {
+  const out = new Map();
+  if (!TOKEN) return out;
+  for (let i = 0; i < slugs.length; i += 50) {
+    const batch = slugs.slice(i, i + 50);
+    const query = `query {${batch
+      .map(
+        (s, n) =>
+          ` r${n}: repository(owner:${JSON.stringify(s.split('/')[0])}, name:${JSON.stringify(
+            s.split('/')[1]
+          )}) { openGraphImageUrl usesCustomOpenGraphImage }`
+      )
+      .join('')} }`;
+    let r;
+    try {
+      r = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
+        headers: { ...H, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query }),
+      });
+    } catch {
+      console.log('  social-preview lookup failed (network), continuing without it');
+      return out;
+    }
+    if (!r.ok) {
+      console.log(`  social-preview lookup unavailable (HTTP ${r.status}), continuing without it`);
+      return out;
+    }
+    const j = await r.json();
+    batch.forEach((slug, n) => {
+      const d = j.data && j.data[`r${n}`];
+      if (d && d.usesCustomOpenGraphImage && GH_IMAGE_HOST.test(d.openGraphImageUrl || '')) {
+        out.set(slug, d.openGraphImageUrl);
+      }
+    });
+  }
+  return out;
+}
+
+// Images the project's own README points at. Relative paths are resolved against the repo's default
+// branch, which is where the README already says the file lives; nothing is fabricated.
+function extractImages(slug, md) {
+  if (!md) return [];
+  const found = [];
+  const add = (raw) => {
+    if (!raw) return;
+    let u = raw.trim().replace(/^<|>$/g, '').replace(/["')]+$/, '').split(/\s+/)[0];
+    if (!u || u.startsWith('#') || u.startsWith('data:') || u.startsWith('mailto:')) return;
+    if (/^https?:\/\//i.test(u)) {
+      if (!GH_IMAGE_HOST.test(u)) return; // third-party image host, never hotlink it
+    } else {
+      if (/^\/\//.test(u)) return; // protocol-relative, host unknown
+      u = `https://raw.githubusercontent.com/${slug}/HEAD/${u.replace(/^\.?\//, '')}`;
+    }
+    if (!found.includes(u)) found.push(u);
+  };
+  for (const m of md.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)) add(m[1]);
+  for (const m of md.matchAll(/<img[^>]+src\s*=\s*["']([^"']+)["']/gi)) add(m[1]);
+  return found.slice(0, MAX_SHOTS);
+}
+
 // ---------------------------------------------------------------- verify + assemble
 
 const rows = [];
@@ -219,14 +295,12 @@ await run(curated, async (e) => {
   if (j.archived) return void dropped.archived++;
   if (j.full_name.toLowerCase() !== e.slug.toLowerCase()) return void dropped.renamed++;
 
+  const md = await fetchReadme(e.slug);
   let verified = false;
-  if (e.cmd && /^dsh\s+plugin/i.test(e.cmd)) {
+  if (e.cmd && /^dsh\s+plugin/i.test(e.cmd) && md) {
     let tok = e.cmd.split(/\s+/).pop().replace(/^['"]|['"]$/g, '');
-    const md = await fetchReadme(e.slug);
-    if (md) {
-      if (/^https:\/\/github\.com\//.test(tok)) tok = tok.split('/').slice(-2).join('/');
-      verified = md.includes(tok);
-    }
+    if (/^https:\/\/github\.com\//.test(tok)) tok = tok.split('/').slice(-2).join('/');
+    verified = md.includes(tok);
   }
   rows.push({
     name: e.name,
@@ -235,6 +309,7 @@ await run(curated, async (e) => {
     stars: j.stargazers_count,
     cmd: e.cmd,
     verified,
+    shots: extractImages(j.full_name, md),
     curated: true,
   });
 });
@@ -253,9 +328,22 @@ await run(shortlist, async (it) => {
     stars: it.stargazers_count,
     cmd,
     verified: true,
+    shots: extractImages(it.full_name, md),
     curated: false,
   });
 });
+
+// One batched pass, after the rows exist, so a repo with a real uploaded social preview leads with
+// it and README images fill in behind.
+const og = await fetchOgImages(rows.map((r) => r.slug));
+for (const r of rows) {
+  const lead = og.get(r.slug);
+  r.shots = (lead ? [lead, ...r.shots.filter((u) => u !== lead)] : r.shots).slice(0, MAX_SHOTS);
+}
+console.log(
+  `Screenshots collected: ${rows.filter((r) => r.shots.length).length}/${rows.length} rows have at least one ` +
+    `(${og.size} from an uploaded social preview). Data capture only, CATALOG.md is unchanged.`
+);
 
 rows.sort((a, b) => b.stars - a.stars || a.slug.localeCompare(b.slug));
 
@@ -326,11 +414,14 @@ const csvCell = (v) => {
   const s = String(v ?? '').replace(/\s+/g, ' ').trim();
   return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
+// screenshots is semicolon-joined so the column stays one CSV field and splits without a parser.
 const csv =
-  ['name,description,stars,install_command,verified,repo_url']
+  ['name,description,stars,install_command,verified,repo_url,screenshots']
     .concat(
       rows.map((r) =>
-        [r.name, r.blurb, r.stars, r.cmd, r.verified, `https://github.com/${r.slug}`].map(csvCell).join(',')
+        [r.name, r.blurb, r.stars, r.cmd, r.verified, `https://github.com/${r.slug}`, r.shots.join(';')]
+          .map(csvCell)
+          .join(',')
       )
     )
     .join('\n') + '\n';
