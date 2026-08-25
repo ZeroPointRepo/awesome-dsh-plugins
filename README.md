@@ -1043,6 +1043,7 @@ rules.
 <summary><strong>Related lists</strong></summary>
 
 - [awesome-fx-skills](https://github.com/ZeroPointRepo/awesome-fx-skills): skills, MCP servers and subagents for Vercel's fx coding agent, every install command machine-checked weekly.
+- [awesome-cursor-plugins](https://github.com/ZeroPointRepo/awesome-cursor-plugins): Cursor plugins from the official marketplace, each with the other agents it also runs in and whether it needs a sign-in.
 
 </details>
 
