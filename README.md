@@ -138,7 +138,7 @@ if you would rather browse from inside the app.
 
 ### See and understand
 
-- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,629★, MIT.
+- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,671★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -149,7 +149,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Use a free, keyless vision route plus pixel tools** with [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) by [ysr666](https://github.com/ysr666). OCR, grounding, crop, pixel diff, and screenshots. No API key. 966★, MIT.
+- **Use a free, keyless vision route plus pixel tools** with [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) by [ysr666](https://github.com/ysr666). OCR, grounding, crop, pixel diff, and screenshots. No API key. 979★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -160,7 +160,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Ask questions about a pasted screenshot** with [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) by [Anionex](https://github.com/Anionex). Image Q&A, long-screenshot OCR, and UI-to-code restoration for text-only models. 822★, MIT.
+- **Ask questions about a pasted screenshot** with [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) by [Anionex](https://github.com/Anionex). Image Q&A, long-screenshot OCR, and UI-to-code restoration for text-only models. 827★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -185,7 +185,7 @@ if you would rather browse from inside the app.
 
 ### Search the web
 
-- **Ask the web or X and get structured evidence back** with [modsearch](https://github.com/liustack/modsearch) by [liustack](https://github.com/liustack). Search, scrape, and citations for models with no native web access. 262★, MIT.
+- **Ask the web or X and get structured evidence back** with [modsearch](https://github.com/liustack/modsearch) by [liustack](https://github.com/liustack). Search, scrape, and citations for models with no native web access. 280★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -196,7 +196,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Add a multi-provider web search backend** with [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) by [anysearch-team](https://github.com/anysearch-team). One search tool that routes across several providers instead of locking you to one. 251★, MIT.
+- **Add a multi-provider web search backend** with [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) by [anysearch-team](https://github.com/anysearch-team). One search tool that routes across several providers instead of locking you to one. 272★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -207,7 +207,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get persistent, cached multi-engine search** with [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) by [anweat](https://github.com/anweat). SQLite and LRU caching plus real page rendering, so repeat queries do not re-fetch. 42★, MIT.
+- **Get persistent, cached multi-engine search** with [dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro) by [anweat](https://github.com/anweat). SQLite and LRU caching plus real page rendering, so repeat queries do not re-fetch. 45★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -232,7 +232,7 @@ if you would rather browse from inside the app.
 
 ### Remember between sessions
 
-- **Get a three-tier memory control plane** with [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) by [omdsh-dev](https://github.com/omdsh-dev). Persistent runtime context, searchable project documents, and pluggable long-term memory in one plugin. 206★, MIT.
+- **Get a three-tier memory control plane** with [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) by [omdsh-dev](https://github.com/omdsh-dev). Persistent runtime context, searchable project documents, and pluggable long-term memory in one plugin. 226★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -243,7 +243,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Add memory your agent has to ask permission to use** with [dsh-memento](https://github.com/PerryLink/dsh-memento) by [PerryLink](https://github.com/PerryLink). Layered, approval-gated, auditable cross-session memory backed by SQLite. 61★, Apache-2.0.
+- **Add memory your agent has to ask permission to use** with [dsh-memento](https://github.com/PerryLink/dsh-memento) by [PerryLink](https://github.com/PerryLink). Layered, approval-gated, auditable cross-session memory backed by SQLite. 62★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -254,7 +254,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Give your agent durable, inspectable long-term memory** with [dsh-noema](https://github.com/ZSeven-W/dsh-noema) by [ZSeven-W](https://github.com/ZSeven-W). Recall tools plus a settings page so you can see exactly what it remembers. 125★, MIT.
+- **Give your agent durable, inspectable long-term memory** with [dsh-noema](https://github.com/ZSeven-W/dsh-noema) by [ZSeven-W](https://github.com/ZSeven-W). Recall tools plus a settings page so you can see exactly what it remembers. 126★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -265,7 +265,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Store memory as Markdown you can read and edit yourself** with [dsh-mneme](https://github.com/modusensus/dsh-mneme) by [modusensus](https://github.com/modusensus). Offline semantic search over an entity-attribute-timeline, with nightly self-consolidation. 45★, MIT.
+- **Store memory as Markdown you can read and edit yourself** with [dsh-mneme](https://github.com/modusensus/dsh-mneme) by [modusensus](https://github.com/modusensus). Offline semantic search over an entity-attribute-timeline, with nightly self-consolidation. 51★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -276,7 +276,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Let your agent write and manage its own skills between sessions** with [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) by [csyangwen](https://github.com/csyangwen). Five-track memory, git-branch awareness, and a self-review pass at the end of every turn. 243★, MIT.
+- **Let your agent write and manage its own skills between sessions** with [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) by [csyangwen](https://github.com/csyangwen). Five-track memory, git-branch awareness, and a self-review pass at the end of every turn. 249★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -290,7 +290,7 @@ if you would rather browse from inside the app.
 
 ### Reshape the interface
 
-- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 5,981★, Apache-2.0.
+- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 6,099★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -301,7 +301,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Run DSH in a Claude Code style terminal UI** with [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) by [ccch1mneyyy](https://github.com/ccch1mneyyy). Live status line, streaming thought expansion, double-Esc rollback. 2,508★, MIT.
+- **Run DSH in a Claude Code style terminal UI** with [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) by [ccch1mneyyy](https://github.com/ccch1mneyyy). Live status line, streaming thought expansion, double-Esc rollback. 2,561★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -312,7 +312,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get interactive UI components inline in replies** with [dsh-genui](https://github.com/omdsh-dev/dsh-genui) by [omdsh-dev](https://github.com/omdsh-dev). Charts, forms, quizzes, Mermaid diagrams, and 3D scenes, with an event loop back to the model. 327★, MIT.
+- **Get interactive UI components inline in replies** with [dsh-genui](https://github.com/omdsh-dev/dsh-genui) by [omdsh-dev](https://github.com/omdsh-dev). Charts, forms, quizzes, Mermaid diagrams, and 3D scenes, with an event loop back to the model. 338★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -323,7 +323,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Turn model output into visualization cards** with [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) by [Nagi-ovo](https://github.com/Nagi-ovo). Renders interactive cards directly inside the conversation. 214★, BSD-3-Clause.
+- **Turn model output into visualization cards** with [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) by [Nagi-ovo](https://github.com/Nagi-ovo). Renders interactive cards directly inside the conversation. 218★, BSD-3-Clause.
 
   <details>
   <summary>Install</summary>
@@ -334,7 +334,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get an open sidebar foundation other plugins can register into** with [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) by [omdsh-dev](https://github.com/omdsh-dev). Built-in file editor, terminal, Git, and sub-agent pages out of the box. 2,848★, MIT.
+- **Get an open sidebar foundation other plugins can register into** with [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) by [omdsh-dev](https://github.com/omdsh-dev). Built-in file editor, terminal, Git, and sub-agent pages out of the box. 2,925★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -345,7 +345,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **See exactly what your context window is made of** with [dsh-context](https://github.com/bowenliang123/dsh-context) by [bowenliang123](https://github.com/bowenliang123). A context dashboard and browser for composition, breakdown, and compaction events. 1,013★, Apache-2.0.
+- **See exactly what your context window is made of** with [dsh-context](https://github.com/bowenliang123/dsh-context) by [bowenliang123](https://github.com/bowenliang123). A context dashboard and browser for composition, breakdown, and compaction events. 1,040★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -356,7 +356,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Explore a conversation as a branching canvas** with [dsh-synapse](https://github.com/liangmianya/dsh-synapse) by [liangmianya](https://github.com/liangmianya). A visual, non-linear workspace for sessions instead of one long scroll. 213★, MIT.
+- **Explore a conversation as a branching canvas** with [dsh-synapse](https://github.com/liangmianya/dsh-synapse) by [liangmianya](https://github.com/liangmianya). A visual, non-linear workspace for sessions instead of one long scroll. 233★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -381,7 +381,7 @@ if you would rather browse from inside the app.
 
 ### Make it yours
 
-- **Skin DSH with the Catppuccin palette** with [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) by [NoNameLeGo](https://github.com/NoNameLeGo). Latte, Frappe, Macchiato, and Mocha, one-click switch, with an optional glass finish. 18★, MIT.
+- **Skin DSH with the Catppuccin palette** with [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) by [NoNameLeGo](https://github.com/NoNameLeGo). Latte, Frappe, Macchiato, and Mocha, one-click switch, with an optional glass finish. 20★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -392,7 +392,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Install a desktop pet in one line** with [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) by [PC2005-cloud](https://github.com/PC2005-cloud). 28 transparent animations ready to go, or build your own from the included asset pipeline. 404★, MIT.
+- **Install a desktop pet in one line** with [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) by [PC2005-cloud](https://github.com/PC2005-cloud). 28 transparent animations ready to go, or build your own from the included asset pipeline. 419★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -403,7 +403,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Reskin DSH with an industrial fan-art shell** with [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) by [rison114514](https://github.com/rison114514). A full alternate UI treatment for the Web GUI, unofficial and clearly labelled as such. 38★.
+- **Reskin DSH with an industrial fan-art shell** with [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) by [rison114514](https://github.com/rison114514). A full alternate UI treatment for the Web GUI, unofficial and clearly labelled as such. 42★.
 
   <details>
   <summary>Install</summary>
@@ -414,7 +414,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Turn the whole interface into frosted glass** with [DSH-Transparent-UI-Plugin](https://github.com/WYH66666666/DSH-Transparent-UI-Plugin) by [WYH66666666](https://github.com/WYH66666666). Adjustable blur and frost on every panel, off switch returns you to the stock UI instantly. 382★, MIT.
+- **Turn the whole interface into frosted glass** with [DSH-Transparent-UI-Plugin](https://github.com/WYH66666666/DSH-Transparent-UI-Plugin) by [WYH66666666](https://github.com/WYH66666666). Adjustable blur and frost on every panel, off switch returns you to the stock UI instantly. 385★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -428,7 +428,7 @@ if you would rather browse from inside the app.
 
 ### Boost coding workflow
 
-- **Attach a workspace file to your prompt by searching for it** with [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) by [FSMargoo](https://github.com/FSMargoo). Codex-style @file mentions in the composer. 469★, MIT.
+- **Attach a workspace file to your prompt by searching for it** with [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) by [FSMargoo](https://github.com/FSMargoo). Codex-style @file mentions in the composer. 475★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -439,7 +439,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Write declarative allow, deny, and ask rules for tools** with [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) by [PerryLink](https://github.com/PerryLink). Claude-Code-style rules matched on tool name, arguments, and workspace path, with a session-log audit. 37★, Apache-2.0.
+- **Write declarative allow, deny, and ask rules for tools** with [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) by [PerryLink](https://github.com/PerryLink). Claude-Code-style rules matched on tool name, arguments, and workspace path, with a session-log audit. 47★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -461,7 +461,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Let routine tool calls run without a prompt each time** with [dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) by [NanmiCoder](https://github.com/NanmiCoder). Safe automatic permissions instead of approving the same command over and over. 129★, MIT.
+- **Let routine tool calls run without a prompt each time** with [dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) by [NanmiCoder](https://github.com/NanmiCoder). Safe automatic permissions instead of approving the same command over and over. 131★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -472,7 +472,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Roll a conversation and the workspace back together** with [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) by [Anionex](https://github.com/Anionex). A persistent change ledger undoes code state alongside chat state. 99★, BSD-3-Clause.
+- **Roll a conversation and the workspace back together** with [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) by [Anionex](https://github.com/Anionex). A persistent change ledger undoes code state alongside chat state. 100★, BSD-3-Clause.
 
   <details>
   <summary>Install</summary>
@@ -483,7 +483,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Cut the token cost of every file edit** with [dsh-better-edit](https://github.com/Rianico/dsh-better-edit) by [Rianico](https://github.com/Rianico). Hash-anchored read, edit, and undo tools that avoid re-sending whole files. 17★, MIT.
+- **Cut the token cost of every file edit** with [dsh-better-edit](https://github.com/Rianico/dsh-better-edit) by [Rianico](https://github.com/Rianico). Hash-anchored read, edit, and undo tools that avoid re-sending whole files. 18★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -497,7 +497,7 @@ if you would rather browse from inside the app.
 
 ### Run a team of agents
 
-- **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 976★, MIT.
+- **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 1,028★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -508,7 +508,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Turn one-shot multi-agent runs into a saved workflow** with [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) by [omdsh-dev](https://github.com/omdsh-dev). Generate, save, govern, and resume a multi-agent pipeline instead of starting from scratch each time. 100★, MIT.
+- **Turn one-shot multi-agent runs into a saved workflow** with [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) by [omdsh-dev](https://github.com/omdsh-dev). Generate, save, govern, and resume a multi-agent pipeline instead of starting from scratch each time. 103★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -519,7 +519,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Run persistent multi-model teams with a real console** with [dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) by [toolclub](https://github.com/toolclub). Dynamic lead planning, bounded task graphs, and per-agent model and tool settings. 129★, MIT.
+- **Run persistent multi-model teams with a real console** with [dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) by [toolclub](https://github.com/toolclub). Dynamic lead planning, bounded task graphs, and per-agent model and tool settings. 132★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -555,7 +555,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Preview and edit spreadsheets, docs, and slides inline** with [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) by [dream-num](https://github.com/dream-num). Full office document editing inside DSH, powered by Univer. 112★, Apache-2.0.
+- **Preview and edit spreadsheets, docs, and slides inline** with [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) by [dream-num](https://github.com/dream-num). Full office document editing inside DSH, powered by Univer. 135★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -566,7 +566,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get a real file tree in the sidebar** with [dsh-file-explorer](https://github.com/joejojoking-cloud/dsh-file-explorer) by [joejojoking-cloud](https://github.com/joejojoking-cloud). Preview, syntax-highlighted in-panel editing, and a VS Code hand-off. 17★.
+- **Get a real file tree in the sidebar** with [dsh-file-explorer](https://github.com/joejojoking-cloud/dsh-file-explorer) by [joejojoking-cloud](https://github.com/joejojoking-cloud). Preview, syntax-highlighted in-panel editing, and a VS Code hand-off. 19★.
 
   <details>
   <summary>Install</summary>
@@ -577,7 +577,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Turn PDFs and Office files into clean Markdown** with [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) by [HuanLinOTO](https://github.com/HuanLinOTO). Exposes MinerU document parsing as a tool the model can call directly. 41★.
+- **Turn PDFs and Office files into clean Markdown** with [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) by [HuanLinOTO](https://github.com/HuanLinOTO). Exposes MinerU document parsing as a tool the model can call directly. 42★.
 
   <details>
   <summary>Install</summary>
@@ -588,7 +588,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Upload a file and let the model actually read it** with [dsh-files](https://github.com/taxueseek/dsh-files) by [taxueseek](https://github.com/taxueseek). Colorful composer cards plus a read_document tool that sniffs PDF, DOCX, and XLSX content. 22★.
+- **Upload a file and let the model actually read it** with [dsh-files](https://github.com/taxueseek/dsh-files) by [taxueseek](https://github.com/taxueseek). Colorful composer cards plus a read_document tool that sniffs PDF, DOCX, and XLSX content. 26★.
 
   <details>
   <summary>Install</summary>
@@ -613,7 +613,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get browser automation, an MCP server, and GitHub or GitLab review in one install** with [reef](https://github.com/huey1in/reef) by [huey1in](https://github.com/huey1in). Five modules, one plugin: automation, MCP, review, and a native panel. 17★, MIT.
+- **Get browser automation, an MCP server, and GitHub or GitLab review in one install** with [reef](https://github.com/huey1in/reef) by [huey1in](https://github.com/huey1in). Five modules, one plugin: automation, MCP, review, and a native panel. 18★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -624,7 +624,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Review a diff the moment the agent makes it** with [dsh-file-review](https://github.com/left0ver/dsh-file-review) by [left0ver](https://github.com/left0ver). See exactly what changed in a file right after an edit, before you keep going. 24★, MIT.
+- **Review a diff the moment the agent makes it** with [dsh-file-review](https://github.com/left0ver/dsh-file-review) by [left0ver](https://github.com/left0ver). See exactly what changed in a file right after an edit, before you keep going. 26★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -638,7 +638,7 @@ if you would rather browse from inside the app.
 
 ### Notifications and messaging
 
-- **Drive a DSH agent from Lark or Feishu chat** with [dsh-lark](https://github.com/omdsh-dev/dsh-lark) by [omdsh-dev](https://github.com/omdsh-dev). Tool approvals and plan reviews return as cards you tap. 45★, BSD-3-Clause.
+- **Drive a DSH agent from Lark or Feishu chat** with [dsh-lark](https://github.com/omdsh-dev/dsh-lark) by [omdsh-dev](https://github.com/omdsh-dev). Tool approvals and plan reviews return as cards you tap. 46★, BSD-3-Clause.
 
   <details>
   <summary>Install</summary>
@@ -649,7 +649,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Connect nine chat platforms to DSH at once** with [dsh-im](https://github.com/xmanrui/dsh-im) by [xmanrui](https://github.com/xmanrui). Feishu, WeChat, DingTalk, QQ, Slack, Telegram, Discord, WhatsApp, and WeCom, via QR code or credentials. 807★, MIT.
+- **Connect nine chat platforms to DSH at once** with [dsh-im](https://github.com/xmanrui/dsh-im) by [xmanrui](https://github.com/xmanrui). Feishu, WeChat, DingTalk, QQ, Slack, Telegram, Discord, WhatsApp, and WeCom, via QR code or credentials. 859★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -671,7 +671,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get one notify API and eight channel adapters** with [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) by [THEWOLFWALKER](https://github.com/THEWOLFWALKER). Telegram, DingTalk, Feishu, WxPusher, PushPlus, ServerChan, Bark, and plain webhooks, from a single call. 67★, MIT.
+- **Get one notify API and eight channel adapters** with [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) by [THEWOLFWALKER](https://github.com/THEWOLFWALKER). Telegram, DingTalk, Feishu, WxPusher, PushPlus, ServerChan, Bark, and plain webhooks, from a single call. 72★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -682,7 +682,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get a desktop notification when a turn finishes** with [dsh-notification](https://github.com/omdsh-dev/dsh-notification) by [omdsh-dev](https://github.com/omdsh-dev). Per-outcome controls and keyword rules decide what actually pings you. 75★, MIT.
+- **Get a desktop notification when a turn finishes** with [dsh-notification](https://github.com/omdsh-dev/dsh-notification) by [omdsh-dev](https://github.com/omdsh-dev). Per-outcome controls and keyword rules decide what actually pings you. 76★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -696,7 +696,7 @@ if you would rather browse from inside the app.
 
 ### Remote access and mobile
 
-- **Scan a QR code to reach your desktop DSH from your phone** with [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) by [shaobeichen](https://github.com/shaobeichen). Real-time mirrored access over LAN or the public internet. 607★, GPL-2.0.
+- **Scan a QR code to reach your desktop DSH from your phone** with [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) by [shaobeichen](https://github.com/shaobeichen). Real-time mirrored access over LAN or the public internet. 669★, GPL-2.0.
 
   <details>
   <summary>Install</summary>
@@ -707,7 +707,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Reach your dev machine with no server at all** with [dsh-tether](https://github.com/zexadev/dsh-tether) by [zexadev](https://github.com/zexadev). Peer-to-peer connection over iroh, works across networks without renting a relay. 23★, MIT.
+- **Reach your dev machine with no server at all** with [dsh-tether](https://github.com/zexadev/dsh-tether) by [zexadev](https://github.com/zexadev). Peer-to-peer connection over iroh, works across networks without renting a relay. 26★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -729,7 +729,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Chat with your local DSH from WeChat or QQ** with [dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) by [wenbin-wb](https://github.com/wenbin-wb). Multi-channel remote access with no public server required, streaming output and workspace switching included. 35★, MIT.
+- **Chat with your local DSH from WeChat or QQ** with [dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) by [wenbin-wb](https://github.com/wenbin-wb). Multi-channel remote access with no public server required, streaming output and workspace switching included. 48★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -743,7 +743,7 @@ if you would rather browse from inside the app.
 
 ### Usage, cost, and account tracking
 
-- **Track session and daily cost against a budget** with [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) by [Han-1413141](https://github.com/Han-1413141). Provider balances, peak and off-peak pricing, and a 90-plus model pricing catalog, kept in sync automatically. 185★, MIT.
+- **Track session and daily cost against a budget** with [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) by [Han-1413141](https://github.com/Han-1413141). Provider balances, peak and off-peak pricing, and a 90-plus model pricing catalog, kept in sync automatically. 197★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -754,7 +754,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **See provider balances and quota burn in one panel** with [dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) by [Ychris12138](https://github.com/Ychris12138). Token-usage analytics for the Web GUI, refreshed live. 119★, MIT.
+- **See provider balances and quota burn in one panel** with [dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats) by [Ychris12138](https://github.com/Ychris12138). Token-usage analytics for the Web GUI, refreshed live. 125★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -765,7 +765,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Track token usage with zero setup** with [TokenLedger](https://github.com/zh667/TokenLedger) by [zh667](https://github.com/zh667). Attributes usage per relay site, no credentials or config file needed. 147★, MIT.
+- **Track token usage with zero setup** with [TokenLedger](https://github.com/zh667/TokenLedger) by [zh667](https://github.com/zh667). Attributes usage per relay site, no credentials or config file needed. 157★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -790,7 +790,7 @@ if you would rather browse from inside the app.
 
 ### Find and manage plugins
 
-- **Browse and install plugins without leaving the app** with [dsh-market](https://github.com/dsh-market/dsh-market) by [dsh-market](https://github.com/dsh-market). Search, category filters, and one-click install from inside settings. 2,252★, MIT.
+- **Browse and install plugins without leaving the app** with [dsh-market](https://github.com/dsh-market/dsh-market) by [dsh-market](https://github.com/dsh-market). Search, category filters, and one-click install from inside settings. 2,414★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -801,7 +801,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Ask your agent to find a plugin for you** with [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) by [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin). Searches the live GitHub dsh-plugin topic by keyword, star-ranked. 90★, MIT.
+- **Ask your agent to find a plugin for you** with [dsh-find-plugin](https://github.com/awesome-dsh-plugin/dsh-find-plugin) by [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin). Searches the live GitHub dsh-plugin topic by keyword, star-ranked. 98★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -859,7 +859,7 @@ if you would rather browse from inside the app.
 
 ### Providers and subscriptions
 
-- **Use a ChatGPT, Claude, or X Premium subscription as a DSH provider** with [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) by [V1ki](https://github.com/V1ki). OAuth login in the Web UI, no separate API keys to manage. 266★, MIT.
+- **Use a ChatGPT, Claude, or X Premium subscription as a DSH provider** with [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) by [V1ki](https://github.com/V1ki). OAuth login in the Web UI, no separate API keys to manage. 274★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -870,7 +870,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Use your ChatGPT subscription through OpenAI's own Codex sign-in** with [dsh-codex](https://github.com/Yan-Zero/dsh-codex) by [Yan-Zero](https://github.com/Yan-Zero). No API key, authenticates the same way the official Codex CLI does. 47★, Apache-2.0.
+- **Use your ChatGPT subscription through OpenAI's own Codex sign-in** with [dsh-codex](https://github.com/Yan-Zero/dsh-codex) by [Yan-Zero](https://github.com/Yan-Zero). No API key, authenticates the same way the official Codex CLI does. 48★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -895,7 +895,7 @@ if you would rather browse from inside the app.
 
 ### Security and safety
 
-- **Audit your API relay for prompt injection and worse** with [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) by [toby-bridges](https://github.com/toby-bridges). A local, offline scan for model substitution, tool-call rewriting, and error leakage on any LLM proxy. 805★, AGPL-3.0.
+- **Audit your API relay for prompt injection and worse** with [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) by [toby-bridges](https://github.com/toby-bridges). A local, offline scan for model substitution, tool-call rewriting, and error leakage on any LLM proxy. 809★, AGPL-3.0.
 
   <details>
   <summary>Install</summary>
@@ -906,7 +906,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Have a second model review approval requests** with [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) by [PerryLink](https://github.com/PerryLink). A read-only reviewer returns allow or deny with reasons, fails closed by default, fully auditable. 98★, Apache-2.0.
+- **Have a second model review approval requests** with [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) by [PerryLink](https://github.com/PerryLink). A read-only reviewer returns allow or deny with reasons, fails closed by default, fully auditable. 110★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -960,7 +960,7 @@ if you would rather browse from inside the app.
 
 ### Domain specific
 
-- **Get expert guidance for HarmonyOS NEXT development** with [harmony-next.skills](https://github.com/linhay/harmony-next.skills) by [linhay](https://github.com/linhay). IDE workflow, API references, DevEco and emulator automation. 338★.
+- **Get expert guidance for HarmonyOS NEXT development** with [harmony-next.skills](https://github.com/linhay/harmony-next.skills) by [linhay](https://github.com/linhay). IDE workflow, API references, DevEco and emulator automation. 339★.
 
   <details>
   <summary>Install</summary>
@@ -993,7 +993,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get a trading research workbench** with [dsh-trading](https://github.com/maddogfinance/dsh-trading) by [maddogfinance](https://github.com/maddogfinance). A typed market-data layer, deterministic indicators, and interactive chart cards. 19★, MIT.
+- **Get a trading research workbench** with [dsh-trading](https://github.com/maddogfinance/dsh-trading) by [maddogfinance](https://github.com/maddogfinance). A typed market-data layer, deterministic indicators, and interactive chart cards. 21★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -1015,7 +1015,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Switch DSH into a penetration-testing mode** with [dsh-pentest](https://github.com/howmp/dsh-pentest) by [howmp](https://github.com/howmp). Purpose-built for authorized security research and testing workflows. 248★.
+- **Switch DSH into a penetration-testing mode** with [dsh-pentest](https://github.com/howmp/dsh-pentest) by [howmp](https://github.com/howmp). Purpose-built for authorized security research and testing workflows. 263★.
 
   <details>
   <summary>Install</summary>

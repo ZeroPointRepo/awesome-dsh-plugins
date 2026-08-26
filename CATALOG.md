@@ -42,7 +42,7 @@ organized list is [README.md](README.md).
 | [dsh-ios](https://github.com/ZSeven-W/dsh-ios) | DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22 agent… | 254 | `dsh plugin --profile web add @zseven-w/dsh-ios@latest` | ✅ |
 | [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) | Let your agent write and manage its own skills between sessions | 249 | `dsh plugin --profile web add github:csyangwen/dsh-memory-evolve` | ✅ |
 | [plur](https://github.com/plur-ai/plur) | Shared memory for AI agents | 242 | `dsh plugin add @plur-ai/dsh` | ✅ |
-| [dsh-synapse](https://github.com/liangmianya/dsh-synapse) | Explore a conversation as a branching canvas | 233 | `dsh plugin --profile web add github:liangmianya/dsh-synapse` | — |
+| [dsh-synapse](https://github.com/liangmianya/dsh-synapse) | Explore a conversation as a branching canvas | 233 | `dsh plugin --profile web add dsh-synapse` | ✅ |
 | [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | Get a three-tier memory control plane | 226 | `dsh plugin --profile web add dsh-mnemon` | ✅ |
 | [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) | Turn model output into visualization cards | 218 | `dsh plugin --profile web add github:Nagi-ovo/dsh-visualize` | ✅ |
 | [dsh-image-gen](https://github.com/shanliuling/dsh-image-gen) | Generate images directly in DeepSeek Harness chats | 202 | `dsh plugin --profile web add dsh-image-gen@latest` | ✅ |
@@ -144,7 +144,7 @@ organized list is [README.md](README.md).
 | [billion-context-dsh](https://github.com/Tyan66666/billion-context-dsh) | Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and… | 48 | `dsh plugin --profile web add billion-context-dsh` | ✅ |
 | [dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) | Chat with your local DSH from WeChat or QQ | 48 | `dsh plugin --profile web add @wenbin_wb/dsh-bridge` | ✅ |
 | [dsh-codex](https://github.com/Yan-Zero/dsh-codex) | Use your ChatGPT subscription through OpenAI's own Codex sign-in | 48 | `dsh plugin --profile web add dsh-codex` | ✅ |
-| [dsh-maze](https://github.com/lamost423/dsh-maze) | Trace Compare & Live Maze for DeepSeek Harness: visualize agent exploration (main path, detours, backtracks) from… | 47 | `dsh plugin --profile web add dsh-maze` | ✅ |
+| [dsh-maze](https://github.com/lamost423/dsh-maze) | The execution maze for DeepSeek Harness agents — see how the agent actually worked: maze timeline, per-step data… | 47 | `dsh plugin --profile web add dsh-maze` | ✅ |
 | [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) | Write declarative allow, deny, and ask rules for tools | 47 | `dsh plugin --profile web add dsh-permission-rules` | ✅ |
 | [dsh-talk-map](https://github.com/Tasihi89/dsh-talk-map) | Visual conversation map for DeepSeek Harness — sessions as cards on a whiteboard: drag to arrange, double-click to… | 47 | `dsh plugin --profile web add github:Tasihi89/dsh-talk-map` | ✅ |
 | [dsh-remote](https://github.com/xgone/dsh-remote) | Remote access for DeepSeek Harness: account/password auth + MFA (TOTP) login gate, signed session cookies, role-based… | 47 | `dsh plugin --profile web add @xgone/dsh-remote` | ✅ |
