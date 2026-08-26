@@ -1064,6 +1064,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Draft documents in chat and review each edit before it lands** with [dsh-qingagent](https://github.com/void2anything/dsh-qingagent) by [void2anything](https://github.com/void2anything). Typeset rice-paper panel renders mermaid, drawio, tables, and KaTeX. Needs the open-source QingAgent desktop client running. 2★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  npx @deepseek-ai/dsh plugin --profile web add github:void2anything/dsh-qingagent
+  ```
+
+  </details>
+
 
 ---
 
