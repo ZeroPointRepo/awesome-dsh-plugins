@@ -42,6 +42,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node .github/scripts/build-catalog.mjs
 
+      - name: Refresh the generated README sections
+        # The panorama and the recently-added list are derived, not written: one from the page's
+        # own catalog, one from the first-seen ledger. Offline, so it costs nothing to run every
+        # time, and a no-op when neither moved.
+        if: always()
+        run: node .github/scripts/build-readme-sections.mjs README.md
+
       - name: Commit updated badge and catalog data
         if: always()
         run: |
@@ -78,6 +85,10 @@ jobs:
             cp -r "$tmp"/badges "$tmp"/CATALOG.md "$tmp"/catalog.csv "$tmp"/plugins.json .
             count=$(grep -c '^| \[' CATALOG.md)
             sed -i -E "s/^(- \*\*Full catalog:\*\* every verified DSH plugin \()[0-9]+(\) in .*)$/\1${count}\2/" README.md
+            # The marker regions are derived the same way on any tree, so re-derive rather than
+            # trying to replay them: both inputs (this README's catalog, the merged ledger) are
+            # already correct at this point.
+            node .github/scripts/build-readme-sections.mjs README.md
             git add $TRACKED
             git diff --cached --quiet && exit 0
             git commit -m "chore: refresh install-verification badges and catalog [skip ci]"
