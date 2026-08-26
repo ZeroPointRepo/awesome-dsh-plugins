@@ -362,7 +362,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add github:liangmianya/dsh-synapse
+  dsh plugin --profile web add dsh-synapse
   ```
 
   </details>
