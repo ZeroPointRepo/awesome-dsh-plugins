@@ -87,7 +87,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6097,
+      "stars": 6099,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -107,7 +107,7 @@
         "en": "Paste an image and get structured evidence back"
       },
       "stars": 3671,
-      "install": "dsh plugin --profile web add @liustack/modlens@3.24.1",
+      "install": "dsh plugin --profile web add @liustack/modlens@3.25.0",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
       "screenshots": [
@@ -144,7 +144,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 2924,
+      "stars": 2925,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -200,7 +200,7 @@
       "description": {
         "en": "Browse and install plugins without leaving the app"
       },
-      "stars": 2412,
+      "stars": 2413,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-24",
       "npm": "dshmarket",
@@ -566,7 +566,7 @@
         "en": "Ask the web or X and get structured evidence back"
       },
       "stars": 280,
-      "install": "dsh plugin --profile web add @liustack/modsearch@5.9.0",
+      "install": "dsh plugin --profile web add @liustack/modsearch@5.9.1",
       "added": "2026-08-24",
       "npm": "@liustack/modsearch",
       "screenshots": [

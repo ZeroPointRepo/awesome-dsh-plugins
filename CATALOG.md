@@ -7,7 +7,7 @@ organized list is [README.md](README.md).
 |---|---|---|---|---|
 | [PicGo](https://github.com/Molunerfinn/PicGo) | :rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image… | 27k | `dsh plugin --profile web add @picgo/dsh-plugin` | ✅ |
 | [dsh-web](https://github.com/zhu1090093659/dsh-web) | Add a task board, git graph, and mobile remote UI | 6.1k | `dsh plugin --profile web add @linxin666/dsh-web-all@latest` | ✅ |
-| [modlens](https://github.com/liustack/modlens) | Paste an image and get structured evidence back | 3.7k | `dsh plugin --profile web add @liustack/modlens@3.24.1` | — |
+| [modlens](https://github.com/liustack/modlens) | Paste an image and get structured evidence back | 3.7k | `dsh plugin --profile web add @liustack/modlens@3.25.0` | ✅ |
 | [ReMe](https://github.com/agentscope-ai/ReMe) | ReMe: Memory Management Kit for Agents - Remember Me, Refine Me. | 3.4k | `dsh plugin --profile web add @agentscope-ai/reme` | ✅ |
 | [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | Get an open sidebar foundation other plugins can register into | 2.9k | `dsh plugin --profile web add dsh-better-sidebar@latest` | ✅ |
 | [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | Run DSH in a Claude Code style terminal UI | 2.6k | `dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui` | ✅ |
@@ -33,7 +33,7 @@ organized list is [README.md](README.md).
 | [harmony-next.skills](https://github.com/linhay/harmony-next.skills) | Get expert guidance for HarmonyOS NEXT development | 339 | `dsh plugin --profile demo add github:linhay/harmony-next.skills` | ✅ |
 | [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | Get interactive UI components inline in replies | 338 | `dsh plugin --profile web add git+https://github.com/omdsh-dev/dsh-genui.git` | ✅ |
 | [whale-girl](https://github.com/vlln/whale-girl) | DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。 | 285 | `dsh plugin --profile web add "github:vlln/whale-girl#main"` | ✅ |
-| [modsearch](https://github.com/liustack/modsearch) | Ask the web or X and get structured evidence back | 280 | `dsh plugin --profile web add @liustack/modsearch@5.9.0` | — |
+| [modsearch](https://github.com/liustack/modsearch) | Ask the web or X and get structured evidence back | 280 | `dsh plugin --profile web add @liustack/modsearch@5.9.1` | ✅ |
 | [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | Use a ChatGPT, Claude, or X Premium subscription as a DSH provider | 274 | `dsh plugin --profile web add dsh-plugin-subscriptions` | ✅ |
 | [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) | Add a multi-provider web search backend | 272 | `dsh plugin --profile web add @anysearch/anysearch-dsh` | ✅ |
 | [dsh-pentest](https://github.com/howmp/dsh-pentest) | Switch DSH into a penetration-testing mode | 263 | `dsh plugin --profile web add https://github.com/howmp/dsh-pentest/releases/latest/download/dsh-pentest.tar.gz` | ✅ |
