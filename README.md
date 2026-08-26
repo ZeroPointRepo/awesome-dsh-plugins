@@ -97,8 +97,8 @@ if you would rather browse from inside the app.
 - **Vision, web search, and memory**: [modlens](https://github.com/liustack/modlens) reads what you paste, [modsearch](https://github.com/liustack/modsearch) goes and looks things up, [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) keeps both between sessions.
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.24.1
-  dsh plugin --profile web add @liustack/modsearch@5.9.0
+  dsh plugin --profile web add @liustack/modlens@3.25.0
+  dsh plugin --profile web add @liustack/modsearch@5.9.1
   dsh plugin --profile web add dsh-mnemon
   ```
 
@@ -144,7 +144,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.24.1
+  dsh plugin --profile web add @liustack/modlens@3.25.0
   ```
 
   </details>
@@ -191,7 +191,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modsearch@5.9.0
+  dsh plugin --profile web add @liustack/modsearch@5.9.1
   ```
 
   </details>
