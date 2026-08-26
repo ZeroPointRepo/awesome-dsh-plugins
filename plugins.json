@@ -87,7 +87,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6099,
+      "stars": 6100,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -144,7 +144,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 2925,
+      "stars": 2927,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -200,7 +200,7 @@
       "description": {
         "en": "Browse and install plugins without leaving the app"
       },
-      "stars": 2414,
+      "stars": 2415,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-24",
       "npm": "dshmarket",
@@ -360,7 +360,7 @@
       "description": {
         "en": "Audit your API relay for prompt injection and worse"
       },
-      "stars": 809,
+      "stars": 810,
       "install": "dsh plugin --profile web add github:toby-bridges/api-relay-audit#v2.4.0",
       "added": "2026-08-24",
       "screenshots": [
@@ -376,7 +376,7 @@
       "description": {
         "en": "Scan a QR code to reach your desktop DSH from your phone"
       },
-      "stars": 669,
+      "stars": 670,
       "install": "dsh plugin --profile web add dsh-pocket -w",
       "added": "2026-08-24",
       "screenshots": [
@@ -603,14 +603,14 @@
       "description": {
         "en": "Add a multi-provider web search backend"
       },
-      "stars": 272,
+      "stars": 273,
       "install": "dsh plugin --profile web add @anysearch/anysearch-dsh",
       "added": "2026-08-24",
       "npm": "@anysearch/anysearch-dsh",
       "screenshots": [
         "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/anysearch-logo.svg",
-        "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/wechat-community-qr.jpg",
-        "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/discord-community-qr.png"
+        "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/discord-community-qr.png",
+        "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/wechat-community-qr.jpg"
       ]
     },
     {
@@ -770,7 +770,7 @@
       "description": {
         "en": "Generate images directly in DeepSeek Harness chats"
       },
-      "stars": 202,
+      "stars": 203,
       "install": "dsh plugin --profile web add dsh-image-gen@latest",
       "added": "2026-08-24",
       "npm": "dsh-image-gen",
@@ -901,6 +901,19 @@
       ]
     },
     {
+      "name": "pi2dsh",
+      "owner": "weijiafu14",
+      "url": "https://github.com/weijiafu14/pi2dsh",
+      "category": "unsorted",
+      "description": {
+        "en": "Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生态。"
+      },
+      "stars": 164,
+      "install": "dsh plugin add pi2dsh",
+      "added": "2026-08-24",
+      "npm": "pi2dsh"
+    },
+    {
       "name": "anime-find",
       "owner": "cocofhu",
       "url": "https://github.com/cocofhu/anime-find",
@@ -917,19 +930,6 @@
         "https://raw.githubusercontent.com/cocofhu/anime-find/HEAD/docs/screenshot-resources.png",
         "https://raw.githubusercontent.com/cocofhu/anime-find/HEAD/docs/screenshot-streaming.png"
       ]
-    },
-    {
-      "name": "pi2dsh",
-      "owner": "weijiafu14",
-      "url": "https://github.com/weijiafu14/pi2dsh",
-      "category": "unsorted",
-      "description": {
-        "en": "Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通 Pi 与 DSH 生态。"
-      },
-      "stars": 163,
-      "install": "dsh plugin add pi2dsh",
-      "added": "2026-08-24",
-      "npm": "pi2dsh"
     },
     {
       "name": "dsh-purge",
@@ -1020,7 +1020,7 @@
       "description": {
         "en": "DeepSeek Harness 移动端适配与安全访问插件，支持局域网、远程连接、Android App 和手机浏览器。"
       },
-      "stars": 147,
+      "stars": 148,
       "install": "dsh plugin --profile web add dsh-mobile@latest",
       "added": "2026-08-24",
       "npm": "dsh-mobile",
@@ -1089,7 +1089,7 @@
       "description": {
         "en": "电子发票整理与报销准备工具：从邮箱批量收集 PDF/OFD/XML 发票，OCR 识别、分类归档并生成 Excel 汇总；提供 Windows/macOS 桌面版与 DSH 插件。"
       },
-      "stars": 137,
+      "stars": 138,
       "install": "dsh plugin --profile web add @ethanyoq/dsh-invoice-downloader",
       "added": "2026-08-24",
       "npm": "@ethanyoq/dsh-invoice-downloader",
@@ -1456,6 +1456,18 @@
       ]
     },
     {
+      "name": "dsh_workflow",
+      "owner": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev/dsh_workflow",
+      "category": "run-a-team-of-agents",
+      "description": {
+        "en": "Turn one-shot multi-agent runs into a saved workflow"
+      },
+      "stars": 104,
+      "install": "dsh plugin --profile web add \"github:dsh-external/dsh_workflow#main\"",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-commandcode-provider",
       "owner": "Mars-Sea",
       "url": "https://github.com/Mars-Sea/dsh-commandcode-provider",
@@ -1472,18 +1484,6 @@
         "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/HEAD/assets/screenshots/usage-dashboard.png",
         "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/HEAD/assets/screenshots/settings-page.png"
       ]
-    },
-    {
-      "name": "dsh_workflow",
-      "owner": "omdsh-dev",
-      "url": "https://github.com/omdsh-dev/dsh_workflow",
-      "category": "run-a-team-of-agents",
-      "description": {
-        "en": "Turn one-shot multi-agent runs into a saved workflow"
-      },
-      "stars": 103,
-      "install": "dsh plugin --profile web add \"github:dsh-external/dsh_workflow#main\"",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-turn-rewind",
@@ -1629,7 +1629,7 @@
       "description": {
         "en": "DeepSeek Harness skin market 皮肤市场 已收录200+DSH 皮肤 完善评分系统加人工审核，有便捷的社区收录入口；有在线页面方便在线浏览，也有插件方便管理本地皮肤"
       },
-      "stars": 93,
+      "stars": 94,
       "install": "dsh plugin --profile web add \"dsh-skin-market@latest\"",
       "added": "2026-08-24",
       "npm": "dsh-skin-market",
@@ -2228,6 +2228,24 @@
       ]
     },
     {
+      "name": "dsh-plugin-hub",
+      "owner": "dshplugin",
+      "url": "https://github.com/dshplugin/dsh-plugin-hub",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness 社区内置插件市场（dsh-plugin）— 搜索插件、下载并安装 4000+ 人工精选社区插件，每日更新、完全免费。内置在 Harness「设置 → 插件中心」，无需离开应用即可浏览、搜索、安装各类 AI 插件。"
+      },
+      "stars": 50,
+      "install": "dsh plugin --profile web add git+https://github.com/dshplugin/dsh-plugin-hub.git",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/assets/logo.svg",
+        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-home-zh-v1.3.5.png",
+        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-install-zh-v1.2.1.png",
+        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-uninstall-zh-v1.2.1.png"
+      ]
+    },
+    {
       "name": "dsh-prompt-enhancer",
       "owner": "Fishsb",
       "url": "https://github.com/Fishsb/dsh-prompt-enhancer",
@@ -2241,24 +2259,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Fishsb/dsh-prompt-enhancer/HEAD/docs/screenshots/voice-main.png",
         "https://raw.githubusercontent.com/Fishsb/dsh-prompt-enhancer/HEAD/docs/screenshots/voice-settings.png"
-      ]
-    },
-    {
-      "name": "dsh-plugin-hub",
-      "owner": "dshplugin",
-      "url": "https://github.com/dshplugin/dsh-plugin-hub",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness 社区内置插件市场（dsh-plugin）— 搜索插件、下载并安装 4000+ 人工精选社区插件，每日更新、完全免费。内置在 Harness「设置 → 插件中心」，无需离开应用即可浏览、搜索、安装各类 AI 插件。"
-      },
-      "stars": 49,
-      "install": "dsh plugin --profile web add git+https://github.com/dshplugin/dsh-plugin-hub.git",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/assets/logo.svg",
-        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-home-zh-v1.3.5.png",
-        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-install-zh-v1.2.1.png",
-        "https://raw.githubusercontent.com/dshplugin/dsh-plugin-hub/HEAD/docs/screenshots/dsh-plugin-hub-uninstall-zh-v1.2.1.png"
       ]
     },
     {
