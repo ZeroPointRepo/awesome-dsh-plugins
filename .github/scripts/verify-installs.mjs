@@ -76,6 +76,31 @@ for (let i = 0; i < lines.length; i++) {
 
 console.log(`Parsed ${entries.length} catalog entries from ${file}\n`);
 
+// The Starter combos section repeats install commands that already exist in the catalog, so a
+// first install is one copy instead of three. A repeated command is a rot surface: the catalog
+// copy is the one this script re-checks weekly and the one a maintainer repins, and nothing
+// would ever notice the combo copy drifting away from it (the same failure mode refresh-stars.mjs
+// exists to close for star figures). Assert the two agree, offline, before spending an API call.
+// Deliberately kept out of `problems`: the install-checks badge counts catalog entries, and a
+// stale duplicate is not one of them. It still fails the run.
+const combosDrift = [];
+const combosHeading = text.match(/^## .*Starter combos\s*$/m);
+if (!combosHeading) {
+  console.log('Notice: no Starter combos section found, duplicate-command check skipped.\n');
+} else {
+  const isInstall = (l) => /^dsh\s+plugin\s/.test(l);
+  const catalogCmds = new Set(catalogText.split('\n').map((l) => l.trim()).filter(isInstall));
+  const combosText = text.slice(combosHeading.index, catalogStart > combosHeading.index ? catalogStart : undefined);
+  const comboCmds = combosText.split('\n').map((l) => l.trim()).filter(isInstall);
+  if (!comboCmds.length) {
+    combosDrift.push('Starter combos section has a heading but no install commands');
+  }
+  for (const c of comboCmds) {
+    if (!catalogCmds.has(c)) combosDrift.push(`"${c}" does not match any catalog command`);
+  }
+  console.log(`Starter combos: ${comboCmds.length} commands checked against the catalog\n`);
+}
+
 // Some projects document their pinned ref as a shell variable rather than inline:
 //   DSH_PLUGIN_REF=v2.4.0
 //   dsh plugin --profile web add "github:owner/repo#${DSH_PLUGIN_REF}"
@@ -163,6 +188,10 @@ if (problems.length) {
   console.log(`\nPROBLEMS (${problems.length}):`);
   problems.forEach((s) => console.log('  ' + s));
 }
+if (combosDrift.length) {
+  console.log(`\nSTARTER COMBO DRIFT (${combosDrift.length}):`);
+  combosDrift.forEach((s) => console.log('  ' + s));
+}
 
 const total = entries.length;
 const passing = ok.length;
@@ -197,4 +226,4 @@ writeFileSync(
 );
 
 console.log(`\nWrote badges/verified.json (${passing}/${total}) and badges/checked-at.json`);
-process.exit(problems.length ? 1 : 0);
+process.exit(problems.length || combosDrift.length ? 1 : 0);

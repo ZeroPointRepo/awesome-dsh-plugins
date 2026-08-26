@@ -23,29 +23,29 @@ that actually install, sorted by the job they do for you instead of the alphabet
 
 ---
 
-## Contents
+## Find a DSH plugin by what it does
 
-- [⭐ Featured plugin](#-featured-plugin)
-- [🚀 Where do I start?](#-where-do-i-start)
-- [The catalog](#the-catalog)
-  - [See and understand](#see-and-understand)
-  - [Search the web](#search-the-web)
-  - [Remember between sessions](#remember-between-sessions)
-  - [Reshape the interface](#reshape-the-interface)
-  - [Make it yours](#make-it-yours)
-  - [Boost coding workflow](#boost-coding-workflow)
-  - [Run a team of agents](#run-a-team-of-agents)
-  - [Browse files and data](#browse-files-and-data)
-  - [Git and code review](#git-and-code-review)
-  - [Notifications and messaging](#notifications-and-messaging)
-  - [Remote access and mobile](#remote-access-and-mobile)
-  - [Usage, cost, and account tracking](#usage-cost-and-account-tracking)
-  - [Find and manage plugins](#find-and-manage-plugins)
-  - [Providers and subscriptions](#providers-and-subscriptions)
-  - [Security and safety](#security-and-safety)
-  - [Live data APIs](#live-data-apis)
-  - [Domain specific](#domain-specific)
-- [Good to know](#good-to-know)
+| What I want | Where to go |
+| --- | --- |
+| **Vision and OCR**: my model cannot read the screenshot I just pasted | [See and understand](#see-and-understand) |
+| **Web search with citations**: look something up and come back with sources | [Search the web](#search-the-web) |
+| **Memory between sessions**: stop re-explaining the project every morning | [Remember between sessions](#remember-between-sessions) |
+| **A better Web UI**: task board, sidebar workbench, context panel, full-screen TUI | [Reshape the interface](#reshape-the-interface) |
+| **Themes, skins, and a desktop pet**: make it look like mine | [Make it yours](#make-it-yours) |
+| **Faster coding loops**: @file mentions, diff cards, permission rules, undo | [Boost coding workflow](#boost-coding-workflow) |
+| **Multi-agent teams**: hand one big job to several agents at once | [Run a team of agents](#run-a-team-of-agents) |
+| **Office, PDF, and spreadsheet files**: read real documents inside the chat | [Browse files and data](#browse-files-and-data) |
+| **Code review before it lands**: see the diff the moment the agent writes it | [Git and code review](#git-and-code-review) |
+| **Notifications**: get pinged on the desktop, Telegram, or Feishu when a run ends | [Notifications and messaging](#notifications-and-messaging) |
+| **Remote and mobile access**: drive the DSH on my desk from my phone | [Remote access and mobile](#remote-access-and-mobile) |
+| **Token and cost tracking**: know what a session actually costs | [Usage, cost, and account tracking](#usage-cost-and-account-tracking) |
+| **A plugin marketplace**: browse and install without leaving the app | [Find and manage plugins](#find-and-manage-plugins) |
+| **Another model provider**: a subscription I already pay for, or a local model | [Providers and subscriptions](#providers-and-subscriptions) |
+| **Guardrails and audit**: approval rules, and a log of what the agent did | [Security and safety](#security-and-safety) |
+| **Live data APIs**: transcripts, property data, real numbers in the chat | [Live data APIs](#live-data-apis) |
+| **Robotics, trading, pentest, HarmonyOS**: the specialist stuff | [Domain specific](#domain-specific) |
+| **My first plugin, in 30 seconds** | [Where do I start?](#-where-do-i-start) |
+| **A set that works together**, not one plugin at a time | [Starter combos](#-starter-combos) |
 
 - **Full catalog:** every verified DSH plugin (222) in [CATALOG.md](CATALOG.md)
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), which [dsh-market](https://github.com/dsh-market/dsh-market) reads if you point `DSHM_REGISTRY_URL` at its raw URL
@@ -89,6 +89,48 @@ if you would rather browse from inside the app.
 
 > `dsh` is in **developer preview** and states plainly that there will be compatibility-breaking
 > changes. Pin versions where this list does.
+
+---
+
+## 🎒 Starter combos
+
+- **Vision, web search, and memory**: [modlens](https://github.com/liustack/modlens) reads what you paste, [modsearch](https://github.com/liustack/modsearch) goes and looks things up, [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) keeps both between sessions.
+
+  ```sh
+  dsh plugin --profile web add @liustack/modlens@3.24.1
+  dsh plugin --profile web add @liustack/modsearch@5.9.0
+  dsh plugin --profile web add dsh-mnemon
+  ```
+
+- **Multi-agent teams that resume**: [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) splits the job across agents, [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) saves the run as a pipeline you can start again, [dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) stops the approval prompt on routine calls.
+
+  ```sh
+  dsh plugin --profile web add @nanmicoder/dsh-agent-teams
+  dsh plugin --profile web add "github:dsh-external/dsh_workflow#main"
+  dsh plugin --profile web add @nanmicoder/dsh-auto-mode
+  ```
+
+- **Code review and undo**: [dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) shows every edit as a diff card, [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) decides what the agent may touch, [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) rolls the chat and the code back together.
+
+  ```sh
+  dsh plugin --profile web add "github:lehhair/dsh-diff-viewer"
+  dsh plugin --profile web add dsh-permission-rules
+  dsh plugin --profile web add @anionex/dsh-turn-rewind
+  ```
+
+- **Long runs you walk away from**: [dsh-notification](https://github.com/omdsh-dev/dsh-notification) pings the desktop when a turn ends, [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) puts the same session on your phone.
+
+  ```sh
+  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.3.tar.gz
+  dsh plugin --profile web add dsh-pocket -w
+  ```
+
+- **Token budget and context**: [dsh-context](https://github.com/bowenliang123/dsh-context) shows what filled the window, [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) shows what it cost against a budget.
+
+  ```sh
+  dsh plugin --profile web add dsh-context
+  dsh plugin --profile web add dsh-cost-meter
+  ```
 
 ---
 

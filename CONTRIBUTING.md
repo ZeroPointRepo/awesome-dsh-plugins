@@ -21,6 +21,18 @@ The top slot rotates on merit, roughly one plugin in six from a strong batch. It
 house slot. A plugin earns it by being an unusually good answer to a real job, having a verified
 install command, and being active. Maintainers pick it; there is no separate application.
 
+## Starter combos
+
+A combo is a small set of plugins that answers one job together. It is not a "best of" shortlist
+and not a place to get a second entry in.
+
+- Every member is already a listed entry, using the same install command, character for character.
+  CI compares the combo block against the catalog and fails the run if the two drift apart.
+- Two or three members. If a fourth is only loosely related, it does not belong.
+- Each member does something the others do not. A combo whose members overlap is padding.
+
+Suggest one in an issue: the job it solves, and why those specific plugins.
+
 ## Adding a plugin entry
 
 Open a PR that adds one entry, in the right category, in this exact format:
