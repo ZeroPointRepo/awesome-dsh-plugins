@@ -1124,6 +1124,7 @@ rules.
 
 - [awesome-fx-skills](https://github.com/ZeroPointRepo/awesome-fx-skills): skills, MCP servers and subagents for Vercel's fx coding agent, every install command machine-checked weekly.
 - [awesome-cursor-plugins](https://github.com/ZeroPointRepo/awesome-cursor-plugins): Cursor plugins from the official marketplace, each with the other agents it also runs in and whether it needs a sign-in.
+- [awesome-ag-ui](https://github.com/ZeroPointRepo/awesome-ag-ui): AG-UI, the protocol for putting an agent in front of a person, with a capability matrix per framework. Two people have already bridged DSH into it.
 
 </details>
 
