@@ -416,6 +416,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Read a long answer while drafting the next detailed prompt beside it** with [dsh-composer-layout](https://github.com/lavapapa/dsh-composer-layout) by [lavapapa](https://github.com/lavapapa). A right-side Composer for DSH Web, with per-session placement, an adjustable width, and a responsive return to the native bottom layout. 2★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-composer-layout@latest
+  ```
+
+  </details>
+
 
 ### Make it yours
 
