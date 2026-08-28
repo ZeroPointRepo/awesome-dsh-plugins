@@ -416,6 +416,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Branch from any earlier answer without contaminating the main session** with [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) by [sluminositys](https://github.com/sluminositys). Creates real, read-only nested sessions and keeps them in one message-level tree. 16★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-nested-followups
+  ```
+
+  </details>
+
 
 ### Make it yours
 
