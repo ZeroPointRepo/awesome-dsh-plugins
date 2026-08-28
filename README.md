@@ -416,7 +416,7 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
-- **Branch from any earlier answer without contaminating the main session** with [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) by [sluminositys](https://github.com/sluminositys). Creates real, read-only nested sessions and keeps them in one message-level tree. 16★, MIT.
+- **Branch again from answers inside a side conversation** with [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) by [sluminositys](https://github.com/sluminositys). Every level is a real, read-only session with its own inherited context; the main task stays untouched and Tree View keeps the recursive trail attached. 16★, MIT.
 
   <details>
   <summary>Install</summary>
