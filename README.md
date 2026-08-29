@@ -477,6 +477,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Speak into an editable composer draft without auto-sending** with [dsh-dictation](https://github.com/WSL043/dsh-dictation) by [WSL043](https://github.com/WSL043). Local multilingual recognition or Codex Desktop dictation, with the user keeping final control. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-dictation@0.1.0-beta.1
+  ```
+
+  </details>
+
 - **Write declarative allow, deny, and ask rules for tools** with [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules) by [PerryLink](https://github.com/PerryLink). Claude-Code-style rules matched on tool name, arguments, and workspace path, with a session-log audit. 54★, Apache-2.0.
 
   <details>
