@@ -48,7 +48,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 | **A set that works together**, not one plugin at a time | [Starter combos](#-starter-combos) |
 | **What landed since last time** | [Recently added](#-recently-added) |
 
-- **Full catalog:** every verified DSH plugin (223) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified DSH plugin (226) in [CATALOG.md](CATALOG.md)
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), which [dsh-market](https://github.com/dsh-market/dsh-market) reads if you point `DSHM_REGISTRY_URL` at its raw URL
 
 <details>
@@ -168,6 +168,7 @@ if you would rather browse from inside the app.
 
 <!-- dsh:recent:start -->
 - **[dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription)** in [Providers and subscriptions](#providers-and-subscriptions), added 2026-08-31
+- **[dsh-composer-layout](https://github.com/lavapapa/dsh-composer-layout)** in [Reshape the interface](#reshape-the-interface), added 2026-08-31
 - **[dsh-dictation](https://github.com/WSL043/dsh-dictation)** in [Boost coding workflow](#boost-coding-workflow), added 2026-08-31
 - **[dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups)** in [Reshape the interface](#reshape-the-interface), added 2026-08-31
 - **[dsh-qingagent](https://github.com/void2anything/dsh-qingagent)** in [Domain specific](#domain-specific), added 2026-08-31

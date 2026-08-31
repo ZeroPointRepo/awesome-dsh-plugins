@@ -3,7 +3,7 @@
   "url": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "source": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "updated": "2026-08-31",
-  "count": 223,
+  "count": 226,
   "categories": {
     "unsorted": {
       "en": "Unsorted"
@@ -69,7 +69,7 @@
       "description": {
         "en": ":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done."
       },
-      "stars": 27097,
+      "stars": 27098,
       "install": "dsh plugin --profile web add @picgo/dsh-plugin",
       "added": "2026-08-24",
       "screenshots": [
@@ -1017,6 +1017,25 @@
       ]
     },
     {
+      "name": "dsh-data-agent",
+      "owner": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev/dsh-data-agent",
+      "category": "unsorted",
+      "description": {
+        "en": "Connect DSH to your database for conversational data analysis and actionable business insights."
+      },
+      "stars": 184,
+      "install": "dsh plugin --profile web add @yejiming/dsh-data-agent",
+      "added": "2026-08-24",
+      "npm": "@yejiming/dsh-data-agent",
+      "screenshots": [
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/banner.webp",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/features.webp",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/tables.webp",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/data-governance.webp"
+      ]
+    },
+    {
       "name": "dsh-evolve-modes",
       "owner": "GraySilver",
       "url": "https://github.com/GraySilver/dsh-evolve-modes",
@@ -1031,25 +1050,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/GraySilver/dsh-evolve-modes/main/assets/social-preview.png",
         "https://raw.githubusercontent.com/GraySilver/dsh-evolve-modes/main/assets/evolve-modes-review.png"
-      ]
-    },
-    {
-      "name": "dsh-data-agent",
-      "owner": "omdsh-dev",
-      "url": "https://github.com/omdsh-dev/dsh-data-agent",
-      "category": "unsorted",
-      "description": {
-        "en": "Connect DSH to your database for conversational data analysis and actionable business insights."
-      },
-      "stars": 183,
-      "install": "dsh plugin --profile web add @yejiming/dsh-data-agent",
-      "added": "2026-08-24",
-      "npm": "@yejiming/dsh-data-agent",
-      "screenshots": [
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/banner.webp",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/features.webp",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/tables.webp",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-data-agent/HEAD/assets/data-governance.webp"
       ]
     },
     {
@@ -2307,7 +2307,7 @@
         "en": "Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness."
       },
       "stars": 67,
-      "install": "dsh plugin --profile web add dsh-codex-connect@alpha",
+      "install": "dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.22",
       "added": "2026-08-24",
       "npm": "dsh-codex-connect",
       "screenshots": [
@@ -3484,6 +3484,24 @@
       ]
     },
     {
+      "name": "dsh-nested-followups",
+      "owner": "sluminositys",
+      "url": "https://github.com/sluminositys/dsh-nested-followups",
+      "category": "reshape-the-interface",
+      "description": {
+        "en": "Keep branching from any answer at any depth"
+      },
+      "stars": 19,
+      "install": "dsh plugin --profile web add dsh-nested-followups",
+      "added": "2026-08-31",
+      "npm": "dsh-nested-followups",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1339103577/987b9333-c254-4d06-b340-2fea44c9fe22",
+        "https://raw.githubusercontent.com/sluminositys/dsh-nested-followups/HEAD/assets/demo.gif",
+        "https://raw.githubusercontent.com/sluminositys/dsh-nested-followups/HEAD/assets/recursive-branching.png"
+      ]
+    },
+    {
       "name": "dsh-office",
       "owner": "omdsh-dev",
       "url": "https://github.com/omdsh-dev/dsh-office",
@@ -3592,6 +3610,42 @@
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/ZeroPointRepo/youtube-mcp/HEAD/public/brand/logo-512.png"
+      ]
+    },
+    {
+      "name": "dsh-composer-layout",
+      "owner": "lavapapa",
+      "url": "https://github.com/lavapapa/dsh-composer-layout",
+      "category": "reshape-the-interface",
+      "description": {
+        "en": "Read a long answer while drafting the next detailed prompt beside it"
+      },
+      "stars": 4,
+      "install": "dsh plugin --profile web add dsh-composer-layout@latest",
+      "added": "2026-08-31",
+      "npm": "dsh-composer-layout",
+      "screenshots": [
+        "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/HEAD/assets/hero-en.png",
+        "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/HEAD/assets/screenshots/hero-en.png",
+        "https://raw.githubusercontent.com/lavapapa/dsh-composer-layout/HEAD/assets/screenshots/layout-guide-en.webp"
+      ]
+    },
+    {
+      "name": "dsh-qingagent",
+      "owner": "void2anything",
+      "url": "https://github.com/void2anything/dsh-qingagent",
+      "category": "domain-specific",
+      "description": {
+        "en": "Draft documents in chat and review each edit before it lands"
+      },
+      "stars": 4,
+      "install": "npx @deepseek-ai/dsh plugin --profile web add github:void2anything/dsh-qingagent",
+      "added": "2026-08-31",
+      "screenshots": [
+        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/logo.svg",
+        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-demo.gif",
+        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-diagram.webp",
+        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-table-math.webp"
       ]
     },
     {

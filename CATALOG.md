@@ -60,8 +60,8 @@ organized list is [README.md](README.md).
 | [open-sea-skin](https://github.com/d-dev0101/open-sea-skin) | WebGPU ocean skin for DeepSeek Harness — DSH plugin, Harness-only Chrome/Edge extension, static installer, and native… | 194 | `dsh plugin --profile web add 'github:d-dev0101/open-sea-skin#v1.2.1'` | ✅ |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | DeepSeek Harness（dsh）Windows 轻量启动器：双击即用，克制的原生体验 / Lightweight Windows launcher for DeepSeek Harness (dsh) —… | 189 | `dsh plugin --profile web add dsh-launcher-lifetime` | ✅ |
 | [TokenLedger](https://github.com/zh667/TokenLedger) | Track token usage with zero setup | 189 | `dsh plugin --profile web add "github:zh667/TokenLedger"` | ✅ |
+| [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | Connect DSH to your database for conversational data analysis and actionable business insights. | 184 | `dsh plugin --profile web add @yejiming/dsh-data-agent` | ✅ |
 | [dsh-evolve-modes](https://github.com/GraySilver/dsh-evolve-modes) | 让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable task controls and… | 183 | `dsh plugin --profile web add @graysilver/dsh-evolve-modes@0.3.2` | ✅ |
-| [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | Connect DSH to your database for conversational data analysis and actionable business insights. | 183 | `dsh plugin --profile web add @yejiming/dsh-data-agent` | ✅ |
 | [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | DeepSeek Harness 的 Android App 与安全远程访问插件，支持局域网/远程连接和高度自定义的移动界面与扩展能力。 | 180 | `dsh plugin --profile web add dsh-mobile@latest` | ✅ |
 | [pi2dsh](https://github.com/weijiafu14/pi2dsh) | Bridge the Pi and DeepSeek Harness ecosystems: one Pi Host ABI runs unmodified Pi extensions as native DSH plugins. 打通… | 175 | `dsh plugin add pi2dsh` | ✅ |
 | [dsh-popout-sidebar](https://github.com/e2mcc/dsh-popout-sidebar) | A sidebar can pop out a separate browser tab (drag it to another monitor) | 170 | `dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar` | ✅ |
@@ -141,7 +141,7 @@ organized list is [README.md](README.md).
 | [opencontext](https://github.com/melandlabs/opencontext) | A temporal context graph, a memory API, retrieval primitives, and a multiple-platform integration mesh — designed to… | 69 | `dsh plugin --profile web add dsh-opencontext` | ✅ |
 | [dsh-web-plugin-manager](https://github.com/LX2000WASD/dsh-web-plugin-manager) | Manage every plugin from one panel | 68 | `dsh plugin --profile web add dsh-web-plugin-manager@latest` | ✅ |
 | [dsh-meme](https://github.com/yyh-001/dsh-meme) | DeepSeek Harness 的表情包插件——找得到、发得出、学得会，纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包 、多种风格随意切换。 | 68 | `dsh plugin --profile web add dsh-meme` | ✅ |
-| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness. | 67 | `dsh plugin --profile web add dsh-codex-connect@alpha` | ✅ |
+| [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness. | 67 | `dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.22` | ✅ |
 | [dsh-mneme](https://github.com/modusensus/dsh-mneme) | Store memory as Markdown you can read and edit yourself | 67 | `dsh plugin --profile web add @modusensus/dsh-mneme` | ✅ |
 | [deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) | DeepSeek Harness control center for balance, usage, peak/off-peak pricing, encrypted multi-account switching, health… | 66 | `dsh plugin --profile web add github:feibi-mochi/deepseek-harness-control-center` | ✅ |
 | [Martty](https://github.com/openma-ai/Martty) | deepseek-harness-tui（dsh-tui） before. Self-Improvement TUI Plugin of DeepSeek Harness. Everything Here Is Also A… | 66 | `dsh plugin --profile martty add martty@latest` | ✅ |
@@ -218,6 +218,7 @@ organized list is [README.md](README.md).
 | [reef](https://github.com/huey1in/reef) | Get browser automation, an MCP server, and GitHub or GitLab review in one install | 19 | `dsh plugin --profile web add dsh-reef` | ✅ |
 | [dsh-file-explorer](https://github.com/joejojoking-cloud/dsh-file-explorer) | Get a real file tree in the sidebar | 19 | `dsh plugin --profile web add dsh-file-explorer` | ✅ |
 | [dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) | Add a three-model vision and image-generation fallback chain | 19 | `dsh plugin --profile web add github:MJorgin/dsh-media-skills` | ✅ |
+| [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) | Keep branching from any answer at any depth | 19 | `dsh plugin --profile web add dsh-nested-followups` | ✅ |
 | [dsh-office](https://github.com/omdsh-dev/dsh-office) | Generate, read, and edit Office files in chat | 18 | `dsh plugin --profile web add @huiliyi37/dsh-office` | ✅ |
 | [dsh-robotic-harness](https://github.com/dingkaihu63/dsh-robotic-harness) | Run embodied-intelligence research from DSH | 17 | `dsh plugin --profile rh-demo add ./packages/dsh-bundle` | ✅ |
 | [dsh-client-pricing](https://github.com/Miyazawai/dsh-client-pricing) | See the live model price in the session header | 17 | `dsh plugin --profile web add dsh-client-pricing` | ✅ |
@@ -226,10 +227,12 @@ organized list is [README.md](README.md).
 | [dsh-reviewer-bot](https://github.com/chaojixinren/dsh-reviewer-bot) | Run a code review bot natively inside DSH | 14 | `dsh plugin --profile web add @dshrb/bundle` | ✅ |
 | [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) | Audit your own DSH install | 14 | `dsh plugin --profile web add github:omdsh-dev/dsh-security-audit` | ✅ |
 | [transcriptapi](https://github.com/ZeroPointRepo/youtube-mcp) | Search YouTube and pull transcripts | 9 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/transcriptapi.cordis.yml` | — |
+| [dsh-composer-layout](https://github.com/lavapapa/dsh-composer-layout) | Read a long answer while drafting the next detailed prompt beside it | 4 | `dsh plugin --profile web add dsh-composer-layout@latest` | ✅ |
+| [dsh-qingagent](https://github.com/void2anything/dsh-qingagent) | Draft documents in chat and review each edit before it lands | 4 | `npx @deepseek-ai/dsh plugin --profile web add github:void2anything/dsh-qingagent` | — |
 | [zillapi](https://github.com/ZeroPointRepo/zillow-mcp) | Look up Zillow property data | 1 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/zillapi.cordis.yml` | — |
 | [dsh-dictation](https://github.com/WSL043/dsh-dictation) | Speak into an editable composer draft without auto-sending | 0 | `dsh plugin --profile web add dsh-dictation@0.1.0-beta.1` | — |
 
-<sub>223 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
+<sub>226 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
 [`build-catalog.mjs`](.github/scripts/build-catalog.mjs) on every
 [verify-installs](.github/workflows/verify-installs.yml) run · ✅ = the install command still appears in the
 project's own README · edits here are overwritten, send them to [README.md](README.md).</sub>
