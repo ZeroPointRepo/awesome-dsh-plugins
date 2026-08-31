@@ -416,6 +416,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Keep branching from any answer at any depth** with [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) by [sluminositys](https://github.com/sluminositys). The fork rule repeats without a plugin-defined depth limit; every level is a real, read-only session, the main task stays untouched, and Tree View keeps the trail attached. 16★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-nested-followups
+  ```
+
+  </details>
+
 
 ### Make it yours
 
