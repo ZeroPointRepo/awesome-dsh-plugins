@@ -48,7 +48,7 @@ that actually install, sorted by the job they do for you instead of the alphabet
 | **A set that works together**, not one plugin at a time | [Starter combos](#-starter-combos) |
 | **What landed since last time** | [Recently added](#-recently-added) |
 
-- **Full catalog:** every verified DSH plugin (221) in [CATALOG.md](CATALOG.md)
+- **Full catalog:** every verified DSH plugin (225) in [CATALOG.md](CATALOG.md)
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), which [dsh-market](https://github.com/dsh-market/dsh-market) reads if you point `DSHM_REGISTRY_URL` at its raw URL
 
 <details>
@@ -57,22 +57,22 @@ that actually install, sorted by the job they do for you instead of the alphabet
 <!-- dsh:panorama:start -->
 ```mermaid
 mindmap
-  root((Awesome DSH Plugins · 76))
-    Reshape the interface · 8
-    Boost coding workflow · 6
-    Domain specific · 6
+  root((Awesome DSH Plugins · 81))
+    Reshape the interface · 10
+    Boost coding workflow · 7
+    Domain specific · 7
     Find and manage plugins · 6
     Browse files and data · 5
     Notifications and messaging · 5
     Remember between sessions · 5
     Make it yours · 4
+    Providers and subscriptions · 4
     Remote access and mobile · 4
     Run a team of agents · 4
     Search the web · 4
     See and understand · 4
     Usage, cost, and account tracking · 4
     Git and code review · 3
-    Providers and subscriptions · 3
     Security and safety · 3
     Live data APIs · 2
 ```
@@ -167,7 +167,10 @@ if you would rather browse from inside the app.
 ## 🆕 Recently added
 
 <!-- dsh:recent:start -->
-No new entries this week. [Add one](CONTRIBUTING.md).
+- **[dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription)** in [Providers and subscriptions](#providers-and-subscriptions), added 2026-08-31
+- **[dsh-dictation](https://github.com/WSL043/dsh-dictation)** in [Boost coding workflow](#boost-coding-workflow), added 2026-08-31
+- **[dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups)** in [Reshape the interface](#reshape-the-interface), added 2026-08-31
+- **[dsh-qingagent](https://github.com/void2anything/dsh-qingagent)** in [Domain specific](#domain-specific), added 2026-08-31
 <!-- dsh:recent:end -->
 
 ---
