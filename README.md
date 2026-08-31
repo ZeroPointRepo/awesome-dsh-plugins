@@ -930,6 +930,17 @@ No new entries this week. [Add one](CONTRIBUTING.md).
 
   </details>
 
+- **Use a ChatGPT or Codex subscription in DSH without an API key or Codex CLI** with [dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) by [WSL043](https://github.com/WSL043). OAuth sign-in with models, quota, search, and image tools. 26★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-codex-subscription
+  ```
+
+  </details>
+
 - **Run local MLX models as a native provider** with [rapid-mlx-dsh-provider](https://github.com/raullenchai/rapid-mlx-dsh-provider) by [raullenchai](https://github.com/raullenchai). DSH reads model facts straight from the server instead of a hand-edited settings file. 22★, Apache-2.0.
 
   <details>
