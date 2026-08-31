@@ -118,11 +118,18 @@ function expandVars(md) {
 
 const problems = [];
 const ok = [];
+// THIRD STATE. A repo we could not reach is not a repo that failed its check. A broken
+// credential (401), a rate limit (403/429), a GitHub outage (5xx) and a dead socket (0) are all
+// "we could not look"; 404 stays a real finding, because a repo that is genuinely gone IS the
+// thing this script exists to catch. Conflating the two is what published a red "0/81 passing"
+// badge, and a fresh checked-at date, off a fully rate-limited run on 2026-08-31.
+const unchecked = [];
+const isTransport = (s) => s === 401 || s === 403 || s === 429 || s === 0 || s >= 500;
 
 for (const e of entries) {
-  const r = await fetch(`https://api.github.com/repos/${e.slug}`, { headers: H });
+  const r = await fetch(`https://api.github.com/repos/${e.slug}`, { headers: H }).catch(() => ({ ok: false, status: 0 }));
   if (!r.ok) {
-    problems.push(`${e.name} (${e.slug}): repo lookup HTTP ${r.status}`);
+    (isTransport(r.status) ? unchecked : problems).push(`${e.name} (${e.slug}): repo lookup HTTP ${r.status}`);
     continue;
   }
   const j = await r.json();
@@ -148,9 +155,9 @@ for (const e of entries) {
   }
 
   let tok = e.cmd.split(/\s+/).pop().replace(/^['"]|['"]$/g, '');
-  const rr = await fetch(`https://api.github.com/repos/${e.slug}/readme`, { headers: H });
+  const rr = await fetch(`https://api.github.com/repos/${e.slug}/readme`, { headers: H }).catch(() => ({ ok: false, status: 0 }));
   if (!rr.ok) {
-    problems.push(`${e.name} (${e.slug}): could not read project's own README (HTTP ${rr.status}), command unverified`);
+    (isTransport(rr.status) ? unchecked : problems).push(`${e.name} (${e.slug}): could not read project's own README (HTTP ${rr.status}), command unverified`);
     continue;
   }
   const md = expandVars(Buffer.from((await rr.json()).content, 'base64').toString());
@@ -197,6 +204,10 @@ if (problems.length) {
   console.log(`\nPROBLEMS (${problems.length}):`);
   problems.forEach((s) => console.log('  ' + s));
 }
+if (unchecked.length) {
+  console.log(`\nUNCHECKED (${unchecked.length}) — could not look, so no verdict claimed:`);
+  unchecked.forEach((s) => console.log('  ' + s));
+}
 if (combosDrift.length) {
   console.log(`\nSTARTER COMBO DRIFT (${combosDrift.length}):`);
   combosDrift.forEach((s) => console.log('  ' + s));
@@ -205,6 +216,19 @@ if (combosDrift.length) {
 const total = entries.length;
 const passing = ok.length;
 const color = problems.length === 0 ? 'brightgreen' : problems.length <= 2 ? 'yellow' : 'red';
+
+// Never publish a verdict this run did not earn. Above 5% unreachable the badges are LEFT
+// ALONE: last week's honest figure is strictly better than this week's fabricated one, and
+// `checked-at` must never claim a date on which nothing was actually checked. Same ceiling,
+// same reasoning as the catalog build and the star ledger.
+if (unchecked.length / Math.max(total, 1) > 0.05) {
+  console.log(
+    `\nBADGES NOT WRITTEN: ${unchecked.length}/${total} entries (${((unchecked.length / total) * 100).toFixed(1)}%) were unreachable.\n` +
+      'Leaving the previous badge and checked-at date in place — a run that could not look must not\n' +
+      'publish "0 passing", and must not stamp today as the day the list was checked.'
+  );
+  process.exit(1);
+}
 
 mkdirSync('badges', { recursive: true });
 writeFileSync(
@@ -235,4 +259,4 @@ writeFileSync(
 );
 
 console.log(`\nWrote badges/verified.json (${passing}/${total}) and badges/checked-at.json`);
-process.exit(problems.length || combosDrift.length ? 1 : 0);
+process.exit(problems.length || combosDrift.length || unchecked.length ? 1 : 0);
