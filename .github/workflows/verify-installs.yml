@@ -2,7 +2,12 @@ name: verify-installs
 
 on:
   schedule:
-    - cron: '0 8 * * 1' # Mondays 08:00 UTC, ahead of the weekly maintenance pass
+    # Off the hour deliberately. :00 is the most contended slot on GitHub's scheduler and runs
+    # there are silently DROPPED under load — this portfolio lost every scheduled run for a full
+    # week that way (2026-08-24 -> 2026-08-31) with every workflow still reporting state:active.
+    # The minute is allocated portfolio-wide in PORTFOLIO.json -> tooling.cron_minute_map.
+    # Do not "tidy" this back to :00.
+    - cron: '23 8 * * 1' # Mondays 08:23 UTC, ahead of the weekly maintenance pass
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -10,14 +15,28 @@ on:
       - README.md
       - .github/scripts/verify-installs.mjs
       - .github/scripts/build-catalog.mjs
+      - .github/scripts/snapshot-stars.mjs
       - .github/workflows/verify-installs.yml
 
 permissions:
   contents: write
 
+# One walk at a time, per repo. Every scheduled workflow here walks the same catalog through the
+# same installation-wide 5,000 REST calls/hour, so two overlapping walks drain each other
+# mid-walk regardless of the budget either one started with (AK evidence, 2026-08-27). The group
+# is shared by name across this repo's scheduled workflows, so the overlap is STRUCTURALLY
+# impossible rather than merely unlikely. QUEUE, never cancel: a catalog walk that gets killed
+# half-way publishes a partial catalog, which is the exact failure the shrink guard exists to
+# catch. pr-validate is deliberately NOT in this group — contributor PRs must never queue behind
+# a catalog walk.
+concurrency:
+  group: catalog-walk
+  cancel-in-progress: false
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -42,6 +61,17 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node .github/scripts/build-catalog.mjs
 
+      - name: Append a dated star snapshot to the ledger
+        # Append-only, keyed by immutable repo id. Rides this walk instead of taking a cron of
+        # its own: the ceiling here is one catalog walk at a time, and the numbers this needs
+        # were already fetched two steps up. `if: always()` because the ledger is a record of
+        # what was observed, and an upstream step finding drift is not a reason to skip
+        # recording the week.
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/snapshot-stars.mjs CATALOG.md .github/data/star-history.json
+
       - name: Refresh the generated README sections
         # The panorama and the recently-added list are derived, not written: one from the page's
         # own catalog, one from the first-seen ledger. Offline, so it costs nothing to run every
@@ -54,7 +84,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          TRACKED="badges/ CATALOG.md catalog.csv plugins.json README.md .github/data/first-seen.json"
+          TRACKED="badges/ CATALOG.md catalog.csv plugins.json README.md .github/data/first-seen.json .github/data/star-history.json"
           if git diff --quiet -- $TRACKED; then
             echo "No badge or catalog change."
             exit 0
@@ -70,7 +100,7 @@ jobs:
             git push && exit 0
             git fetch origin main
             tmp=$(mktemp -d)
-            cp -r badges CATALOG.md catalog.csv plugins.json .github/data/first-seen.json "$tmp"/
+            cp -r badges CATALOG.md catalog.csv plugins.json .github/data/first-seen.json .github/data/star-history.json "$tmp"/
             git reset --hard origin/main
             # The ledger is the one file that must not simply be overwritten: a first-seen date is
             # only ever wrong in the "too late" direction, so keep the earlier of the two.
@@ -82,6 +112,9 @@ jobs:
               mine.seen=Object.fromEntries(Object.entries(seen).sort(([x],[y])=>x.localeCompare(y)));
               fs.writeFileSync(b, JSON.stringify(mine,null,2)+"\n");
             ' "$tmp/first-seen.json" .github/data/first-seen.json
+            # Same one-directional reasoning, one file over: a dated reading already on
+            # main is kept, ours only adds dates it does not have.
+            node .github/scripts/merge-star-history.mjs "$tmp/star-history.json" .github/data/star-history.json
             cp -r "$tmp"/badges "$tmp"/CATALOG.md "$tmp"/catalog.csv "$tmp"/plugins.json .
             count=$(grep -c '^| \[' CATALOG.md)
             sed -i -E "s/^(- \*\*Full catalog:\*\* every verified DSH plugin \()[0-9]+(\) in .*)$/\1${count}\2/" README.md
