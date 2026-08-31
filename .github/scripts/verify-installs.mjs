@@ -11,7 +11,8 @@
 //   COMMAND DRIFT       - the project's own README no longer contains the install command's
 //                         package spec. A superseded pin (e.g. foo@1.2.3 when 2.0 is out)
 //                         still resolves and still installs, so nothing else will ever flag it.
-//   PIN SUPERSEDED      - an npm-pinned version is no longer registry.npmjs.org's latest.
+//   PIN SUPERSEDED      - an npm-pinned version no longer matches ANY registry.npmjs.org
+//                         dist-tag (not just `latest`, which never moves onto a prerelease).
 //
 // Reads README.md, finds every catalog entry (bullet + author link + fenced install command),
 // re-resolves each linked repo through the GitHub API, and re-reads that repo's own README to
@@ -171,8 +172,16 @@ for (const e of entries) {
     const [, name, pinned] = pin;
     const nr = await fetch(`https://registry.npmjs.org/${encodeURIComponent(name).replace('%40', '@')}`);
     if (nr.ok) {
-      const latest = (await nr.json())['dist-tags']?.latest;
-      if (latest && latest !== pinned) {
+      const tags = (await nr.json())['dist-tags'] ?? {};
+      const latest = tags.latest;
+      // A pin is current if it matches ANY published dist-tag, not just `latest`.
+      // npm does not move `latest` onto a prerelease, so a package whose own README
+      // documents `pkg@1.0.0-beta.2` sits under the `beta` tag while `latest` still
+      // points at `beta.1`. Checking `latest` alone reported that as "pin superseded"
+      // and would have pushed the list BACKWARDS onto a stale version to quiet the
+      // check. Real case: dsh-dictation, 2026-08-31.
+      const tagged = Object.values(tags).includes(pinned);
+      if (latest && !tagged) {
         problems.push(`${name}: pin superseded, list has ${pinned}, npm latest is ${latest} (line ${e.line})`);
         continue;
       }
