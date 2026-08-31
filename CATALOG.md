@@ -227,11 +227,10 @@ organized list is [README.md](README.md).
 | [dsh-reviewer-bot](https://github.com/chaojixinren/dsh-reviewer-bot) | Run a code review bot natively inside DSH | 14 | `dsh plugin --profile web add @dshrb/bundle` | ✅ |
 | [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) | Audit your own DSH install | 14 | `dsh plugin --profile web add github:omdsh-dev/dsh-security-audit` | ✅ |
 | [transcriptapi](https://github.com/ZeroPointRepo/youtube-mcp) | Search YouTube and pull transcripts | 9 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/transcriptapi.cordis.yml` | — |
-| [dsh-qingagent](https://github.com/void2anything/dsh-qingagent) | Draft documents in chat and review each edit before it lands | 4 | `npx @deepseek-ai/dsh plugin --profile web add github:void2anything/dsh-qingagent` | — |
 | [zillapi](https://github.com/ZeroPointRepo/zillow-mcp) | Look up Zillow property data | 1 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/zillapi.cordis.yml` | — |
 | [dsh-dictation](https://github.com/WSL043/dsh-dictation) | Speak into an editable composer draft without auto-sending | 0 | `dsh plugin --profile web add dsh-dictation@0.1.0-beta.1` | — |
 
-<sub>225 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
+<sub>224 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
 [`build-catalog.mjs`](.github/scripts/build-catalog.mjs) on every
 [verify-installs](.github/workflows/verify-installs.yml) run · ✅ = the install command still appears in the
 project's own README · edits here are overwritten, send them to [README.md](README.md).</sub>

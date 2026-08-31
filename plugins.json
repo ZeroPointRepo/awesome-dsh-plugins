@@ -3,7 +3,7 @@
   "url": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "source": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "updated": "2026-08-31",
-  "count": 225,
+  "count": 224,
   "categories": {
     "unsorted": {
       "en": "Unsorted"
@@ -3610,24 +3610,6 @@
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/ZeroPointRepo/youtube-mcp/HEAD/public/brand/logo-512.png"
-      ]
-    },
-    {
-      "name": "dsh-qingagent",
-      "owner": "void2anything",
-      "url": "https://github.com/void2anything/dsh-qingagent",
-      "category": "domain-specific",
-      "description": {
-        "en": "Draft documents in chat and review each edit before it lands"
-      },
-      "stars": 4,
-      "install": "npx @deepseek-ai/dsh plugin --profile web add github:void2anything/dsh-qingagent",
-      "added": "2026-08-31",
-      "screenshots": [
-        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/logo.svg",
-        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-demo.gif",
-        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-diagram.webp",
-        "https://raw.githubusercontent.com/void2anything/dsh-qingagent/main/docs/assets/dsh-table-math.webp"
       ]
     },
     {
