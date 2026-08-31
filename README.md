@@ -180,7 +180,7 @@ if you would rather browse from inside the app.
 
 ### See and understand
 
-- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,789★, MIT.
+- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,790★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -238,7 +238,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Add a multi-provider web search backend** with [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) by [anysearch-team](https://github.com/anysearch-team). One search tool that routes across several providers instead of locking you to one. 380★, MIT.
+- **Add a multi-provider web search backend** with [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) by [anysearch-team](https://github.com/anysearch-team). One search tool that routes across several providers instead of locking you to one. 381★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -332,7 +332,7 @@ if you would rather browse from inside the app.
 
 ### Reshape the interface
 
-- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 6,554★, Apache-2.0.
+- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 6,555★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -376,7 +376,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get an open sidebar foundation other plugins can register into** with [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) by [omdsh-dev](https://github.com/omdsh-dev). Built-in file editor, terminal, Git, and sub-agent pages out of the box. 3,158★, MIT.
+- **Get an open sidebar foundation other plugins can register into** with [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) by [omdsh-dev](https://github.com/omdsh-dev). Built-in file editor, terminal, Git, and sub-agent pages out of the box. 3,162★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -387,7 +387,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **See exactly what your context window is made of** with [dsh-context](https://github.com/bowenliang123/dsh-context) by [bowenliang123](https://github.com/bowenliang123). A context dashboard and browser for composition, breakdown, and compaction events. 1,193★, Apache-2.0.
+- **See exactly what your context window is made of** with [dsh-context](https://github.com/bowenliang123/dsh-context) by [bowenliang123](https://github.com/bowenliang123). A context dashboard and browser for composition, breakdown, and compaction events. 1,195★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -572,7 +572,7 @@ if you would rather browse from inside the app.
 
 ### Run a team of agents
 
-- **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 1,224★, MIT.
+- **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 1,225★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -771,7 +771,7 @@ if you would rather browse from inside the app.
 
 ### Remote access and mobile
 
-- **Scan a QR code to reach your desktop DSH from your phone** with [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) by [shaobeichen](https://github.com/shaobeichen). Real-time mirrored access over LAN or the public internet. 846★, GPL-2.0.
+- **Scan a QR code to reach your desktop DSH from your phone** with [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) by [shaobeichen](https://github.com/shaobeichen). Real-time mirrored access over LAN or the public internet. 847★, GPL-2.0.
 
   <details>
   <summary>Install</summary>

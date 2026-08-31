@@ -69,7 +69,7 @@
       "description": {
         "en": ":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done."
       },
-      "stars": 27098,
+      "stars": 27099,
       "install": "dsh plugin --profile web add @picgo/dsh-plugin",
       "added": "2026-08-24",
       "screenshots": [
@@ -87,7 +87,7 @@
       "description": {
         "en": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."
       },
-      "stars": 6985,
+      "stars": 6987,
       "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
       "added": "2026-08-31"
     },
@@ -99,7 +99,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6554,
+      "stars": 6555,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -133,8 +133,8 @@
       "description": {
         "en": "Paste an image and get structured evidence back"
       },
-      "stars": 3789,
-      "install": "dsh plugin --profile web add @liustack/modlens@3.25.0",
+      "stars": 3790,
+      "install": "dsh plugin --profile web add @liustack/modlens@3.25.3",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
       "screenshots": [
@@ -152,7 +152,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 3157,
+      "stars": 3162,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -189,7 +189,7 @@
       "description": {
         "en": "Run DSH in a Claude Code style terminal UI"
       },
-      "stars": 2736,
+      "stars": 2737,
       "install": "dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui",
       "added": "2026-08-24",
       "npm": "@deepseek-harness-tui/dsh-tui",
@@ -261,7 +261,7 @@
       "description": {
         "en": "Dispatch work across a team of agents"
       },
-      "stars": 1223,
+      "stars": 1225,
       "install": "dsh plugin --profile web add @nanmicoder/dsh-agent-teams",
       "added": "2026-08-24",
       "npm": "@nanmicoder/dsh-agent-teams",
@@ -278,7 +278,7 @@
       "description": {
         "en": "See exactly what your context window is made of"
       },
-      "stars": 1193,
+      "stars": 1195,
       "install": "dsh plugin --profile web add dsh-context",
       "added": "2026-08-24",
       "npm": "dsh-context",
@@ -343,6 +343,24 @@
       ]
     },
     {
+      "name": "dsh-pocket",
+      "owner": "shaobeichen",
+      "url": "https://github.com/shaobeichen/dsh-pocket",
+      "category": "remote-access-and-mobile",
+      "description": {
+        "en": "Scan a QR code to reach your desktop DSH from your phone"
+      },
+      "stars": 847,
+      "install": "dsh plugin --profile web add dsh-pocket -w",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1334962266/fd8ec773-50a4-4bd1-9b94-3c9d4e1731ec",
+        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/banner.jpg",
+        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/interface.jpg",
+        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/entry.jpg"
+      ]
+    },
+    {
       "name": "dsh-vision-toolkit",
       "owner": "Anionex",
       "url": "https://github.com/Anionex/dsh-vision-toolkit",
@@ -359,24 +377,6 @@
         "https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/HEAD/assets/logo_aihubmix.png",
         "https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/HEAD/assets/logo_eapi_dark.png",
         "https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/HEAD/assets/dsh-view-example.png"
-      ]
-    },
-    {
-      "name": "dsh-pocket",
-      "owner": "shaobeichen",
-      "url": "https://github.com/shaobeichen/dsh-pocket",
-      "category": "remote-access-and-mobile",
-      "description": {
-        "en": "Scan a QR code to reach your desktop DSH from your phone"
-      },
-      "stars": 846,
-      "install": "dsh plugin --profile web add dsh-pocket -w",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1334962266/fd8ec773-50a4-4bd1-9b94-3c9d4e1731ec",
-        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/banner.jpg",
-        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/interface.jpg",
-        "https://raw.githubusercontent.com/shaobeichen/dsh-pocket/HEAD/docs/entry.jpg"
       ]
     },
     {
@@ -475,7 +475,7 @@
         "en": "Attach a workspace file to your prompt by searching for it"
       },
       "stars": 499,
-      "install": "dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.6.8.tar.gz",
+      "install": "dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.6.9.tar.gz",
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/FSMargoo/dsh-at-file/HEAD/assets/screenshots/workspace-path-picker.png",
@@ -491,7 +491,7 @@
       "description": {
         "en": "Install a desktop pet in one line"
       },
-      "stars": 487,
+      "stars": 488,
       "install": "dsh plugin --profile web add dsh-pet",
       "added": "2026-08-24",
       "npm": "dsh-pet",
@@ -579,7 +579,7 @@
       "description": {
         "en": "Add a multi-provider web search backend"
       },
-      "stars": 379,
+      "stars": 381,
       "install": "dsh plugin --profile web add @anysearch/anysearch-dsh",
       "added": "2026-08-24",
       "npm": "@anysearch/anysearch-dsh",
@@ -587,6 +587,25 @@
         "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/anysearch-logo.svg",
         "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/discord-community-qr.png",
         "https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/HEAD/docs/assets/wechat-community-qr.jpg"
+      ]
+    },
+    {
+      "name": "dsh-genui",
+      "owner": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev/dsh-genui",
+      "category": "reshape-the-interface",
+      "description": {
+        "en": "Get interactive UI components inline in replies"
+      },
+      "stars": 380,
+      "install": "dsh plugin --profile web add @changfenhuang/dsh-genui",
+      "added": "2026-08-24",
+      "npm": "@changfenhuang/dsh-genui",
+      "screenshots": [
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/demo-thumb.png",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase-panel.png",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase-plot.png",
+        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase.png"
       ]
     },
     {
@@ -605,24 +624,6 @@
         "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/assets/orchestration.svg",
         "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/web-team-topology.png",
         "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/telegram-console.png"
-      ]
-    },
-    {
-      "name": "dsh-genui",
-      "owner": "omdsh-dev",
-      "url": "https://github.com/omdsh-dev/dsh-genui",
-      "category": "reshape-the-interface",
-      "description": {
-        "en": "Get interactive UI components inline in replies"
-      },
-      "stars": 378,
-      "install": "dsh plugin --profile web add git+https://github.com/omdsh-dev/dsh-genui.git",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/demo-thumb.png",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase-panel.png",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase-plot.png",
-        "https://raw.githubusercontent.com/omdsh-dev/dsh-genui/HEAD/assets/showcase.png"
       ]
     },
     {
@@ -664,7 +665,7 @@
         "en": "Ask the web or X and get structured evidence back"
       },
       "stars": 326,
-      "install": "dsh plugin --profile web add @liustack/modsearch@5.9.1",
+      "install": "dsh plugin --profile web add @liustack/modsearch@5.10.0",
       "added": "2026-08-24",
       "npm": "@liustack/modsearch",
       "screenshots": [
@@ -907,7 +908,7 @@
       "description": {
         "en": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐"
       },
-      "stars": 221,
+      "stars": 223,
       "install": "dsh plugin --profile web add https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.zip",
       "added": "2026-08-24",
       "screenshots": [
@@ -943,7 +944,7 @@
       "description": {
         "en": "Preview and edit spreadsheets, docs, and slides inline"
       },
-      "stars": 209,
+      "stars": 210,
       "install": "dsh plugin --profile web add dsh-univer-office",
       "added": "2026-08-24",
       "npm": "dsh-univer-office",
@@ -1303,7 +1304,7 @@
       "description": {
         "en": "基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自己熟练的才好用，好的方法论=好的生态）"
       },
-      "stars": 139,
+      "stars": 140,
       "install": "dsh plugin --profile web add github:SeaOf0/dsh-redteam-model",
       "added": "2026-08-25",
       "screenshots": [
@@ -1311,6 +1312,25 @@
         "https://raw.githubusercontent.com/SeaOf0/dsh-redteam-model/HEAD/功能展示/2.png",
         "https://raw.githubusercontent.com/SeaOf0/dsh-redteam-model/HEAD/功能展示/3.png",
         "https://raw.githubusercontent.com/SeaOf0/dsh-redteam-model/HEAD/功能展示/4.png"
+      ]
+    },
+    {
+      "name": "ds-harness-remote",
+      "owner": "liguobao",
+      "url": "https://github.com/liguobao/ds-harness-remote",
+      "category": "unsorted",
+      "description": {
+        "en": "一个基于 DeepSeek Harness 插件机制构建的多端远程访问方案，通过安全、低延迟、端到端加密的 P2P 优先网络，支持从 PC、Android 和 Web 随时访问并操作远程 Harness。 (A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling PC, Android, and Web clients to securely access and operate a remote Harness over a low-latency, end-to-end encrypted, P2P-first network.)"
+      },
+      "stars": 138,
+      "install": "dsh plugin --profile web add ds-harness-remote@0.4.2",
+      "added": "2026-08-31",
+      "npm": "ds-harness-remote",
+      "screenshots": [
+        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/logo.svg",
+        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/host-list.png",
+        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/remote.png",
+        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/mobile-list.jpg"
       ]
     },
     {
@@ -1339,25 +1359,6 @@
       "stars": 137,
       "install": "dsh plugin --profile web add @icelily/dsh-gitbash-preset",
       "added": "2026-08-24"
-    },
-    {
-      "name": "ds-harness-remote",
-      "owner": "liguobao",
-      "url": "https://github.com/liguobao/ds-harness-remote",
-      "category": "unsorted",
-      "description": {
-        "en": "一个基于 DeepSeek Harness 插件机制构建的多端远程访问方案，通过安全、低延迟、端到端加密的 P2P 优先网络，支持从 PC、Android 和 Web 随时访问并操作远程 Harness。 (A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling PC, Android, and Web clients to securely access and operate a remote Harness over a low-latency, end-to-end encrypted, P2P-first network.)"
-      },
-      "stars": 137,
-      "install": "dsh plugin --profile web add ds-harness-remote@0.4.2",
-      "added": "2026-08-31",
-      "npm": "ds-harness-remote",
-      "screenshots": [
-        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/logo.svg",
-        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/host-list.png",
-        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/remote.png",
-        "https://raw.githubusercontent.com/liguobao/ds-harness-remote/HEAD/docs/images/mobile-list.jpg"
-      ]
     },
     {
       "name": "gal-view",
@@ -1881,7 +1882,7 @@
       "description": {
         "en": "DSH网络设置插件 \\| DeepSeek Harness network diagnostics, proxy detection and repair for Windows/WSL/MacOS"
       },
-      "stars": 90,
+      "stars": 91,
       "install": "dsh plugin --profile web add github:kanneiren/dsh-network-settings",
       "added": "2026-08-26",
       "screenshots": [
@@ -3163,6 +3164,18 @@
       "npm": "picturereader"
     },
     {
+      "name": "dsh-openmaic",
+      "owner": "THU-MAIC",
+      "url": "https://github.com/THU-MAIC/dsh-openmaic",
+      "category": "unsorted",
+      "description": {
+        "en": "OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching"
+      },
+      "stars": 35,
+      "install": "dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-computer-use",
       "owner": "Anionex",
       "url": "https://github.com/Anionex/dsh-computer-use",
@@ -3229,18 +3242,6 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/e5bb97b6-051e-45a9-b7a9-8437fe400a4c"
       ]
-    },
-    {
-      "name": "dsh-openmaic",
-      "owner": "THU-MAIC",
-      "url": "https://github.com/THU-MAIC/dsh-openmaic",
-      "category": "unsorted",
-      "description": {
-        "en": "OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching"
-      },
-      "stars": 34,
-      "install": "dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-file-review",
@@ -3673,7 +3674,7 @@
         "en": "Speak into an editable composer draft without auto-sending"
       },
       "stars": 0,
-      "install": "dsh plugin --profile web add dsh-dictation@0.1.0-beta.1",
+      "install": "dsh plugin --profile web add dsh-dictation@0.1.0-beta.2",
       "added": "2026-08-31",
       "npm": "dsh-dictation",
       "screenshots": [
