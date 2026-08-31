@@ -218,7 +218,6 @@ organized list is [README.md](README.md).
 | [reef](https://github.com/huey1in/reef) | Get browser automation, an MCP server, and GitHub or GitLab review in one install | 19 | `dsh plugin --profile web add dsh-reef` | ✅ |
 | [dsh-file-explorer](https://github.com/joejojoking-cloud/dsh-file-explorer) | Get a real file tree in the sidebar | 19 | `dsh plugin --profile web add dsh-file-explorer` | ✅ |
 | [dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) | Add a three-model vision and image-generation fallback chain | 19 | `dsh plugin --profile web add github:MJorgin/dsh-media-skills` | ✅ |
-| [dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) | Keep branching from any answer at any depth | 19 | `dsh plugin --profile web add dsh-nested-followups` | ✅ |
 | [dsh-office](https://github.com/omdsh-dev/dsh-office) | Generate, read, and edit Office files in chat | 18 | `dsh plugin --profile web add @huiliyi37/dsh-office` | ✅ |
 | [dsh-robotic-harness](https://github.com/dingkaihu63/dsh-robotic-harness) | Run embodied-intelligence research from DSH | 17 | `dsh plugin --profile rh-demo add ./packages/dsh-bundle` | ✅ |
 | [dsh-client-pricing](https://github.com/Miyazawai/dsh-client-pricing) | See the live model price in the session header | 17 | `dsh plugin --profile web add dsh-client-pricing` | ✅ |
@@ -230,7 +229,7 @@ organized list is [README.md](README.md).
 | [zillapi](https://github.com/ZeroPointRepo/zillow-mcp) | Look up Zillow property data | 1 | `curl -O https://raw.githubusercontent.com/ZeroPointRepo/awesome-dsh-plugins/main/mcp-configs/zillapi.cordis.yml` | — |
 | [dsh-dictation](https://github.com/WSL043/dsh-dictation) | Speak into an editable composer draft without auto-sending | 0 | `dsh plugin --profile web add dsh-dictation@0.1.0-beta.1` | — |
 
-<sub>224 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
+<sub>223 plugins · same rows as data in [catalog.csv](catalog.csv) · rebuilt by
 [`build-catalog.mjs`](.github/scripts/build-catalog.mjs) on every
 [verify-installs](.github/workflows/verify-installs.yml) run · ✅ = the install command still appears in the
 project's own README · edits here are overwritten, send them to [README.md](README.md).</sub>

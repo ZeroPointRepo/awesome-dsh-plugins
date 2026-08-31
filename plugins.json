@@ -3,7 +3,7 @@
   "url": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "source": "https://github.com/ZeroPointRepo/awesome-dsh-plugins",
   "updated": "2026-08-31",
-  "count": 224,
+  "count": 223,
   "categories": {
     "unsorted": {
       "en": "Unsorted"
@@ -3481,24 +3481,6 @@
         "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/HEAD/docs/screenshots/demo-paste.png",
         "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/HEAD/docs/screenshots/how-it-works.png",
         "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/HEAD/examples/generated/fox-forest.jpg"
-      ]
-    },
-    {
-      "name": "dsh-nested-followups",
-      "owner": "sluminositys",
-      "url": "https://github.com/sluminositys/dsh-nested-followups",
-      "category": "reshape-the-interface",
-      "description": {
-        "en": "Keep branching from any answer at any depth"
-      },
-      "stars": 19,
-      "install": "dsh plugin --profile web add dsh-nested-followups",
-      "added": "2026-08-31",
-      "npm": "dsh-nested-followups",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1339103577/987b9333-c254-4d06-b340-2fea44c9fe22",
-        "https://raw.githubusercontent.com/sluminositys/dsh-nested-followups/HEAD/assets/demo.gif",
-        "https://raw.githubusercontent.com/sluminositys/dsh-nested-followups/HEAD/assets/recursive-branching.png"
       ]
     },
     {
