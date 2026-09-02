@@ -140,10 +140,35 @@ if (found.size === 0) {
   process.exit(1);
 }
 
+
+// ─── WHAT A STAR COUNT IS ALLOWED TO DECIDE IN THIS FILE ─────────────────────────────────────
+// A star count is a purchasable number. This catalog's standing rule is "we catalog code, not
+// stars": an entry earns its place by having an install command that actually resolves, which is
+// what verify-installs.mjs measures and what the ✅ column reports. Nothing below removes an
+// entry over its star count, and nothing should.
+//
+// But stars are read in three different places here, and they are NOT the same kind of use.
+// The test is PRIVILEGE, NOT PRESENCE — what does the number get to DECIDE?
+//   1. SHORTLIST  (`ranked.slice(0, MAX_CANDIDATES)`, just below) — stars decide WHO GETS CHECKED
+//      AT ALL. A high count pushes a lower-starred plugin off the end of the run entirely. This
+//      is the consequential one, and it is invisible in the output: the evicted entry leaves no
+//      trace. If MAX_CANDIDATES ever binds tightly, this is the line to revisit first.
+//   2. ROW ORDER  (`rows.sort((a, b) => b.stars - a.stars)`) — stars decide RANK. Anything
+//      downstream that treats "top of CATALOG.md" as a merit signal inherits that.
+//   3. DISPLAY    (the star cell in the table body) — the number is reported as a public fact
+//      about the repo. Reporting a public number is not endorsing it; this one is fine as-is.
+//
+// Gates 1 and 2 grant a ranking privilege that a star count cannot actually evidence. Gate 3 does
+// not. Keep them distinguished: if a future change wants to discount a star reading, it should
+// neutralise RANK (e.g. order by the first-seen reading rather than the current one) and leave
+// PRESENCE and DISPLAY untouched. Do not turn this file into a filter.
+// ─────────────────────────────────────────────────────────────────────────────────────────────
+
 const curatedSlugs = new Set(curated.map((e) => e.slug.toLowerCase()));
 const ranked = [...found.values()]
   .filter((it) => !curatedSlugs.has(it.full_name.toLowerCase()))
   .sort((a, b) => b.stargazers_count - a.stargazers_count);
+// GATE 1 (see the note above): stars decide who gets checked at all.
 const shortlist = ranked.slice(0, MAX_CANDIDATES);
 if (ranked.length > shortlist.length) {
   console.log(`Capped at MAX_CANDIDATES=${MAX_CANDIDATES}: ${ranked.length - shortlist.length} lower-starred candidates not checked this run`);
@@ -358,6 +383,7 @@ console.log(
     `(${og.size} from an uploaded social preview). Data capture only, CATALOG.md is unchanged.`
 );
 
+// GATE 2 (see the note above): stars become rank here.
 rows.sort((a, b) => b.stars - a.stars || a.slug.localeCompare(b.slug));
 
 console.log(
@@ -394,6 +420,7 @@ function oneLine(s, max = 120) {
   return t.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
 
+// GATE 3 (see the note above): display only — deliberately left alone.
 const stars = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k` : String(n));
 
 const body = rows
