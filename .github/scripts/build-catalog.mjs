@@ -20,6 +20,12 @@
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { scope } from './lib/markers.mjs';
+import { rankUnknownIds, byStarRank } from './lib/star-rank.mjs';
+
+// Ordering only: some published star counts cannot be read as measurements. Empty unless the
+// environment supplies ids, in which case those entries sort last instead of high. Presence and
+// display are untouched — see lib/star-rank.mjs.
+const RANK_UNKNOWN = rankUnknownIds();
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
 const MAX_CANDIDATES = Number(process.env.MAX_CANDIDATES || 400);
@@ -142,32 +148,25 @@ if (found.size === 0) {
 
 
 // ─── WHAT A STAR COUNT IS ALLOWED TO DECIDE IN THIS FILE ─────────────────────────────────────
-// A star count is a purchasable number. This catalog's standing rule is "we catalog code, not
-// stars": an entry earns its place by having an install command that actually resolves, which is
-// what verify-installs.mjs measures and what the ✅ column reports. Nothing below removes an
-// entry over its star count, and nothing should.
-//
-// But stars are read in three different places here, and they are NOT the same kind of use.
-// The test is PRIVILEGE, NOT PRESENCE — what does the number get to DECIDE?
-//   1. SHORTLIST  (`ranked.slice(0, MAX_CANDIDATES)`, just below) — stars decide WHO GETS CHECKED
-//      AT ALL. A high count pushes a lower-starred plugin off the end of the run entirely. This
-//      is the consequential one, and it is invisible in the output: the evicted entry leaves no
-//      trace. If MAX_CANDIDATES ever binds tightly, this is the line to revisit first.
-//   2. ROW ORDER  (`rows.sort((a, b) => b.stars - a.stars)`) — stars decide RANK. Anything
-//      downstream that treats "top of CATALOG.md" as a merit signal inherits that.
-//   3. DISPLAY    (the star cell in the table body) — the number is reported as a public fact
-//      about the repo. Reporting a public number is not endorsing it; this one is fine as-is.
-//
-// Gates 1 and 2 grant a ranking privilege that a star count cannot actually evidence. Gate 3 does
-// not. Keep them distinguished: if a future change wants to discount a star reading, it should
-// neutralise RANK (e.g. order by the first-seen reading rather than the current one) and leave
-// PRESENCE and DISPLAY untouched. Do not turn this file into a filter.
+// A star count is a purchasable number, and this file reads stars for three different purposes:
+//   PRESENCE — never decided by stars. An entry earns its row by having an install command that
+//              resolves. Nothing here drops a row over its count.
+//   ORDER    — the discovery sort below and the row sort further down. This is the consequential
+//              one: past the MAX_CANDIDATES cap, a high count evicts a lower-counted project from
+//              the run entirely and leaves no trace in the output.
+//   DISPLAY  — the star cell in the table. Reporting a public number is not endorsing it; left
+//              alone deliberately.
+// ORDER is now guarded: counts that cannot be read as measurements sort last rather than high
+// (lib/star-rank.mjs), so they cannot take a discovery slot from an honest entry. The guard is
+// inert unless the environment configures it. See lib/star-rank.test.mjs for the control that
+// reproduces the eviction and then shows the honest entry surviving.
 // ─────────────────────────────────────────────────────────────────────────────────────────────
 
 const curatedSlugs = new Set(curated.map((e) => e.slug.toLowerCase()));
 const ranked = [...found.values()]
   .filter((it) => !curatedSlugs.has(it.full_name.toLowerCase()))
-  .sort((a, b) => b.stargazers_count - a.stargazers_count);
+  .sort(byStarRank({ id: (x) => x.id, stars: (x) => x.stargazers_count,
+                     tiebreak: (a, b) => a.full_name.localeCompare(b.full_name) }, RANK_UNKNOWN));
 // GATE 1 (see the note above): stars decide who gets checked at all.
 const shortlist = ranked.slice(0, MAX_CANDIDATES);
 if (ranked.length > shortlist.length) {
@@ -342,6 +341,7 @@ await run(curated, async (e) => {
   rows.push({
     name: e.name,
     slug: j.full_name,
+    id: j.id,
     blurb: e.headline || j.description || '',
     stars: j.stargazers_count,
     cmd: e.cmd,
@@ -362,6 +362,7 @@ await run(shortlist, async (it) => {
   rows.push({
     name: it.full_name.split('/')[1],
     slug: it.full_name,
+    id: it.id,
     blurb: it.description || '',
     stars: it.stargazers_count,
     cmd,
@@ -384,7 +385,8 @@ console.log(
 );
 
 // GATE 2 (see the note above): stars become rank here.
-rows.sort((a, b) => b.stars - a.stars || a.slug.localeCompare(b.slug));
+rows.sort(byStarRank({ id: (x) => x.id, stars: (x) => x.stars,
+                       tiebreak: (a, b) => a.slug.localeCompare(b.slug) }, RANK_UNKNOWN));
 
 console.log(
   `Rows: ${rows.length} (${rows.filter((r) => r.curated).length} curated, ${rows.filter((r) => !r.curated).length} discovered). ` +
