@@ -87,7 +87,7 @@
       "description": {
         "en": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."
       },
-      "stars": 7022,
+      "stars": 7024,
       "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
       "added": "2026-08-31"
     },
@@ -99,7 +99,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6679,
+      "stars": 6681,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -152,7 +152,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 3223,
+      "stars": 3225,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -171,7 +171,7 @@
       "description": {
         "en": "Browse and install plugins without leaving the app"
       },
-      "stars": 3025,
+      "stars": 3026,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-24",
       "npm": "dshmarket",
@@ -245,7 +245,7 @@
       "description": {
         "en": "DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装"
       },
-      "stars": 1581,
+      "stars": 1584,
       "install": "dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget",
       "added": "2026-08-24",
       "screenshots": [
@@ -312,7 +312,7 @@
       "description": {
         "en": "Connect nine chat platforms to DSH at once"
       },
-      "stars": 1058,
+      "stars": 1060,
       "install": "dsh plugin --profile web add -w @xmanrui/dsh-im",
       "added": "2026-08-24",
       "npm": "@xmanrui/dsh-im",
@@ -439,7 +439,7 @@
       "description": {
         "en": "AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。"
       },
-      "stars": 549,
+      "stars": 550,
       "install": "dsh plugin --profile web add @ethanyoq/dsh-ai-novel-writer",
       "added": "2026-08-24",
       "npm": "@ethanyoq/dsh-ai-novel-writer",
@@ -560,7 +560,7 @@
       "description": {
         "en": "Turn the whole interface into frosted glass"
       },
-      "stars": 399,
+      "stars": 398,
       "install": "dsh plugin --profile web add dsh-client-ui-aqua",
       "added": "2026-08-24",
       "npm": "dsh-client-ui-aqua",
@@ -683,7 +683,7 @@
       "description": {
         "en": "电子发票整理与报销准备工具：从邮箱批量收集 PDF/OFD/XML 发票，OCR 识别、分类归档并生成 Excel 汇总；提供 Windows/macOS 桌面版与 DSH 插件。"
       },
-      "stars": 328,
+      "stars": 329,
       "install": "dsh plugin --profile web add @ethanyoq/dsh-invoice-downloader",
       "added": "2026-08-24",
       "npm": "@ethanyoq/dsh-invoice-downloader",
@@ -834,6 +834,24 @@
       "added": "2026-08-24"
     },
     {
+      "name": "dsh-purge",
+      "owner": "YuJunZhiXue",
+      "url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐"
+      },
+      "stars": 261,
+      "install": "dsh plugin --profile web add https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.zip",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/preview/settings.png",
+        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/preview/rules.png",
+        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/banner.svg",
+        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/appreciate.png"
+      ]
+    },
+    {
       "name": "pilot-harness",
       "owner": "op7418",
       "url": "https://github.com/op7418/pilot-harness",
@@ -846,24 +864,6 @@
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/op7418/pilot-harness/HEAD/apps/desktop/assets/brand-icon.png"
-      ]
-    },
-    {
-      "name": "dsh-purge",
-      "owner": "YuJunZhiXue",
-      "url": "https://github.com/YuJunZhiXue/dsh-purge",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐"
-      },
-      "stars": 260,
-      "install": "dsh plugin --profile web add https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.zip",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/preview/settings.png",
-        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/preview/rules.png",
-        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/banner.svg",
-        "https://raw.githubusercontent.com/YuJunZhiXue/dsh-purge/HEAD/docs/appreciate.png"
       ]
     },
     {
@@ -926,7 +926,7 @@
       "description": {
         "en": "Preview and edit spreadsheets, docs, and slides inline"
       },
-      "stars": 233,
+      "stars": 234,
       "install": "dsh plugin --profile web add dsh-univer-office",
       "added": "2026-08-24",
       "npm": "dsh-univer-office",
@@ -1124,7 +1124,7 @@
       "description": {
         "en": "基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自己熟练的才好用，好的方法论=好的生态）"
       },
-      "stars": 165,
+      "stars": 166,
       "install": "dsh plugin --profile web add github:SeaOf0/dsh-redteam-model",
       "added": "2026-08-25",
       "screenshots": [
@@ -1288,7 +1288,7 @@
       "description": {
         "en": "一个基于 DeepSeek Harness 插件机制构建的多端远程访问方案，通过安全、低延迟、端到端加密的 P2P 优先网络，支持从 PC、Android 和 Web 随时访问并操作远程 Harness。 (A multi-device remote access solution built on the DeepSeek Harness plugin system, enabling PC, Android, and Web clients to securely access and operate a remote Harness over a low-latency, end-to-end encrypted, P2P-first network.)"
       },
-      "stars": 152,
+      "stars": 153,
       "install": "dsh plugin --profile web add ds-harness-remote@0.4.3",
       "added": "2026-08-31",
       "npm": "ds-harness-remote",
@@ -1723,7 +1723,7 @@
       "description": {
         "en": "Complete reverse-skill (87 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack."
       },
-      "stars": 110,
+      "stars": 111,
       "install": "dsh plugin add github:dhicoc/dsh-reverse-skill",
       "added": "2026-08-24"
     },
@@ -1868,7 +1868,7 @@
       "description": {
         "en": "Write declarative allow, deny, and ask rules for tools"
       },
-      "stars": 100,
+      "stars": 101,
       "install": "dsh plugin --profile web add dsh-permission-rules",
       "added": "2026-08-24",
       "npm": "dsh-permission-rules"
@@ -2009,7 +2009,7 @@
       "description": {
         "en": "🌊 Persistent dock & fully-customizable balance/usage panel for DeepSeek Harness — activity heatmap, dual-channel comparison, local-only & privacy-first"
       },
-      "stars": 82,
+      "stars": 83,
       "install": "dsh plugin --profile web add \"github:Aisland-SJL/dsh-usage\"",
       "added": "2026-08-24",
       "screenshots": [
@@ -2181,6 +2181,18 @@
       ]
     },
     {
+      "name": "dsh-talk-map",
+      "owner": "Tasihi89",
+      "url": "https://github.com/Tasihi89/dsh-talk-map",
+      "category": "unsorted",
+      "description": {
+        "en": "Visual conversation map for DeepSeek Harness — sessions as cards on a whiteboard: drag to arrange, double-click to chat, draw an edge to fork with injected context. ADHD-friendly spatial memory. · DSH 可视化对话地图"
+      },
+      "stars": 75,
+      "install": "dsh plugin --profile web add github:Tasihi89/dsh-talk-map",
+      "added": "2026-08-25"
+    },
+    {
       "name": "dsh-web-mobile",
       "owner": "mexiaosqwq",
       "url": "https://github.com/mexiaosqwq/dsh-web-mobile",
@@ -2200,16 +2212,16 @@
       ]
     },
     {
-      "name": "dsh-talk-map",
-      "owner": "Tasihi89",
-      "url": "https://github.com/Tasihi89/dsh-talk-map",
+      "name": "dsh-meow-memory",
+      "owner": "Phant0Meow",
+      "url": "https://github.com/Phant0Meow/dsh-meow-memory",
       "category": "unsorted",
       "description": {
-        "en": "Visual conversation map for DeepSeek Harness — sessions as cards on a whiteboard: drag to arrange, double-click to chat, draw an edge to fork with injected context. ADHD-friendly spatial memory. · DSH 可视化对话地图"
+        "en": "Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fact/lesson/topic/rules), BM25 retrieval, per-window dream consolidation. 跨会话七层长期记忆插件。"
       },
       "stars": 74,
-      "install": "dsh plugin --profile web add github:Tasihi89/dsh-talk-map",
-      "added": "2026-08-25"
+      "install": "dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory",
+      "added": "2026-08-31"
     },
     {
       "name": "dsh-codex-connect",
@@ -2229,18 +2241,6 @@
         "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/oauth-status.jpg",
         "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/model-selector.jpg"
       ]
-    },
-    {
-      "name": "dsh-meow-memory",
-      "owner": "Phant0Meow",
-      "url": "https://github.com/Phant0Meow/dsh-meow-memory",
-      "category": "unsorted",
-      "description": {
-        "en": "Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fact/lesson/topic/rules), BM25 retrieval, per-window dream consolidation. 跨会话七层长期记忆插件。"
-      },
-      "stars": 73,
-      "install": "dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory",
-      "added": "2026-08-31"
     },
     {
       "name": "dsh-stock-watch",
@@ -2559,6 +2559,32 @@
       "npm": "dsh-web-search-pro"
     },
     {
+      "name": "custom-first-control-prompt",
+      "owner": "WM-CODER",
+      "url": "https://github.com/WM-CODER/custom-first-control-prompt",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness plugin for insert custom prompt"
+      },
+      "stars": 60,
+      "install": "dsh plugin --profile web add @wm-coders/dsh-custom-first-control-prompt",
+      "added": "2026-08-24",
+      "npm": "@wm-coders/dsh-custom-first-control-prompt"
+    },
+    {
+      "name": "SpecFusion",
+      "owner": "wxkingstar",
+      "url": "https://github.com/wxkingstar/SpecFusion",
+      "category": "unsorted",
+      "description": {
+        "en": "在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。"
+      },
+      "stars": 60,
+      "install": "dsh plugin --profile web add @wxkingstar/specfusion-dsh",
+      "added": "2026-08-24",
+      "npm": "@wxkingstar/specfusion-dsh"
+    },
+    {
       "name": "plugin-registry",
       "owner": "vlln",
       "url": "https://github.com/vlln/plugin-registry",
@@ -2572,32 +2598,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/vlln/plugin-registry/HEAD/screenshots/console-panel.png"
       ]
-    },
-    {
-      "name": "custom-first-control-prompt",
-      "owner": "WM-CODER",
-      "url": "https://github.com/WM-CODER/custom-first-control-prompt",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness plugin for insert custom prompt"
-      },
-      "stars": 59,
-      "install": "dsh plugin --profile web add @wm-coders/dsh-custom-first-control-prompt",
-      "added": "2026-08-24",
-      "npm": "@wm-coders/dsh-custom-first-control-prompt"
-    },
-    {
-      "name": "SpecFusion",
-      "owner": "wxkingstar",
-      "url": "https://github.com/wxkingstar/SpecFusion",
-      "category": "unsorted",
-      "description": {
-        "en": "在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。"
-      },
-      "stars": 59,
-      "install": "dsh plugin --profile web add @wxkingstar/specfusion-dsh",
-      "added": "2026-08-24",
-      "npm": "@wxkingstar/specfusion-dsh"
     },
     {
       "name": "dsh-session-manager",
@@ -2725,6 +2725,18 @@
       ]
     },
     {
+      "name": "dsh-mcp-panel",
+      "owner": "PerryLink",
+      "url": "https://github.com/PerryLink/dsh-mcp-panel",
+      "category": "unsorted",
+      "description": {
+        "en": "MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a tool trial console over the official tool pipeline (Apache-2.0, dsh-plugin)."
+      },
+      "stars": 53,
+      "install": "dsh plugin --profile web add \"github:PerryLink/dsh-mcp-panel#main\"",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-jingling",
       "owner": "Yi-111-a",
       "url": "https://github.com/Yi-111-a/dsh-jingling",
@@ -2774,18 +2786,6 @@
         "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/conversation.png",
         "https://raw.githubusercontent.com/MichengAI/dsh-codex-ui/HEAD/assets/screenshots/session-menu.png"
       ]
-    },
-    {
-      "name": "dsh-mcp-panel",
-      "owner": "PerryLink",
-      "url": "https://github.com/PerryLink/dsh-mcp-panel",
-      "category": "unsorted",
-      "description": {
-        "en": "MCP management console for the official DeepSeek Harness MCP client: /mcp command with health diagnostics and pipeline trial calls, a Settings MCP tab with server CRUD (approval-gated writes, automatic backups) and a tool trial console over the official tool pipeline (Apache-2.0, dsh-plugin)."
-      },
-      "stars": 52,
-      "install": "dsh plugin --profile web add \"github:PerryLink/dsh-mcp-panel#main\"",
-      "added": "2026-08-24"
     },
     {
       "name": "recruiting-copilot",
@@ -3181,17 +3181,17 @@
       ]
     },
     {
-      "name": "picturereader",
-      "owner": "jing-hy",
-      "url": "https://github.com/jing-hy/picturereader",
+      "name": "dsh-industry-research",
+      "owner": "PerryLink",
+      "url": "https://github.com/PerryLink/dsh-industry-research",
       "category": "unsorted",
       "description": {
-        "en": "DSH plugin: pixel-to-text image reading for text-only models. image_scan/image_ocr/image_sample tools + image-reading skill (34-image trained methodology). Pure local, optional PaddleOCR."
+        "en": "Industry and company research domain pack for DeepSeek Harness: methodology skills, industry chain mapping, public-source policy/news tracking, company research cards, and auditable research reports. Research only - not investment advice."
       },
-      "stars": 36,
-      "install": "dsh plugin --profile web add picturereader",
-      "added": "2026-08-24",
-      "npm": "picturereader"
+      "stars": 37,
+      "install": "dsh plugin --profile demo add dsh-industry-research",
+      "added": "2026-09-02",
+      "npm": "dsh-industry-research"
     },
     {
       "name": "dsh-codex-subscription",
