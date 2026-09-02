@@ -22,6 +22,7 @@
 // Usage: GH_TOKEN=... node .github/scripts/refresh-stars.mjs README.md
 
 import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+import { region } from './lib/markers.mjs';
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
 const file = process.argv[2] || 'README.md';
@@ -32,18 +33,11 @@ const H = {
 };
 
 const text = readFileSync(file, 'utf8');
-// Same catalog scoping as verify-installs.mjs: the Featured plugin entry and anything inside
-// the collapsed "Good to know" accordions are out of scope on purpose.
-const start = text.indexOf('## The catalog');
-const end = text.indexOf('## Good to know');
-if (start < 0 || end <= start) {
-  console.error('Could not locate the catalog section; refusing to rewrite blindly.');
-  process.exit(1);
-}
-
-const head = text.slice(0, start);
-const tail = text.slice(end);
-const lines = text.slice(start, end).split('\n');
+// Same catalog scoping as verify-installs.mjs and build-readme-sections.mjs, and now literally
+// the same code: the Featured plugin entry and anything inside the collapsed "Good to know"
+// accordions are out of scope on purpose.
+const { inner, head, tail } = region(text, 'catalog', file);
+const lines = inner.split('\n');
 
 // Match the house style exactly: plain integer, comma-grouped above 999 (1,570★ — not 1.6k★).
 // This file has never used k-suffixes and the refresher must not quietly introduce them; a

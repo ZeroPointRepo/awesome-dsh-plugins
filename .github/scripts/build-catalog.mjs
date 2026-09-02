@@ -19,6 +19,7 @@
 // Writes CATALOG.md and refreshes the entry count in README.md's "Full catalog" line.
 
 import { readFileSync, writeFileSync } from 'node:fs';
+import { scope } from './lib/markers.mjs';
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
 const MAX_CANDIDATES = Number(process.env.MAX_CANDIDATES || 400);
@@ -52,9 +53,11 @@ async function api(url, tries = 5) {
 // ---------------------------------------------------------------- README (curated entries)
 
 const readme = readFileSync('README.md', 'utf8');
-const cStart = readme.indexOf('## The catalog');
-const cEnd = readme.indexOf('## Good to know');
-const catalogText = cStart >= 0 && cEnd > cStart ? readme.slice(cStart, cEnd) : readme;
+// Marker-scoped, not heading-scoped. This used to window from "## The catalog" to "## Good to
+// know" and fall back to the WHOLE README when either heading moved, which silently pulled the
+// Featured entry, the Starter combos and every accordion into the entry count. `scope` aborts
+// instead. See .github/scripts/lib/markers.mjs.
+const catalogText = scope(readme, 'catalog');
 const rLines = catalogText.split('\n');
 
 const slugify = (s) =>
@@ -561,13 +564,8 @@ console.log(
     `${firstSeenNew} newly added to the first-seen ledger)`
 );
 
-// Keep the README's pointer line honest about the count.
-const line = `- **Full catalog:** every verified DSH plugin (${rows.length}) in [CATALOG.md](CATALOG.md)`;
-const updated = readme.replace(/^- \*\*Full catalog:\*\* every verified DSH plugin \(\d+\) in \[CATALOG\.md\]\(CATALOG\.md\)$/m, line);
-if (updated !== readme) {
-  writeFileSync('README.md', updated);
-  console.log('Refreshed the README catalog count');
-} else if (!readme.includes('CATALOG.md')) {
-  console.error('README.md has no "Full catalog" line to update.');
-  process.exit(1);
-}
+// The README's own numbers are NOT written here. build-readme-sections.mjs owns every count on
+// the page and derives them offline from plugins.json and badges/verified.json, between markers.
+// One number, one writer: this file used to rewrite the full-catalog line by matching its prose,
+// which meant the sentence could not be reworded without silently disabling the refresh.
+console.log(`plugins.json count is ${rows.length}; build-readme-sections.mjs writes it onto the page.`);

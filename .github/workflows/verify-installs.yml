@@ -15,7 +15,10 @@ on:
       - README.md
       - .github/scripts/verify-installs.mjs
       - .github/scripts/build-catalog.mjs
+      - .github/scripts/build-readme-sections.mjs
+      - .github/scripts/refresh-stars.mjs
       - .github/scripts/snapshot-stars.mjs
+      - .github/scripts/lib/markers.mjs
       - .github/workflows/verify-installs.yml
 
 permissions:
@@ -73,9 +76,11 @@ jobs:
         run: node .github/scripts/snapshot-stars.mjs CATALOG.md .github/data/star-history.json
 
       - name: Refresh the generated README sections
-        # The panorama and the recently-added list are derived, not written: one from the page's
-        # own catalog, one from the first-seen ledger. Offline, so it costs nothing to run every
-        # time, and a no-op when neither moved.
+        # Every number on the page is derived, not written: the headline count and the panorama
+        # from the page's own catalog markers, the recently-added list from the first-seen
+        # ledger, the resolved count from plugins.json and the coverage badge from both tiers.
+        # Offline, so it costs nothing to run every time, and a no-op when nothing moved. Runs
+        # last on purpose: its inputs are what the three steps above just rewrote.
         if: always()
         run: node .github/scripts/build-readme-sections.mjs README.md
 
@@ -116,11 +121,11 @@ jobs:
             # main is kept, ours only adds dates it does not have.
             node .github/scripts/merge-star-history.mjs "$tmp/star-history.json" .github/data/star-history.json
             cp -r "$tmp"/badges "$tmp"/CATALOG.md "$tmp"/catalog.csv "$tmp"/plugins.json .
-            count=$(grep -c '^| \[' CATALOG.md)
-            sed -i -E "s/^(- \*\*Full catalog:\*\* every verified DSH plugin \()[0-9]+(\) in .*)$/\1${count}\2/" README.md
-            # The marker regions are derived the same way on any tree, so re-derive rather than
-            # trying to replay them: both inputs (this README's catalog, the merged ledger) are
-            # already correct at this point.
+            # Every number on the page is re-derived here rather than replayed. It used to be a
+            # sed keyed to one sentence's exact wording, which meant rewording the sentence
+            # silently disabled the refresh on this path only. The marker regions are derived the
+            # same way on any tree, and all three of this script's inputs (the README's own
+            # catalog, the restored plugins.json, the restored badge) are correct at this point.
             node .github/scripts/build-readme-sections.mjs README.md
             git add $TRACKED
             git diff --cached --quiet && exit 0

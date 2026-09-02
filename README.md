@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
-  <img src="https://img.shields.io/badge/plugins-81-6799FE" alt="Plugin count" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FZeroPointRepo%2Fawesome-dsh-plugins%2Fmain%2Fbadges%2Fcoverage.json" alt="Install-verified and resolved counts" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FZeroPointRepo%2Fawesome-dsh-plugins%2Fmain%2Fbadges%2Fverified.json" alt="Install checks" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FZeroPointRepo%2Fawesome-dsh-plugins%2Fmain%2Fbadges%2Fchecked-at.json" alt="Last checked" />
   <img src="https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-dsh-plugins" alt="Last commit" />
@@ -15,7 +15,9 @@
 
 # Awesome DSH Plugins
 
-**76 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
+<!-- promise:start -->
+**81 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
+<!-- promise:end -->
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) is DeepSeek's
 open-source agent harness, built on one bet: everything is a plugin. This list catalogs the ones
@@ -48,7 +50,9 @@ that actually install, sorted by the job they do for you instead of the alphabet
 | **A set that works together**, not one plugin at a time | [Starter combos](#-starter-combos) |
 | **What landed since last time** | [Recently added](#-recently-added) |
 
-- **Full catalog:** every verified DSH plugin (226) in [CATALOG.md](CATALOG.md)
+<!-- fullcatalog:start -->
+- **Full catalog:** every DSH plugin this list resolves (223) in [CATALOG.md](CATALOG.md)
+<!-- fullcatalog:end -->
 - **Machine-readable:** the same rows as data in [catalog.csv](catalog.csv) and [plugins.json](plugins.json), which [dsh-market](https://github.com/dsh-market/dsh-market) reads if you point `DSHM_REGISTRY_URL` at its raw URL
 
 <details>
@@ -124,10 +128,11 @@ if you would rather browse from inside the app.
 
 ## 🎒 Starter combos
 
+<!-- combos:start -->
 - **Vision, web search, and memory**: [modlens](https://github.com/liustack/modlens) reads what you paste, [modsearch](https://github.com/liustack/modsearch) goes and looks things up, [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) keeps both between sessions.
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.25.3
+  dsh plugin --profile web add @liustack/modlens@3.25.4
   dsh plugin --profile web add @liustack/modsearch@5.10.0
   dsh plugin --profile web add dsh-mnemon
   ```
@@ -151,7 +156,7 @@ if you would rather browse from inside the app.
 - **Long runs you walk away from**: [dsh-notification](https://github.com/omdsh-dev/dsh-notification) pings the desktop when a turn ends, [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) puts the same session on your phone.
 
   ```sh
-  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.3.tar.gz
+  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.4.tar.gz
   dsh plugin --profile web add dsh-pocket -w
   ```
 
@@ -161,6 +166,8 @@ if you would rather browse from inside the app.
   dsh plugin --profile web add dsh-context
   dsh plugin --profile web add dsh-cost-meter
   ```
+
+<!-- combos:end -->
 
 ---
 
@@ -178,6 +185,7 @@ if you would rather browse from inside the app.
 
 ## The catalog
 
+<!-- catalog:start -->
 ### See and understand
 
 - **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,793★, MIT.
@@ -186,7 +194,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add @liustack/modlens@3.25.3
+  dsh plugin --profile web add @liustack/modlens@3.25.4
   ```
 
   </details>
@@ -498,7 +506,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.6.9.tar.gz
+  dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.7.0.tar.gz
   ```
 
   </details>
@@ -763,7 +771,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.3.tar.gz
+  dsh plugin --profile web add https://github.com/omdsh-dev/dsh-notification/archive/refs/tags/v0.1.4.tar.gz
   ```
 
   </details>
@@ -1123,6 +1131,8 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+<!-- catalog:end -->
 
 ---
 

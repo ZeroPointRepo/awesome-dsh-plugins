@@ -23,6 +23,7 @@
 // Exit code is non-zero when a problem is found, so the Actions status badge reflects reality.
 
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { scope } from './lib/markers.mjs';
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || '';
 const file = process.argv[2] || 'README.md';
@@ -34,12 +35,12 @@ const H = {
 };
 
 const text = readFileSync(file, 'utf8');
-// Scope to the catalog section only, so the badge count matches the "N plugins" claim at the top
+// Scope to the catalog markers only, so the badge count matches the "N plugins" claim at the top
 // of the README rather than also picking up the Featured plugin entry or any link in the
 // collapsed "Good to know" accordions (verification explainer / security / contributing).
-const catalogStart = text.indexOf('## The catalog');
-const catalogEnd = text.indexOf('## Good to know');
-const catalogText = catalogStart >= 0 && catalogEnd > catalogStart ? text.slice(catalogStart, catalogEnd) : text;
+// STRUCTURAL, BY MARKERS: the old heading window fell back to the whole README when a heading
+// moved, which inflated the denominator with no fault reported anywhere. `scope` aborts instead.
+const catalogText = scope(text, 'catalog', file);
 const lines = catalogText.split('\n');
 
 // An entry starts on a bold action line:
@@ -85,13 +86,12 @@ console.log(`Parsed ${entries.length} catalog entries from ${file}\n`);
 // Deliberately kept out of `problems`: the install-checks badge counts catalog entries, and a
 // stale duplicate is not one of them. It still fails the run.
 const combosDrift = [];
-const combosHeading = text.match(/^## .*Starter combos\s*$/m);
-if (!combosHeading) {
-  console.log('Notice: no Starter combos section found, duplicate-command check skipped.\n');
-} else {
+{
   const isInstall = (l) => /^dsh\s+plugin\s/.test(l);
   const catalogCmds = new Set(catalogText.split('\n').map((l) => l.trim()).filter(isInstall));
-  const combosText = text.slice(combosHeading.index, catalogStart > combosHeading.index ? catalogStart : undefined);
+  // Marker-scoped for the same reason the catalog is. The old version windowed from the combos
+  // HEADING to the start of the catalog heading, so it read every section in between as combos.
+  const combosText = scope(text, 'combos', file);
   const comboCmds = combosText.split('\n').map((l) => l.trim()).filter(isInstall);
   if (!comboCmds.length) {
     combosDrift.push('Starter combos section has a heading but no install commands');
