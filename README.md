@@ -188,7 +188,7 @@ if you would rather browse from inside the app.
 <!-- catalog:start -->
 ### See and understand
 
-- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,833★, MIT.
+- **Paste an image and get structured evidence back** with [modlens](https://github.com/liustack/modlens) by [liustack](https://github.com/liustack). OCR, layout, and semantics for text-only models, not a guess. 3,834★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -199,7 +199,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Use a free, keyless vision route plus pixel tools** with [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) by [ysr666](https://github.com/ysr666). OCR, grounding, crop, pixel diff, and screenshots. No API key. 1,051★, MIT.
+- **Use a free, keyless vision route plus pixel tools** with [dsh-vision-router](https://github.com/ysr666/dsh-vision-router) by [ysr666](https://github.com/ysr666). OCR, grounding, crop, pixel diff, and screenshots. No API key. 1,052★, MIT.
 
   <details>
   <summary>Install</summary>
@@ -340,7 +340,7 @@ if you would rather browse from inside the app.
 
 ### Reshape the interface
 
-- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 6,692★, Apache-2.0.
+- **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 6,693★, Apache-2.0.
 
   <details>
   <summary>Install</summary>
@@ -638,7 +638,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Preview and edit spreadsheets, docs, and slides inline** with [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) by [dream-num](https://github.com/dream-num). Full office document editing inside DSH, powered by Univer. 236★, Apache-2.0.
+- **Preview and edit spreadsheets, docs, and slides inline** with [dsh-univer-office](https://github.com/dream-num/dsh-univer-office) by [dream-num](https://github.com/dream-num). Full office document editing inside DSH, powered by Univer. 237★, Apache-2.0.
 
   <details>
   <summary>Install</summary>

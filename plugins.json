@@ -87,7 +87,7 @@
       "description": {
         "en": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."
       },
-      "stars": 7023,
+      "stars": 7022,
       "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
       "added": "2026-08-31"
     },
@@ -99,7 +99,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6692,
+      "stars": 6693,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -133,7 +133,7 @@
       "description": {
         "en": "Paste an image and get structured evidence back"
       },
-      "stars": 3833,
+      "stars": 3834,
       "install": "dsh plugin --profile web add @liustack/modlens@3.25.4",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
@@ -245,7 +245,7 @@
       "description": {
         "en": "DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装"
       },
-      "stars": 1590,
+      "stars": 1591,
       "install": "dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget",
       "added": "2026-08-24",
       "screenshots": [
@@ -331,7 +331,7 @@
       "description": {
         "en": "Use a free, keyless vision route plus pixel tools"
       },
-      "stars": 1051,
+      "stars": 1052,
       "install": "dsh plugin --profile web add dsh-vision-router",
       "added": "2026-08-24",
       "npm": "dsh-vision-router",
@@ -926,7 +926,7 @@
       "description": {
         "en": "Preview and edit spreadsheets, docs, and slides inline"
       },
-      "stars": 236,
+      "stars": 237,
       "install": "dsh plugin --profile web add dsh-univer-office",
       "added": "2026-08-24",
       "npm": "dsh-univer-office",
@@ -1272,7 +1272,7 @@
       "description": {
         "en": "DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 \\| browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI"
       },
-      "stars": 153,
+      "stars": 154,
       "install": "dsh plugin --profile web install bradeGithub/DSH-Plugins-Marketplace",
       "added": "2026-08-24",
       "screenshots": [
@@ -1341,7 +1341,7 @@
       "description": {
         "en": "面向 DeepSeek Harness 的 Claude Code 风格终端界面，支持 Windows、macOS 与 Linux，兼容透明终端、VS Code 主题和自定义配色。"
       },
-      "stars": 142,
+      "stars": 143,
       "install": "dsh plugin --profile tui add --config.enable-global-virtual-store=false seektty@1.2.5",
       "added": "2026-08-24",
       "npm": "seektty",
@@ -2502,7 +2502,7 @@
       "description": {
         "en": "DeepSeek Harness (DSH) 插件：✨ 提示词一键增强 + 💬 语音识别（说完自动停·云端/本地双引擎）· 附 🔁 服务异常一键重启"
       },
-      "stars": 62,
+      "stars": 63,
       "install": "dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer#v3.3.3",
       "added": "2026-08-24",
       "screenshots": [
