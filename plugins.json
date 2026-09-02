@@ -87,7 +87,7 @@
       "description": {
         "en": "dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the task-aware reasoning-mode router preset (measured P1-P23)."
       },
-      "stars": 7024,
+      "stars": 7023,
       "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
       "added": "2026-08-31"
     },
@@ -99,7 +99,7 @@
       "description": {
         "en": "Add a task board, git graph, and mobile remote UI"
       },
-      "stars": 6681,
+      "stars": 6692,
       "install": "dsh plugin --profile web add @linxin666/dsh-web-all@latest",
       "added": "2026-08-24",
       "npm": "@linxin666/dsh-web-all",
@@ -133,7 +133,7 @@
       "description": {
         "en": "Paste an image and get structured evidence back"
       },
-      "stars": 3830,
+      "stars": 3833,
       "install": "dsh plugin --profile web add @liustack/modlens@3.25.4",
       "added": "2026-08-24",
       "npm": "@liustack/modlens",
@@ -152,7 +152,7 @@
       "description": {
         "en": "Get an open sidebar foundation other plugins can register into"
       },
-      "stars": 3225,
+      "stars": 3231,
       "install": "dsh plugin --profile web add dsh-better-sidebar@latest",
       "added": "2026-08-24",
       "npm": "dsh-better-sidebar",
@@ -171,7 +171,7 @@
       "description": {
         "en": "Browse and install plugins without leaving the app"
       },
-      "stars": 3026,
+      "stars": 3031,
       "install": "dsh plugin --profile web add dshmarket",
       "added": "2026-08-24",
       "npm": "dshmarket",
@@ -189,7 +189,7 @@
       "description": {
         "en": "Run DSH in a Claude Code style terminal UI"
       },
-      "stars": 2775,
+      "stars": 2776,
       "install": "dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui",
       "added": "2026-08-24",
       "npm": "@deepseek-harness-tui/dsh-tui",
@@ -208,7 +208,7 @@
       "description": {
         "en": "A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed by Markdown and Milvus."
       },
-      "stars": 2548,
+      "stars": 2549,
       "install": "dsh plugin --profile web add @zilliz/memsearch-dsh",
       "added": "2026-08-24",
       "npm": "@zilliz/memsearch-dsh",
@@ -245,7 +245,7 @@
       "description": {
         "en": "DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装"
       },
-      "stars": 1584,
+      "stars": 1590,
       "install": "dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget",
       "added": "2026-08-24",
       "screenshots": [
@@ -261,7 +261,7 @@
       "description": {
         "en": "Dispatch work across a team of agents"
       },
-      "stars": 1270,
+      "stars": 1273,
       "install": "dsh plugin --profile web add @nanmicoder/dsh-agent-teams",
       "added": "2026-08-24",
       "npm": "@nanmicoder/dsh-agent-teams",
@@ -278,7 +278,7 @@
       "description": {
         "en": "See exactly what your context window is made of"
       },
-      "stars": 1238,
+      "stars": 1240,
       "install": "dsh plugin --profile web add dsh-context",
       "added": "2026-08-24",
       "npm": "dsh-context",
@@ -297,7 +297,7 @@
       "description": {
         "en": "Browser4 — an AI-native browser engine for autonomous agents, intelligent extraction, and large-scale web automation."
       },
-      "stars": 1118,
+      "stars": 1119,
       "install": "dsh plugin --profile web add github:platonai/dsh-browser4",
       "added": "2026-08-24",
       "screenshots": [
@@ -312,7 +312,7 @@
       "description": {
         "en": "Connect nine chat platforms to DSH at once"
       },
-      "stars": 1060,
+      "stars": 1061,
       "install": "dsh plugin --profile web add -w @xmanrui/dsh-im",
       "added": "2026-08-24",
       "npm": "@xmanrui/dsh-im",
@@ -331,7 +331,7 @@
       "description": {
         "en": "Use a free, keyless vision route plus pixel tools"
       },
-      "stars": 1050,
+      "stars": 1051,
       "install": "dsh plugin --profile web add dsh-vision-router",
       "added": "2026-08-24",
       "npm": "dsh-vision-router",
@@ -350,7 +350,7 @@
       "description": {
         "en": "Scan a QR code to reach your desktop DSH from your phone"
       },
-      "stars": 894,
+      "stars": 895,
       "install": "dsh plugin --profile web add dsh-pocket -w",
       "added": "2026-08-24",
       "screenshots": [
@@ -439,7 +439,7 @@
       "description": {
         "en": "AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版、Ollama 与 DSH 插件预览。"
       },
-      "stars": 550,
+      "stars": 551,
       "install": "dsh plugin --profile web add @ethanyoq/dsh-ai-novel-writer",
       "added": "2026-08-24",
       "npm": "@ethanyoq/dsh-ai-novel-writer",
@@ -474,7 +474,7 @@
       "description": {
         "en": "Install a desktop pet in one line"
       },
-      "stars": 507,
+      "stars": 510,
       "install": "dsh plugin --profile web add dsh-pet",
       "added": "2026-08-24",
       "npm": "dsh-pet",
@@ -560,7 +560,7 @@
       "description": {
         "en": "Turn the whole interface into frosted glass"
       },
-      "stars": 398,
+      "stars": 397,
       "install": "dsh plugin --profile web add dsh-client-ui-aqua",
       "added": "2026-08-24",
       "npm": "dsh-client-ui-aqua",
@@ -590,6 +590,24 @@
       ]
     },
     {
+      "name": "ccteam",
+      "owner": "firstintent",
+      "url": "https://github.com/firstintent/ccteam",
+      "category": "unsorted",
+      "description": {
+        "en": "ccteam turns the coding agents you already run (Claude Code, Codex, Grok, DeepSeek Harness, Kimi, Pi) into one team — any session can spawn, dispatch, and collect work from any vendor on any machine, while you steer it all from Telegram, Lark, or a browser tab. 把你在用的编程 agent 编成一支团队,跨厂商跨机器派活,Telegram/飞书/网页统一指挥。"
+      },
+      "stars": 388,
+      "install": "dsh plugin --profile web add @ccteam/ccteam-ui",
+      "added": "2026-08-31",
+      "screenshots": [
+        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/assets/logo.svg",
+        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/assets/orchestration.svg",
+        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/web-team-topology.png",
+        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/telegram-console.png"
+      ]
+    },
+    {
       "name": "dsh-genui",
       "owner": "omdsh-dev",
       "url": "https://github.com/omdsh-dev/dsh-genui",
@@ -609,24 +627,6 @@
       ]
     },
     {
-      "name": "ccteam",
-      "owner": "firstintent",
-      "url": "https://github.com/firstintent/ccteam",
-      "category": "unsorted",
-      "description": {
-        "en": "ccteam turns the coding agents you already run (Claude Code, Codex, Grok, DeepSeek Harness, Kimi, Pi) into one team — any session can spawn, dispatch, and collect work from any vendor on any machine, while you steer it all from Telegram, Lark, or a browser tab. 把你在用的编程 agent 编成一支团队,跨厂商跨机器派活,Telegram/飞书/网页统一指挥。"
-      },
-      "stars": 386,
-      "install": "dsh plugin --profile web add @ccteam/ccteam-ui",
-      "added": "2026-08-31",
-      "screenshots": [
-        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/assets/logo.svg",
-        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/assets/orchestration.svg",
-        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/web-team-topology.png",
-        "https://raw.githubusercontent.com/firstintent/ccteam/HEAD/docs/images/telegram-console.png"
-      ]
-    },
-    {
       "name": "dsh-pentest",
       "owner": "howmp",
       "url": "https://github.com/howmp/dsh-pentest",
@@ -634,7 +634,7 @@
       "description": {
         "en": "Switch DSH into a penetration-testing mode"
       },
-      "stars": 350,
+      "stars": 353,
       "install": "dsh plugin --profile web add https://github.com/howmp/dsh-pentest/releases/latest/download/dsh-pentest.tar.gz",
       "added": "2026-08-24",
       "screenshots": [
@@ -652,7 +652,7 @@
       "description": {
         "en": "Get expert guidance for HarmonyOS NEXT development"
       },
-      "stars": 342,
+      "stars": 343,
       "install": "dsh plugin --profile demo add github:linhay/harmony-next.skills",
       "added": "2026-08-24"
     },
@@ -683,7 +683,7 @@
       "description": {
         "en": "电子发票整理与报销准备工具：从邮箱批量收集 PDF/OFD/XML 发票，OCR 识别、分类归档并生成 Excel 汇总；提供 Windows/macOS 桌面版与 DSH 插件。"
       },
-      "stars": 329,
+      "stars": 333,
       "install": "dsh plugin --profile web add @ethanyoq/dsh-invoice-downloader",
       "added": "2026-08-24",
       "npm": "@ethanyoq/dsh-invoice-downloader",
@@ -692,6 +692,22 @@
         "https://raw.githubusercontent.com/EthanYoQ/Invoice-Downloader/HEAD/docs/track-ab.svg",
         "https://raw.githubusercontent.com/EthanYoQ/Invoice-Downloader/HEAD/docs/funnel.svg",
         "https://raw.githubusercontent.com/EthanYoQ/Invoice-Downloader/HEAD/docs/images/invoiceflowai-hero-zh.png"
+      ]
+    },
+    {
+      "name": "dsh-synapse",
+      "owner": "liangmianya",
+      "url": "https://github.com/liangmianya/dsh-synapse",
+      "category": "reshape-the-interface",
+      "description": {
+        "en": "Explore a conversation as a branching canvas"
+      },
+      "stars": 311,
+      "install": "dsh plugin --profile web add dsh-synapse",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/liangmianya/dsh-synapse/HEAD/docs/images/synapse-map.jpg",
+        "https://raw.githubusercontent.com/liangmianya/dsh-synapse/HEAD/docs/images/native-webui.jpg"
       ]
     },
     {
@@ -733,22 +749,6 @@
       ]
     },
     {
-      "name": "dsh-synapse",
-      "owner": "liangmianya",
-      "url": "https://github.com/liangmianya/dsh-synapse",
-      "category": "reshape-the-interface",
-      "description": {
-        "en": "Explore a conversation as a branching canvas"
-      },
-      "stars": 308,
-      "install": "dsh plugin --profile web add dsh-synapse",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/liangmianya/dsh-synapse/HEAD/docs/images/synapse-map.jpg",
-        "https://raw.githubusercontent.com/liangmianya/dsh-synapse/HEAD/docs/images/native-webui.jpg"
-      ]
-    },
-    {
       "name": "whale-girl",
       "owner": "vlln",
       "url": "https://github.com/vlln/whale-girl",
@@ -756,7 +756,7 @@
       "description": {
         "en": "DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。"
       },
-      "stars": 303,
+      "stars": 304,
       "install": "dsh plugin --profile web add \"github:vlln/whale-girl#main\"",
       "added": "2026-08-24",
       "screenshots": [
@@ -774,7 +774,7 @@
       "description": {
         "en": "Generate images directly in DeepSeek Harness chats"
       },
-      "stars": 294,
+      "stars": 296,
       "install": "dsh plugin --profile web add dsh-image-gen@latest",
       "added": "2026-08-24",
       "npm": "dsh-image-gen",
@@ -841,7 +841,7 @@
       "description": {
         "en": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐"
       },
-      "stars": 261,
+      "stars": 262,
       "install": "dsh plugin --profile web add https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.zip",
       "added": "2026-08-24",
       "screenshots": [
@@ -926,7 +926,7 @@
       "description": {
         "en": "Preview and edit spreadsheets, docs, and slides inline"
       },
-      "stars": 234,
+      "stars": 236,
       "install": "dsh plugin --profile web add dsh-univer-office",
       "added": "2026-08-24",
       "npm": "dsh-univer-office",
@@ -963,7 +963,7 @@
       "description": {
         "en": "让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable task controls and isolated, human-reviewed self-evolution."
       },
-      "stars": 201,
+      "stars": 203,
       "install": "dsh plugin --profile web add @graysilver/dsh-evolve-modes@0.4.0",
       "added": "2026-08-24",
       "npm": "@graysilver/dsh-evolve-modes",
@@ -993,7 +993,7 @@
       "description": {
         "en": "A sidebar can pop out a separate browser tab (drag it to another monitor)"
       },
-      "stars": 197,
+      "stars": 198,
       "install": "dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar",
       "added": "2026-08-24"
     },
@@ -1038,7 +1038,7 @@
       "description": {
         "en": "DeepSeek Harness（dsh）Windows 轻量启动器：双击即用，克制的原生体验 / Lightweight Windows launcher for DeepSeek Harness (dsh) — double-click to run, native & restrained"
       },
-      "stars": 190,
+      "stars": 191,
       "install": "dsh plugin --profile web add dsh-launcher-lifetime",
       "added": "2026-08-24",
       "screenshots": [
@@ -1124,7 +1124,7 @@
       "description": {
         "en": "基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自己熟练的才好用，好的方法论=好的生态）"
       },
-      "stars": 166,
+      "stars": 165,
       "install": "dsh plugin --profile web add github:SeaOf0/dsh-redteam-model",
       "added": "2026-08-25",
       "screenshots": [
@@ -1153,6 +1153,24 @@
       ]
     },
     {
+      "name": "dsh-agent-team-gui",
+      "owner": "toolclub",
+      "url": "https://github.com/toolclub/dsh-agent-team-gui",
+      "category": "run-a-team-of-agents",
+      "description": {
+        "en": "Run persistent multi-model teams with a real console"
+      },
+      "stars": 163,
+      "install": "dsh plugin --profile web add -w github:toolclub/dsh-agent-team-gui",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-teams-settings.png",
+        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-composer-mode.png",
+        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-run-center.png",
+        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-insights.png"
+      ]
+    },
+    {
       "name": "dsh-memory",
       "owner": "seriousz158",
       "url": "https://github.com/seriousz158/dsh-memory",
@@ -1163,24 +1181,6 @@
       "stars": 162,
       "install": "dsh plugin --profile web add github:seriousz158/dsh-memory",
       "added": "2026-08-24"
-    },
-    {
-      "name": "dsh-agent-team-gui",
-      "owner": "toolclub",
-      "url": "https://github.com/toolclub/dsh-agent-team-gui",
-      "category": "run-a-team-of-agents",
-      "description": {
-        "en": "Run persistent multi-model teams with a real console"
-      },
-      "stars": 162,
-      "install": "dsh plugin --profile web add -w github:toolclub/dsh-agent-team-gui",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-teams-settings.png",
-        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-composer-mode.png",
-        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-run-center.png",
-        "https://raw.githubusercontent.com/toolclub/dsh-agent-team-gui/HEAD/assets/v0.5-insights.png"
-      ]
     },
     {
       "name": "dsh-plugin-bridge",
@@ -1200,6 +1200,25 @@
       ]
     },
     {
+      "name": "dsh-openpencil",
+      "owner": "ZSeven-W",
+      "url": "https://github.com/ZSeven-W/dsh-openpencil",
+      "category": "unsorted",
+      "description": {
+        "en": "The DeepSeek Harness plugin for OpenPencil — preview, inspect, and edit real .op documents inside a conversation."
+      },
+      "stars": 159,
+      "install": "dsh plugin --profile web add @zseven-w/dsh-openpencil@next",
+      "added": "2026-08-24",
+      "npm": "@zseven-w/dsh-openpencil",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1332212466/e6979184-7b56-4137-8593-878e97b06d60",
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-openpencil/HEAD/docs/images/dsh-openpencil-logo.png",
+        "https://raw.githubusercontent.com/ZSeven-W/dsh-openpencil/HEAD/docs/images/dsh-openpencil-overview.png",
+        "https://raw.githubusercontent.com/ZSeven-W/openpencil/main/screenshot/logo-discord.svg"
+      ]
+    },
+    {
       "name": "dsh-liang-skin",
       "owner": "kingOfSoySauce",
       "url": "https://github.com/kingOfSoySauce/dsh-liang-skin",
@@ -1212,25 +1231,6 @@
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/HEAD/docs/preview.png"
-      ]
-    },
-    {
-      "name": "dsh-openpencil",
-      "owner": "ZSeven-W",
-      "url": "https://github.com/ZSeven-W/dsh-openpencil",
-      "category": "unsorted",
-      "description": {
-        "en": "The DeepSeek Harness plugin for OpenPencil — preview, inspect, and edit real .op documents inside a conversation."
-      },
-      "stars": 158,
-      "install": "dsh plugin --profile web add @zseven-w/dsh-openpencil@next",
-      "added": "2026-08-24",
-      "npm": "@zseven-w/dsh-openpencil",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1332212466/e6979184-7b56-4137-8593-878e97b06d60",
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-openpencil/HEAD/docs/images/dsh-openpencil-logo.png",
-        "https://raw.githubusercontent.com/ZSeven-W/dsh-openpencil/HEAD/docs/images/dsh-openpencil-overview.png",
-        "https://raw.githubusercontent.com/ZSeven-W/openpencil/main/screenshot/logo-discord.svg"
       ]
     },
     {
@@ -1383,6 +1383,25 @@
       ]
     },
     {
+      "name": "dsh-bridge",
+      "owner": "wenbin-wb",
+      "url": "https://github.com/wenbin-wb/dsh-bridge",
+      "category": "remote-access-and-mobile",
+      "description": {
+        "en": "Chat with your local DSH from WeChat or QQ"
+      },
+      "stars": 137,
+      "install": "dsh plugin --profile web add @wenbin_wb/dsh-bridge",
+      "added": "2026-08-24",
+      "npm": "@wenbin_wb/dsh-bridge",
+      "screenshots": [
+        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/banner.jpg",
+        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/lan-access.jpg",
+        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/tunnel-access.jpg",
+        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/remote-web-mobile.jpg"
+      ]
+    },
+    {
       "name": "gal-view",
       "owner": "Ayase34",
       "url": "https://github.com/Ayase34/gal-view",
@@ -1396,6 +1415,18 @@
       "screenshots": [
         "https://raw.githubusercontent.com/Ayase34/gal-view/HEAD/image.png"
       ]
+    },
+    {
+      "name": "dsh-sev",
+      "owner": "Buzzso",
+      "url": "https://github.com/Buzzso/dsh-sev",
+      "category": "unsorted",
+      "description": {
+        "en": "Remote DSH host management for DeepSeek Harness — run a headless dsh on your own server, operate it from the local GUI (SSH tunnels, mixed session list, auto-heal)."
+      },
+      "stars": 136,
+      "install": "dsh plugin --profile web add dsh-sev",
+      "added": "2026-08-31"
     },
     {
       "name": "dsh-gitbash-preset",
@@ -1426,18 +1457,6 @@
         "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/HEAD/assets/screenshots/usage-dashboard.png",
         "https://raw.githubusercontent.com/Mars-Sea/dsh-commandcode-provider/HEAD/assets/screenshots/settings-page.png"
       ]
-    },
-    {
-      "name": "dsh-sev",
-      "owner": "Buzzso",
-      "url": "https://github.com/Buzzso/dsh-sev",
-      "category": "unsorted",
-      "description": {
-        "en": "Remote DSH host management for DeepSeek Harness — run a headless dsh on your own server, operate it from the local GUI (SSH tunnels, mixed session list, auto-heal)."
-      },
-      "stars": 135,
-      "install": "dsh plugin --profile web add dsh-sev",
-      "added": "2026-08-31"
     },
     {
       "name": "dsh-dream-skin",
@@ -1472,25 +1491,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/theBigGavin/marketingdashboard/HEAD/docs/screenshot.png",
         "https://raw.githubusercontent.com/theBigGavin/marketingdashboard/HEAD/public/icons/icon-192.png"
-      ]
-    },
-    {
-      "name": "dsh-bridge",
-      "owner": "wenbin-wb",
-      "url": "https://github.com/wenbin-wb/dsh-bridge",
-      "category": "remote-access-and-mobile",
-      "description": {
-        "en": "Chat with your local DSH from WeChat or QQ"
-      },
-      "stars": 134,
-      "install": "dsh plugin --profile web add @wenbin_wb/dsh-bridge",
-      "added": "2026-08-24",
-      "npm": "@wenbin_wb/dsh-bridge",
-      "screenshots": [
-        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/banner.jpg",
-        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/lan-access.jpg",
-        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/tunnel-access.jpg",
-        "https://raw.githubusercontent.com/wenbin-wb/dsh-bridge/HEAD/docs/screenshots/remote-web-mobile.jpg"
       ]
     },
     {
@@ -1593,6 +1593,21 @@
       ]
     },
     {
+      "name": "humanizer-ru",
+      "owner": "Vladimir-Human",
+      "url": "https://github.com/Vladimir-Human/humanizer-ru",
+      "category": "unsorted",
+      "description": {
+        "en": "Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста, не трогает живое и не дописывает факты. 58 паттернов, 40 regex-маркеров (реестр доказательств 38/40), ось «дельта детектируемости до/после» с FP-контролем, снятие меток C2PA/EXIF/XMP, пакет на PyPI и онлайн-демо. Гейтов 73/69, 193 теста."
+      },
+      "stars": 121,
+      "install": "dsh plugin --profile web add \"github:Vladimir-Human/humanizer-ru#path:/dsh\"",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1139128402/6fd4e927-b1d5-40ec-8080-a2834d58c758"
+      ]
+    },
+    {
       "name": "bibigpt-skill",
       "owner": "JimmyLv",
       "url": "https://github.com/JimmyLv/bibigpt-skill",
@@ -1603,21 +1618,6 @@
       "stars": 120,
       "install": "dsh plugin --profile web add \"github:JimmyLv/bibigpt-skill#path:/dsh-plugin\"",
       "added": "2026-08-24"
-    },
-    {
-      "name": "humanizer-ru",
-      "owner": "Vladimir-Human",
-      "url": "https://github.com/Vladimir-Human/humanizer-ru",
-      "category": "unsorted",
-      "description": {
-        "en": "Скилл для ИИ-агентов: находит и убирает следы машинной генерации из русского текста, не трогает живое и не дописывает факты. 58 паттернов, 40 regex-маркеров (реестр доказательств 38/40), ось «дельта детектируемости до/после» с FP-контролем, снятие меток C2PA/EXIF/XMP, пакет на PyPI и онлайн-демо. Гейтов 73/69, 193 теста."
-      },
-      "stars": 120,
-      "install": "dsh plugin --profile web add \"github:Vladimir-Human/humanizer-ru#path:/dsh\"",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1139128402/6fd4e927-b1d5-40ec-8080-a2834d58c758"
-      ]
     },
     {
       "name": "dsh-skin-market",
@@ -1684,6 +1684,18 @@
       "added": "2026-08-24"
     },
     {
+      "name": "dsh-reverse-skill",
+      "owner": "dhicoc",
+      "url": "https://github.com/dhicoc/dsh-reverse-skill",
+      "category": "unsorted",
+      "description": {
+        "en": "Complete reverse-skill (87 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack."
+      },
+      "stars": 112,
+      "install": "dsh plugin add github:dhicoc/dsh-reverse-skill",
+      "added": "2026-08-24"
+    },
+    {
       "name": "dsh-skill-mcp-panel",
       "owner": "Fishquito7",
       "url": "https://github.com/Fishquito7/dsh-skill-mcp-panel",
@@ -1714,18 +1726,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/awesome-dsh-plugin/dsh-find-plugin/main/assets/demo-en.png"
       ]
-    },
-    {
-      "name": "dsh-reverse-skill",
-      "owner": "dhicoc",
-      "url": "https://github.com/dhicoc/dsh-reverse-skill",
-      "category": "unsorted",
-      "description": {
-        "en": "Complete reverse-skill (87 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineering, authorized pentesting and security research skill pack."
-      },
-      "stars": 111,
-      "install": "dsh plugin add github:dhicoc/dsh-reverse-skill",
-      "added": "2026-08-24"
     },
     {
       "name": "dsh-turn-rewind",
@@ -1923,6 +1923,23 @@
       ]
     },
     {
+      "name": "dsh-memory",
+      "owner": "FuRongJun-1999",
+      "url": "https://github.com/FuRongJun-1999/dsh-memory",
+      "category": "unsorted",
+      "description": {
+        "en": "白箱AGI架构探索：元认知（自我认知循环）、持续学习（知识飞轮）、世界模型（条件空间+语义时空图）、自我改进（自举纪律）、零LLM白箱管线与可审计信任护栏。"
+      },
+      "stars": 96,
+      "install": "dsh plugin --profile web add @furongjun1999/dsh-memory",
+      "added": "2026-08-24",
+      "npm": "@furongjun1999/dsh-memory",
+      "screenshots": [
+        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/lingshu_tutorial.html",
+        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/memory_score.png"
+      ]
+    },
+    {
       "name": "dsh-plugin-template",
       "owner": "bugmaker2",
       "url": "https://github.com/bugmaker2/dsh-plugin-template",
@@ -1933,23 +1950,6 @@
       "stars": 94,
       "install": "dsh plugin --profile web add github:you/dsh-plugin-template",
       "added": "2026-08-27"
-    },
-    {
-      "name": "dsh-memory",
-      "owner": "FuRongJun-1999",
-      "url": "https://github.com/FuRongJun-1999/dsh-memory",
-      "category": "unsorted",
-      "description": {
-        "en": "白箱AGI架构探索：元认知（自我认知循环）、持续学习（知识飞轮）、世界模型（条件空间+语义时空图）、自我改进（自举纪律）、零LLM白箱管线与可审计信任护栏。"
-      },
-      "stars": 93,
-      "install": "dsh plugin --profile web add @furongjun1999/dsh-memory",
-      "added": "2026-08-24",
-      "npm": "@furongjun1999/dsh-memory",
-      "screenshots": [
-        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/lingshu_tutorial.html",
-        "https://raw.githubusercontent.com/FuRongJun-1999/dsh-memory/HEAD/docs/memory_score.png"
-      ]
     },
     {
       "name": "dsh-strata",
@@ -2146,6 +2146,25 @@
       "added": "2026-08-24"
     },
     {
+      "name": "dsh-web-mobile",
+      "owner": "mexiaosqwq",
+      "url": "https://github.com/mexiaosqwq/dsh-web-mobile",
+      "category": "unsorted",
+      "description": {
+        "en": "DSH Web UI 移动端适配：窄屏好用，宽屏适用"
+      },
+      "stars": 75,
+      "install": "dsh plugin --profile web add dsh-web-mobile",
+      "added": "2026-08-24",
+      "npm": "dsh-web-mobile",
+      "screenshots": [
+        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/banner.png",
+        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/hero.png",
+        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/drawer.png",
+        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/settings.png"
+      ]
+    },
+    {
       "name": "dsh-plugin-hub",
       "owner": "Noob-stupid",
       "url": "https://github.com/Noob-stupid/dsh-plugin-hub",
@@ -2193,22 +2212,22 @@
       "added": "2026-08-25"
     },
     {
-      "name": "dsh-web-mobile",
-      "owner": "mexiaosqwq",
-      "url": "https://github.com/mexiaosqwq/dsh-web-mobile",
+      "name": "dsh-codex-connect",
+      "owner": "franksong2702",
+      "url": "https://github.com/franksong2702/dsh-codex-connect",
       "category": "unsorted",
       "description": {
-        "en": "DSH Web UI 移动端适配：窄屏好用，宽屏适用"
+        "en": "Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness."
       },
       "stars": 74,
-      "install": "dsh plugin --profile web add dsh-web-mobile",
+      "install": "dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.23",
       "added": "2026-08-24",
-      "npm": "dsh-web-mobile",
+      "npm": "dsh-codex-connect",
       "screenshots": [
-        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/banner.png",
-        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/hero.png",
-        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/drawer.png",
-        "https://raw.githubusercontent.com/mexiaosqwq/dsh-web-mobile/HEAD/assets/settings.png"
+        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/hero.jpg",
+        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/plugin-entry.jpg",
+        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/oauth-status.jpg",
+        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/model-selector.jpg"
       ]
     },
     {
@@ -2219,28 +2238,9 @@
       "description": {
         "en": "Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fact/lesson/topic/rules), BM25 retrieval, per-window dream consolidation. 跨会话七层长期记忆插件。"
       },
-      "stars": 74,
+      "stars": 73,
       "install": "dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory",
       "added": "2026-08-31"
-    },
-    {
-      "name": "dsh-codex-connect",
-      "owner": "franksong2702",
-      "url": "https://github.com/franksong2702/dsh-codex-connect",
-      "category": "unsorted",
-      "description": {
-        "en": "Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness."
-      },
-      "stars": 73,
-      "install": "dsh plugin --profile web add dsh-codex-connect@0.1.0-alpha.4.23",
-      "added": "2026-08-24",
-      "npm": "dsh-codex-connect",
-      "screenshots": [
-        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/hero.jpg",
-        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/plugin-entry.jpg",
-        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/oauth-status.jpg",
-        "https://raw.githubusercontent.com/franksong2702/dsh-codex-connect/main/docs/assets/en/model-selector.jpg"
-      ]
     },
     {
       "name": "dsh-stock-watch",
@@ -2331,6 +2331,23 @@
       "npm": "dsh-plugins-store"
     },
     {
+      "name": "dsh-mneme",
+      "owner": "modusensus",
+      "url": "https://github.com/modusensus/dsh-mneme",
+      "category": "remember-between-sessions",
+      "description": {
+        "en": "Store memory as Markdown you can read and edit yourself"
+      },
+      "stars": 70,
+      "install": "dsh plugin --profile web add @modusensus/dsh-mneme",
+      "added": "2026-08-24",
+      "npm": "@modusensus/dsh-mneme",
+      "screenshots": [
+        "https://repository-images.githubusercontent.com/1333254657/9e5e4be6-11e2-492f-804e-59f3504a4a04",
+        "https://raw.githubusercontent.com/modusensus/dsh-mneme/HEAD/横幅.png"
+      ]
+    },
+    {
       "name": "dsh-preset-plus",
       "owner": "Rain-kl",
       "url": "https://github.com/Rain-kl/dsh-preset-plus",
@@ -2349,23 +2366,6 @@
       ]
     },
     {
-      "name": "dsh-mneme",
-      "owner": "modusensus",
-      "url": "https://github.com/modusensus/dsh-mneme",
-      "category": "remember-between-sessions",
-      "description": {
-        "en": "Store memory as Markdown you can read and edit yourself"
-      },
-      "stars": 69,
-      "install": "dsh plugin --profile web add @modusensus/dsh-mneme",
-      "added": "2026-08-24",
-      "npm": "@modusensus/dsh-mneme",
-      "screenshots": [
-        "https://repository-images.githubusercontent.com/1333254657/9e5e4be6-11e2-492f-804e-59f3504a4a04",
-        "https://raw.githubusercontent.com/modusensus/dsh-mneme/HEAD/横幅.png"
-      ]
-    },
-    {
       "name": "billion-context-dsh",
       "owner": "Tyan66666",
       "url": "https://github.com/Tyan66666/billion-context-dsh",
@@ -2373,7 +2373,7 @@
       "description": {
         "en": "Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim. CompactionEngine backend with compress/decompress/search_context/acp_status tools."
       },
-      "stars": 68,
+      "stars": 69,
       "install": "dsh plugin --profile web add github:Tyan66666/billion-context-dsh#v0.2.17",
       "added": "2026-08-24"
     },
@@ -2439,7 +2439,7 @@
       "description": {
         "en": "A DeepSeek Harness (dsh) web plugin: rotate the \"Deep diving…\" status label with typewriter-animated rainbow phrases, a live status pill, tab titles, schedule presets — and video-site-style danmaku floating behind the UI."
       },
-      "stars": 65,
+      "stars": 66,
       "install": "dsh plugin --profile web add dsh-status-rotator",
       "added": "2026-08-24",
       "npm": "dsh-status-rotator"
@@ -2483,7 +2483,7 @@
       "description": {
         "en": "DeepSeek Harness (DSH) backup & restore plugin — export, import, migrate and sync your complete DSH configuration, plugins, MCP servers, skills and workspace. One-click migration to another machine."
       },
-      "stars": 63,
+      "stars": 64,
       "install": "dsh plugin --profile web add dsh-config-manager@0.1.8",
       "added": "2026-08-26",
       "npm": "dsh-config-manager",
@@ -2546,6 +2546,19 @@
       ]
     },
     {
+      "name": "custom-first-control-prompt",
+      "owner": "WM-CODER",
+      "url": "https://github.com/WM-CODER/custom-first-control-prompt",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness plugin for insert custom prompt"
+      },
+      "stars": 61,
+      "install": "dsh plugin --profile web add @wm-coders/dsh-custom-first-control-prompt",
+      "added": "2026-08-24",
+      "npm": "@wm-coders/dsh-custom-first-control-prompt"
+    },
+    {
       "name": "dsh-web-search-pro",
       "owner": "anweat",
       "url": "https://github.com/anweat/dsh-web-search-pro",
@@ -2559,19 +2572,6 @@
       "npm": "dsh-web-search-pro"
     },
     {
-      "name": "custom-first-control-prompt",
-      "owner": "WM-CODER",
-      "url": "https://github.com/WM-CODER/custom-first-control-prompt",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness plugin for insert custom prompt"
-      },
-      "stars": 60,
-      "install": "dsh plugin --profile web add @wm-coders/dsh-custom-first-control-prompt",
-      "added": "2026-08-24",
-      "npm": "@wm-coders/dsh-custom-first-control-prompt"
-    },
-    {
       "name": "SpecFusion",
       "owner": "wxkingstar",
       "url": "https://github.com/wxkingstar/SpecFusion",
@@ -2583,6 +2583,24 @@
       "install": "dsh plugin --profile web add @wxkingstar/specfusion-dsh",
       "added": "2026-08-24",
       "npm": "@wxkingstar/specfusion-dsh"
+    },
+    {
+      "name": "dsh-auto-continue",
+      "owner": "HsiangNianian",
+      "url": "https://github.com/HsiangNianian/dsh-auto-continue",
+      "category": "unsorted",
+      "description": {
+        "en": "DSH Web UI plugin: auto-sends 「继续」 after non-human interruptions, with error classification, adaptive backoff, pause, idempotency/loop guards, resume templates, and stats—all configurable in settings UI \\| DSH 前端 UI 插件：非人为中断后自动发送「继续」，支持错误分类、自适应退避、暂停、幂等/循环保护、续跑模板与统计，均可在设置界面配置"
+      },
+      "stars": 59,
+      "install": "dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/demo.svg",
+        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/auto-continue-workflow.en.svg",
+        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/screenshots/02-settings-card.png",
+        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/banner.svg"
+      ]
     },
     {
       "name": "plugin-registry",
@@ -2645,24 +2663,6 @@
       "added": "2026-08-24",
       "screenshots": [
         "https://raw.githubusercontent.com/vlln/dsh-navbar/HEAD/docs/preview/navbar.png"
-      ]
-    },
-    {
-      "name": "dsh-auto-continue",
-      "owner": "HsiangNianian",
-      "url": "https://github.com/HsiangNianian/dsh-auto-continue",
-      "category": "unsorted",
-      "description": {
-        "en": "DSH Web UI plugin: auto-sends 「继续」 after non-human interruptions, with error classification, adaptive backoff, pause, idempotency/loop guards, resume templates, and stats—all configurable in settings UI \\| DSH 前端 UI 插件：非人为中断后自动发送「继续」，支持错误分类、自适应退避、暂停、幂等/循环保护、续跑模板与统计，均可在设置界面配置"
-      },
-      "stars": 57,
-      "install": "dsh plugin --profile web add github:HsiangNianian/dsh-auto-continue",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/demo.svg",
-        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/auto-continue-workflow.en.svg",
-        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/screenshots/02-settings-card.png",
-        "https://raw.githubusercontent.com/HsiangNianian/dsh-auto-continue/HEAD/docs/banner.svg"
       ]
     },
     {
@@ -2858,6 +2858,24 @@
       ]
     },
     {
+      "name": "dsh-whale-musume",
+      "owner": "Sutera-Diffusus",
+      "url": "https://github.com/Sutera-Diffusus/dsh-whale-musume",
+      "category": "unsorted",
+      "description": {
+        "en": "DeepSeek Harness 桌宠插件：元气鲸鱼娘陪你写代码 🐋"
+      },
+      "stars": 50,
+      "install": "dsh plugin --profile web add github:Sutera-Diffusus/dsh-whale-musume",
+      "added": "2026-08-24",
+      "screenshots": [
+        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/homepage-promo.png",
+        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/logo.png",
+        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/preview-idle-coffee.png",
+        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/preview-working.png"
+      ]
+    },
+    {
       "name": "dsh-personal-directive",
       "owner": "liucaimao2026",
       "url": "https://github.com/liucaimao2026/dsh-personal-directive",
@@ -2868,24 +2886,6 @@
       "stars": 49,
       "install": "dsh plugin --profile web add github:liucaimao2026/dsh-personal-directive",
       "added": "2026-08-24"
-    },
-    {
-      "name": "dsh-whale-musume",
-      "owner": "Sutera-Diffusus",
-      "url": "https://github.com/Sutera-Diffusus/dsh-whale-musume",
-      "category": "unsorted",
-      "description": {
-        "en": "DeepSeek Harness 桌宠插件：元气鲸鱼娘陪你写代码 🐋"
-      },
-      "stars": 49,
-      "install": "dsh plugin --profile web add github:Sutera-Diffusus/dsh-whale-musume",
-      "added": "2026-08-24",
-      "screenshots": [
-        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/homepage-promo.png",
-        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/logo.png",
-        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/preview-idle-coffee.png",
-        "https://raw.githubusercontent.com/Sutera-Diffusus/dsh-whale-musume/HEAD/docs/images/preview-working.png"
-      ]
     },
     {
       "name": "dsh-message-edit",
@@ -3113,8 +3113,8 @@
       "screenshots": [
         "https://github.com/user-attachments/assets/48103763-2897-4df3-94a9-af36df672448",
         "https://github.com/user-attachments/assets/a15c4cfe-c27a-4450-8ba3-5f03e2c3ea6d",
-        "https://github.com/user-attachments/assets/44db8e14-202e-4fca-bdfb-bf6ef4c5dbc1",
-        "https://github.com/user-attachments/assets/6f8b7a88-99f0-4bdb-8abf-d9c0975c5f92"
+        "https://github.com/user-attachments/assets/6f8b7a88-99f0-4bdb-8abf-d9c0975c5f92",
+        "https://github.com/user-attachments/assets/44db8e14-202e-4fca-bdfb-bf6ef4c5dbc1"
       ]
     },
     {
@@ -3149,6 +3149,19 @@
       ]
     },
     {
+      "name": "dsh-industry-research",
+      "owner": "PerryLink",
+      "url": "https://github.com/PerryLink/dsh-industry-research",
+      "category": "unsorted",
+      "description": {
+        "en": "Industry and company research domain pack for DeepSeek Harness: methodology skills, industry chain mapping, public-source policy/news tracking, company research cards, and auditable research reports. Research only - not investment advice."
+      },
+      "stars": 39,
+      "install": "dsh plugin --profile demo add dsh-industry-research",
+      "added": "2026-09-02",
+      "npm": "dsh-industry-research"
+    },
+    {
       "name": "dsh-sidebar-qa",
       "owner": "ChenRuoT",
       "url": "https://github.com/ChenRuoT/dsh-sidebar-qa",
@@ -3179,19 +3192,6 @@
         "https://raw.githubusercontent.com/FeatherHunter/dsh-mattpocock-skills-deck/HEAD/assets/issue-detail-zh.png",
         "https://raw.githubusercontent.com/FeatherHunter/dsh-mattpocock-skills-deck/HEAD/assets/issue-comment-zh.png"
       ]
-    },
-    {
-      "name": "dsh-industry-research",
-      "owner": "PerryLink",
-      "url": "https://github.com/PerryLink/dsh-industry-research",
-      "category": "unsorted",
-      "description": {
-        "en": "Industry and company research domain pack for DeepSeek Harness: methodology skills, industry chain mapping, public-source policy/news tracking, company research cards, and auditable research reports. Research only - not investment advice."
-      },
-      "stars": 37,
-      "install": "dsh plugin --profile demo add dsh-industry-research",
-      "added": "2026-09-02",
-      "npm": "dsh-industry-research"
     },
     {
       "name": "dsh-codex-subscription",
@@ -3256,7 +3256,7 @@
       "description": {
         "en": "Upload a file and let the model actually read it"
       },
-      "stars": 30,
+      "stars": 31,
       "install": "dsh plugin --profile web add dsh-files",
       "added": "2026-08-24",
       "screenshots": [
