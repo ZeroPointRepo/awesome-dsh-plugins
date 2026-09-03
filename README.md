@@ -1022,6 +1022,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Let a configured model decide native tool approvals** with [dsh-plugin-auto-review](https://github.com/delef/dsh-plugin-auto-review) by [delef](https://github.com/delef). Uses DSH LLM routes, Web controls, and fail-closed handling. 1★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-plugin-auto-review
+  ```
+
+  </details>
+
 
 ### Live data APIs
 
