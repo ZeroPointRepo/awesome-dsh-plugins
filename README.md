@@ -683,6 +683,18 @@ if you would rather browse from inside the app.
   </details>
 
 
+- **Build a Zotero-style library for papers and data** with [dsh-paperpanel](https://github.com/Floatingfur/dsh-paperpanel) by [Floatingfur](https://github.com/Floatingfur). Reads PDF/Word in a centered reader with select-to-note, and edits CSV/Excel tables in place. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add github:Floatingfur/dsh-paperpanel
+  ```
+
+  </details>
+
+
 ### Git and code review
 
 - **Run a code review bot natively inside DSH** with [dsh-reviewer-bot](https://github.com/chaojixinren/dsh-reviewer-bot) by [chaojixinren](https://github.com/chaojixinren). Cross-platform, rules are pluggable, and a review can be replayed locally. 14★, MIT.
