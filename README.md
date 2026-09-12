@@ -1043,6 +1043,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Connect DSH to remote servers and workspaces** with [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). SSH/SFTP workspace operations, conflict-aware mirror sync, port forwarding, and a native Web UI. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-remote-workspace
+  ```
+
+  </details>
+
 ### Usage, cost, and account tracking
 
 - **Track session and daily cost against a budget** with [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) by [Han-1413141](https://github.com/Han-1413141). Provider balances, peak and off-peak pricing, and a 90-plus model pricing catalog, kept in sync automatically. 260★, MIT.
