@@ -418,6 +418,18 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+- **Search prior conversations from agent tools** with [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). A model-facing full-text search tool for indexed DeepSeek Harness conversation history. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-session-search
+  ```
+
+  </details>
+
 ### Reshape the interface
 
 - **Add a task board, git graph, and mobile remote UI** with [dsh-web](https://github.com/zhu1090093659/dsh-web) by [zhu1090093659](https://github.com/zhu1090093659). A whole plugin bundle for the Web GUI, live token stats and a skin center included. 7,091★, Apache-2.0.
@@ -1065,6 +1077,18 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+- **Monitor Linux servers from the sidebar** with [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Read-only SSH metrics for CPU, memory, swap, disks, processes, containers, network, and listening ports. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-server-monitor
+  ```
+
+  </details>
+
 ### Usage, cost, and account tracking
 
 - **Track session and daily cost against a budget** with [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) by [Han-1413141](https://github.com/Han-1413141). Provider balances, peak and off-peak pricing, and a 90-plus model pricing catalog, kept in sync automatically. 260★, MIT.
@@ -1362,6 +1386,18 @@ if you would rather browse from inside the app.
 
   ```sh
   dsh plugin --profile web add @goodandready/dsh-shadow-auditor
+  ```
+
+  </details>
+
+
+- **Gate risky host commands behind approval** with [dsh-approval-gate](https://github.com/GooDAnDReaDY/dsh-approval-gate) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Blocks recognized dangerous operations and requests approval when a command cannot be inspected. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-approval-gate
   ```
 
   </details>
