@@ -16,7 +16,7 @@
 # Awesome DSH Plugins
 
 <!-- promise:start -->
-**81 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
+**107 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
 <!-- promise:end -->
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) is DeepSeek's
@@ -234,6 +234,51 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Generate, edit, and compare images in the conversation** with [dsh-image-gen](https://github.com/GooDAnDReaDY/dsh-image-gen) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Provider-pluggable image generation with FAL, OpenAI-compatible APIs, ChatGPT, and Grok subscriptions. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-image-gen
+  ```
+
+  </details>
+
+- **Turn documents and images into multimodal evidence** with [dsh-vision-bridge](https://github.com/GooDAnDReaDY/dsh-vision-bridge) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Vision tools for PDFs, formulas, tables, QR codes, UI diagrams, and multi-model consensus. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-vision-bridge
+  ```
+
+  </details>
+
+- **Turn assistant replies into spoken audio** with [dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Multi-provider text-to-speech with local engines, streaming, and voice integrations. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-tts
+  ```
+
+  </details>
+
+- **Speak into DSH and send voice messages** with [dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Voice dictation with provider fallback, local whisper.cpp, and messenger voice messages. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-voice
+  ```
+
+  </details>
+
 ### Search the web
 
 - **Ask the web or X and get structured evidence back** with [modsearch](https://github.com/liustack/modsearch) by [liustack](https://github.com/liustack). Search, scrape, and citations for models with no native web access. 515★, MIT.
@@ -280,6 +325,18 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **Search X and profile authors from the conversation** with [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). SuperGrok OAuth tools for X search, author profiling, trends, and fact checking. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-grok-xsearch
+  ```
+
+  </details>
 
 ### Remember between sessions
 
@@ -338,6 +395,41 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **Keep sessions searchable and organized** with [dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Pin conversations, search contents, read archived transcripts, and hide sidebar noise. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-session-control
+  ```
+
+  </details>
+
+- **Create safe checkpoints and roll back workspaces** with [dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Smart checkpoints, workspace safety guards, and instant rollback for DSH work. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-time-machine
+  ```
+
+  </details>
+
+
+- **Search prior conversations from agent tools** with [dsh-session-search](https://github.com/GooDAnDReaDY/dsh-session-search) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). A model-facing full-text search tool for indexed DeepSeek Harness conversation history. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-session-search
+  ```
+
+  </details>
 
 ### Reshape the interface
 
@@ -452,6 +544,40 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **See context pressure before it breaks a run** with [dsh-context-lens](https://github.com/GooDAnDReaDY/dsh-context-lens) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). AST context compression, test-log filtering, and token-budget guards for DSH. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-context-lens
+  ```
+
+  </details>
+
+- **Run a Gitea-backed task board beside the agent** with [dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Visual Kanban board with workflow columns and a dedicated agent session per task. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-kanban
+  ```
+
+  </details>
+
+- **Preview HTML, React, SVG, and diagrams live** with [dsh-live-canvas](https://github.com/GooDAnDReaDY/dsh-live-canvas) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Interactive browser canvas with SSE hot reload for real-time artifact previews. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-live-canvas
+  ```
+
+  </details>
+
 ### Make it yours
 
 - **Skin DSH with the Catppuccin palette** with [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) by [NoNameLeGo](https://github.com/NoNameLeGo). Latte, Frappe, Macchiato, and Mocha, one-click switch, with an optional glass finish. 42★, MIT.
@@ -498,6 +624,18 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **Use Russian throughout the Web UI** with [dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Russian localization for core DSH and community plugin namespaces. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-russian-lang
+  ```
+
+  </details>
 
 ### Boost coding workflow
 
@@ -579,6 +717,29 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Stop runaway tool-call loops before they spread** with [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Fail-closed runtime guard for repeated tool calls in DeepSeek Harness. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-agent-loop-guard
+  ```
+
+  </details>
+
+- **Keep DSML closing tags out of artifacts** with [dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Sanitizes leaked DeepSeek DSML closing tags from streamed model text. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-dsml-artifact-guard
+  ```
+
+  </details>
+
 ### Run a team of agents
 
 - **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 1,755★, MIT.
@@ -625,6 +786,40 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **Break a goal into milestones and execute it** with [dsh-goal](https://github.com/GooDAnDReaDY/dsh-goal) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Sticky goal banner, milestone task breakdown, elapsed timer, and interactive controls. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-goal
+  ```
+
+  </details>
+
+- **Ask several models for proposals and judge them** with [dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Mixture-of-Agents slash command with parallel proposals, isolation, and judge synthesis. 1★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-moa
+  ```
+
+  </details>
+
+- **Schedule background agent work** with [dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Scheduled cron tasks, background automation, and agent execution for DSH. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-cron
+  ```
+
+  </details>
 
 ### Browse files and data
 
@@ -720,6 +915,29 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Manage Gitea and Forgejo work from DSH** with [dsh-gitea](https://github.com/GooDAnDReaDY/dsh-gitea) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Issue, pull request, worktree, and live Git status tools for Gitea and Forgejo. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-gitea
+  ```
+
+  </details>
+
+- **Submit privacy-safe bug reports from DSH** with [dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Redacts sensitive data and supports GitHub and Gitea issues with explicit confirmation. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-issue-reporter
+  ```
+
+  </details>
+
 ### Notifications and messaging
 
 - **Drive a DSH agent from Lark or Feishu chat** with [dsh-lark](https://github.com/omdsh-dev/dsh-lark) by [omdsh-dev](https://github.com/omdsh-dev). Tool approvals and plan reviews return as cards you tap. 56★, BSD-3-Clause.
@@ -778,6 +996,18 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Drive DSH from Telegram** with [dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Telegram bridge with sessions, steering, inline asks, notifications, and optional voice notes. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-messenger-gateway
+  ```
+
+  </details>
+
 ### Remote access and mobile
 
 - **Scan a QR code to reach your desktop DSH from your phone** with [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) by [shaobeichen](https://github.com/shaobeichen). Real-time mirrored access over LAN or the public internet. 1,262★, GPL-2.0.
@@ -825,6 +1055,41 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Open the Web UI through a LAN or reverse proxy** with [dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Makes DSH Web UI access work beyond localhost and can open its own listener. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-lanmode
+  ```
+
+  </details>
+
+- **Connect DSH to remote servers and workspaces** with [dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). SSH/SFTP workspace operations, conflict-aware mirror sync, port forwarding, and a native Web UI. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-remote-workspace
+  ```
+
+  </details>
+
+
+- **Monitor Linux servers from the sidebar** with [dsh-server-monitor](https://github.com/GooDAnDReaDY/dsh-server-monitor) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Read-only SSH metrics for CPU, memory, swap, disks, processes, containers, network, and listening ports. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-server-monitor
+  ```
+
+  </details>
+
 ### Usage, cost, and account tracking
 
 - **Track session and daily cost against a budget** with [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) by [Han-1413141](https://github.com/Han-1413141). Provider balances, peak and off-peak pricing, and a 90-plus model pricing catalog, kept in sync automatically. 316★, MIT.
@@ -871,6 +1136,51 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **See live session cost in the conversation header** with [dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Token usage by bucket, peak and off-peak pricing, and the next tariff switch. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-cost-meter
+  ```
+
+  </details>
+
+- **Prevent malformed usage samples from crashing history** with [dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Normalizes broken token counters so session history never folds to NaN. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-usage-guard
+  ```
+
+  </details>
+
+- **Keep provider model catalogs current** with [dsh-model-sync](https://github.com/GooDAnDReaDY/dsh-model-sync) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Automatically synchronizes model catalogs for API-key DSH providers. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-model-sync
+  ```
+
+  </details>
+
+- **Track API key and subscription limits in DSH** with [dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Shows quota limits in a floating chip, composer bar, and settings UI. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-key-limits
+  ```
+
+  </details>
 
 ### Find and manage plugins
 
@@ -988,6 +1298,40 @@ if you would rather browse from inside the app.
   </details>
 
 
+
+- **Use ClineBot and ClinePass from DSH** with [dsh-clinebot](https://github.com/GooDAnDReaDY/dsh-clinebot) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Syncs subscription models, quotas, session metrics, usage limits, and the /cline command. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-clinebot
+  ```
+
+  </details>
+
+- **Search and select models in DSH** with [dsh-model-search](https://github.com/GooDAnDReaDY/dsh-model-search) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). A searchable model selector for the DeepSeek Harness WebUI with a native settings card. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-model-search
+  ```
+
+  </details>
+
+- **Use ChatGPT, Claude, Grok, and Antigravity subscriptions** with [dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). OAuth-backed subscription providers for DeepSeek Harness. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-subscriptions
+  ```
+
+  </details>
+
 ### Security and safety
 
 - **Audit your API relay for prompt injection and worse** with [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) by [toby-bridges](https://github.com/toby-bridges). A local, offline scan for model substitution, tool-call rewriting, and error leakage on any LLM proxy. 841★, AGPL-3.0.
@@ -1023,6 +1367,41 @@ if you would rather browse from inside the app.
 
   </details>
 
+
+
+- **Rotate provider keys and fail over automatically** with [dsh-key-rotation](https://github.com/GooDAnDReaDY/dsh-key-rotation) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Provider key pools with cooldowns, clone routes, and quota-error failover. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-key-rotation
+  ```
+
+  </details>
+
+- **Run background security audits** with [dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Checks for secret leakage and unsafe commands in the background. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-shadow-auditor
+  ```
+
+  </details>
+
+
+- **Gate risky host commands behind approval** with [dsh-approval-gate](https://github.com/GooDAnDReaDY/dsh-approval-gate) by [GooDAnDReaDY](https://github.com/GooDAnDReaDY). Blocks recognized dangerous operations and requests approval when a command cannot be inspected. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add @goodandready/dsh-approval-gate
+  ```
+
+  </details>
 
 ### Live data APIs
 
