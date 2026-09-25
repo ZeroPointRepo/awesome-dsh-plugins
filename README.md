@@ -755,7 +755,7 @@ if you would rather browse from inside the app.
 
   </details>
 
-- **Get one notify API and eight channel adapters** with [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) by [THEWOLFWALKER](https://github.com/THEWOLFWALKER). Telegram, DingTalk, Feishu, WxPusher, PushPlus, ServerChan, Bark, and plain webhooks, from a single call. 51★, MIT.
+- **Send notifications and control DSH from your phone** with [dsh-notifier](https://github.com/THEWOLFWALKER/dsh-notifier) by [THEWOLFWALKER](https://github.com/THEWOLFWALKER). 28 outbound channels, six inbound controls, Native DSH UI, and live outbound hot-apply. 53★, MIT.
 
   <details>
   <summary>Install</summary>
