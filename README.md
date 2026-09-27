@@ -1023,6 +1023,16 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Back up, move and sync a whole DSH setup** with [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) by [xiajiajun516](https://github.com/xiajiajun516) - settings, providers, plugins, MCP servers, skills and workspaces, previewed before anything is written, with per-item conflict decisions, rollback on failure, cross-machine path remapping and Git / WebDAV sync. 132★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-config-manager
+  ```
+
+  </details>
 
 ### Live data APIs
 
