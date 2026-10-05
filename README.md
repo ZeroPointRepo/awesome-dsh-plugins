@@ -501,6 +501,21 @@ if you would rather browse from inside the app.
 
 ### Boost coding workflow
 
+- **Search Arcmira API documentation from a DSH session** with [Arcmira API docs](https://github.com/arcmira/integrations) by [Arcmira](https://github.com/arcmira). Selectable API docs preset. No API key; exposes documentation search and feedback submission. 0★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  With DSH 0.1.7-rc.2 installed, clone the repository and change into `integrations/examples/dsh`:
+
+  ```sh
+  dsh web --patch "$PWD/arcmira-docs.patch.yml" --host 127.0.0.1 --port 3086
+  ```
+
+  Select **Arcmira API documentation** before the new session's first turn. The [setup guide](https://github.com/arcmira/integrations/tree/master/examples/dsh) documents tool exposure and verification limits. This preset searches API documentation, not YouTube transcripts, and is not read-only because it also exposes `submit_feedback`.
+
+  </details>
+
 - **Attach a workspace file to your prompt by searching for it** with [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) by [FSMargoo](https://github.com/FSMargoo). Codex-style @file mentions in the composer. 515★, MIT.
 
   <details>
