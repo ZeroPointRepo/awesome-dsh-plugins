@@ -556,6 +556,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Filter repeated model context** with [dsh-sieve](https://github.com/Sev7eEn7/sieve) by [Sev7eEn7](https://github.com/Sev7eEn7). Filters tool outputs, prunes stale context and discloses skills on demand. 3★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile headless add dsh-sieve@0.1.0
+  ```
+
+  </details>
+
 - **Roll a conversation and the workspace back together** with [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) by [Anionex](https://github.com/Anionex). A persistent change ledger undoes code state alongside chat state. 128★, BSD-3-Clause.
 
   <details>
