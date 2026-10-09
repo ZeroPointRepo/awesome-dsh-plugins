@@ -987,6 +987,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Use your Claude subscription as a DSH provider through the Claude Code CLI** with [dsh-oh-my-claude](https://github.com/lcestou/dsh-oh-my-claude) by [lcestou](https://github.com/lcestou). Drives the logged-in `claude` binary over stream-json, no API key: live model list, per-session resume, approval relay, images, a memory/rewind/changes panel, and workspaces on remote SSH boxes. 10★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-oh-my-claude
+  ```
+
+  </details>
+
 
 ### Security and safety
 
