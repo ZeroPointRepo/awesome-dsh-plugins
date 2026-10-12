@@ -338,6 +338,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Seal a research report whose claims stay checkable** with [dsh-research-report](https://github.com/PerryLink/dsh-research-report) by [PerryLink](https://github.com/PerryLink). A content-addressed evidence ledger with per-claim verdicts. 215★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-research-report
+  ```
+
+  </details>
+
 
 ### Reshape the interface
 
@@ -719,6 +730,17 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Grill the requirements and the tests before you ship** with [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) by [PerryLink](https://github.com/PerryLink). A delivery gate that checks the plan, the tests, and the handoff. 55★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-doublecheck
+  ```
+
+  </details>
+
 
 ### Notifications and messaging
 
@@ -1013,6 +1035,17 @@ if you would rather browse from inside the app.
   </details>
 
 - **Audit your own DSH install** with [dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) by [omdsh-dev](https://github.com/omdsh-dev). A read-only, local report on config, plugin sources, sessions, and network exposure. 14★, MIT.
+
+- **Manage which MCP servers your agent may reach** with [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) by [PerryLink](https://github.com/PerryLink). Approval-gated writes, automatic backups, and health checks for each server. 75★, Apache-2.0.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-mcp-panel
+  ```
+
+  </details>
 
   <details>
   <summary>Install</summary>
