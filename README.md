@@ -454,6 +454,17 @@ if you would rather browse from inside the app.
 
 ### Make it yours
 
+- **Turn your text into overhead whales swimming behind frosted conversation cards** with [dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales) by [jryang1997](https://github.com/jryang1997). Five whale species formed from custom text or ASCII, shaded cells, frosted content cards, input-box avoidance, independent dives, spouts, ripples, wind, and cloud shadows. 1★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add github:jryang1997/dsh-ascii-whales
+  ```
+
+  </details>
+
 - **Skin DSH with the Catppuccin palette** with [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) by [NoNameLeGo](https://github.com/NoNameLeGo). Latte, Frappe, Macchiato, and Mocha, one-click switch, with an optional glass finish. 63★, MIT.
 
   <details>
