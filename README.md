@@ -452,6 +452,17 @@ if you would rather browse from inside the app.
   </details>
 
 
+- **Dictate into the composer by holding the input box** with [dsh-hold-to-dictate](https://github.com/jryang1997/dsh-hold-to-dictate) by [jryang1997](https://github.com/jryang1997). Reuses the official voice-input bundle's speech service: long-press the input box, release to write the transcript into the draft, and it never sends. 2★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add github:jryang1997/dsh-hold-to-dictate
+  ```
+
+  </details>
+
 ### Make it yours
 
 - **Skin DSH with the Catppuccin palette** with [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) by [NoNameLeGo](https://github.com/NoNameLeGo). Latte, Frappe, Macchiato, and Mocha, one-click switch, with an optional glass finish. 63★, MIT.
