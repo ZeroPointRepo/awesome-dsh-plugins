@@ -941,6 +941,18 @@ if you would rather browse from inside the app.
   </details>
 
 
+- **Manage MCP servers and switch individual MCP tools on or off inside Settings** with [dsh-mcp-tools](https://github.com/hxlog/dsh-mcp-tools) by [hxlog](https://github.com/hxlog). Add MCP servers, edit Postman-style request headers, run a connection test, and toggle each tool without leaving DSH. 3★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-mcp-tools
+  ```
+
+  </details>
+
+
 ### Providers and subscriptions
 
 - **Use a ChatGPT, Claude, or X Premium subscription as a DSH provider** with [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) by [V1ki](https://github.com/V1ki). OAuth login in the Web UI, no separate API keys to manage. 480★, MIT.
