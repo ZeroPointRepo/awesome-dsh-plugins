@@ -585,7 +585,7 @@ if you would rather browse from inside the app.
   <summary>Install</summary>
 
   ```sh
-  dsh plugin --profile web add dsh-agent-compare@1.0.1
+  dsh plugin --profile web add dsh-agent-compare@1.1.0
   ```
 
   </details>
