@@ -579,6 +579,17 @@ if you would rather browse from inside the app.
   </details>
 
 
+- **Compare two running implementations before adopting one** with [AgentCompare](https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare) by [lijiaqi-AI-Product-Manager](https://github.com/lijiaqi-AI-Product-Manager). Try real Vite previews inside DSH conversations, choose blind, and review adoption against current edits. 96★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-agent-compare@1.0.1
+  ```
+
+  </details>
+
 ### Run a team of agents
 
 - **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 2,635★, MIT.
