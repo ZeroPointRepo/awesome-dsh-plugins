@@ -581,6 +581,18 @@ if you would rather browse from inside the app.
 
 ### Run a team of agents
 
+- **Hand tasks from Codex to a scoped DeepSeek workspace** with [dsh-codex-handoff](https://github.com/lightcoloror/dsh-codex-handoff) by [lightcoloror](https://github.com/lightcoloror). Windows bridge with pairing; Node 22+ and Python 3.11+ required. 0★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile desktop add github:lightcoloror/dsh-codex-handoff#v0.1.1
+  ```
+
+  </details>
+
+
 - **Dispatch work across a team of agents** with [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) by [NanmiCoder](https://github.com/NanmiCoder). Coordinated multi-agent execution instead of one model doing everything serially. 2,800★, MIT.
 
   <details>
