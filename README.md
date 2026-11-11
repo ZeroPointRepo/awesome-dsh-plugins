@@ -577,6 +577,16 @@ if you would rather browse from inside the app.
   ```
 
   </details>
+- **Reproduce a browser bug and check its fix** with [BugGPS](https://github.com/lijiaqi-AI-Product-Manager/dsh-bug-gps) by [lijiaqi-AI-Product-Manager](https://github.com/lijiaqi-AI-Product-Manager). Locks expectations and replays them against changed and original code. 1★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add 'git+https://github.com/lijiaqi-AI-Product-Manager/dsh-bug-gps.git#c48aa094b6b32731d517fb0026cceccdae60e117'
+  ```
+
+  </details>
 
 
 ### Run a team of agents
