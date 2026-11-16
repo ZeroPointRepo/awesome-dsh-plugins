@@ -777,6 +777,16 @@ if you would rather browse from inside the app.
 
   </details>
 
+- **Get a real phone call when the agent needs you** with [dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) by [radres](https://github.com/radres). Adds call_me and text_me tools: the agent rings your iPhone or Android, speaks its question, and your spoken answer comes back as text. 8★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add github:radres/dsh-plugin-call-me
+  ```
+
+  </details>
 
 ### Remote access and mobile
 
