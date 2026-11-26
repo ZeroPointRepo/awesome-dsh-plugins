@@ -16,7 +16,7 @@
 # Awesome DSH Plugins
 
 <!-- promise:start -->
-**81 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
+**82 DeepSeek Harness (dsh) plugins, organized by what each one does for you.**
 <!-- promise:end -->
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) is DeepSeek's
@@ -61,11 +61,11 @@ that actually install, sorted by the job they do for you instead of the alphabet
 <!-- dsh:panorama:start -->
 ```mermaid
 mindmap
-  root((Awesome DSH Plugins · 81))
+  root((Awesome DSH Plugins · 82))
     Reshape the interface · 10
     Boost coding workflow · 7
     Domain specific · 7
-    Find and manage plugins · 6
+    Find and manage plugins · 7
     Browse files and data · 5
     Notifications and messaging · 5
     Remember between sessions · 5
@@ -936,6 +936,16 @@ if you would rather browse from inside the app.
 
   ```sh
   dsh plugin --profile web add dsh-web-plugin-manager@latest
+  ```
+
+  </details>
+- **Recover a broken plugin configuration** with [dsh-version-guard](https://github.com/skyjjgw/dsh-version-guard) by [skyjjgw](https://github.com/skyjjgw). Snapshot plugin versions and restore a known-good profile using an independent recovery page. 1★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add github:skyjjgw/dsh-version-guard
   ```
 
   </details>
