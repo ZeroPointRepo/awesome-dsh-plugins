@@ -574,6 +574,17 @@ if you would rather browse from inside the app.
 
   ```sh
   dsh plugin --profile web add github:Rianico/dsh-better-edit
+- **Compare alternatives before adopting one** with [AgentCompare](https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare) by [lijiaqi-AI-Product-Manager](https://github.com/lijiaqi-AI-Product-Manager). Compare 2–4 answers, files or pages in DSH Desktop/Web with Chinese/English UI and shared context. 458★, MIT.
+
+  <details>
+  <summary>Install</summary>
+
+  ```sh
+  dsh plugin --profile web add dsh-agent-compare@latest
+  ```
+
+  </details>
+
   ```
 
   </details>
